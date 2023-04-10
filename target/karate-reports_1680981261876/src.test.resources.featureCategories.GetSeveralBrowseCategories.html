@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"370ba96a-51f4-4cd7-b29b-888a5c0fd67a",karate_version:"1.4.0",karate_meta:"intellij:1.7.4.325"});
+  }
+});
+</script>
+
+    <title>src.test.resources.featureCategories.GetSeveralBrowseCategories</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-04-08 07:13:06 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>Get Several Browse Categories</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2:15]"><span>[2:15]</span> <span>verify if the API returns an error if i send an invalid id</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/resources/featureCategories/GetSeveralBrowseCategories.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Get Several Browse Categories</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">Get Several Browse Categories</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1850</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def authorization_access = call read(&#39;classpath:Authorization/BearerToken.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1469</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">Authorization.BearerToken</div>
+      </div>
+      <div class="time-cell passed">1358</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://accounts.spotify.com/api/token&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def Base64 = Java.type(&#39;Utils.Base64Encode&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def auth_string = client_authorization</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def encoded_string = Base64.encode(auth_string)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &quot;Basic &quot; + encoded_string</span>
+      </div>
+    </div>
+    <div class="time-cell passed">15</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field grant_type = &quot;client_credentials&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">134</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1183</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.11">19:13:04.768 request:
+1 &gt; POST https://accounts.spotify.com/api/token
+1 &gt; Authorization: Basic MzQ3NTdhOWZkOTIzNDM2OWIwOThkZGVkZTViMDQwMmM6YWViZDMyMDkyOTVlNGQxNThiN2I2M2M1ODljNGU5Mjc=
+1 &gt; Content-Type: application/x-www-form-urlencoded
+1 &gt; Content-Length: 29
+1 &gt; Host: accounts.spotify.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.14)
+1 &gt; Accept-Encoding: gzip,deflate
+grant_type=client_credentials
+
+19:13:05.311 response time in milliseconds: 535
+1 &lt; 200
+1 &lt; date: Sat, 08 Apr 2023 19:11:27 GMT
+1 &lt; content-type: application/json
+1 &lt; set-cookie: __Host-device_id=AQAwEprJfiCwp9yrZkSJRJx_V1owAeIoWlltGt6jwFaK-ggkwSY0IFeU2Q-WIHJGm9okNZ-k_3q7vYAg5yF9n-SH7TWZLfnYF8Y;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly;SameSite=Lax
+1 &lt; set-cookie: sp_tr=false;Version=1;Domain=accounts.spotify.com;Path=/;Secure;SameSite=Lax
+1 &lt; sp-trace-id: d958ce81fbf7e14f
+1 &lt; x-envoy-upstream-service-time: 9
+1 &lt; server: envoy
+1 &lt; strict-transport-security: max-age=31536000
+1 &lt; x-content-type-options: nosniff
+1 &lt; vary: Accept-Encoding
+1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Set-Cookie: __Host-device_id=AQAwEprJfiCwp9yrZkSJRJx_V1owAeIoWlltGt6jwFaK-ggkwSY0IFeU2Q-WIHJGm9okNZ-k_3q7vYAg5yF9n-SH7TWZLfnYF8Y;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly;SameSite=Lax
+1 &lt; Set-Cookie: sp_tr=false;Version=1;Domain=accounts.spotify.com;Path=/;Secure;SameSite=Lax
+{&quot;access_token&quot;:&quot;BQDTnyMXlK2xseT6u6z2DW4lXP3XzAhyQA8mKYvk_0usIOrYaFmw9F1vAkUFW3hBZLJCH5io49bGLJGcDVHuiPI1CiAWcili0AIYJNeSVXy6xHwXj_97&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;expires_in&quot;:3600}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def bearer_token = response.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://api.spotify.com/v1/browse/categories&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authorization_access .bearer_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>params { country = &quot;SE&quot; , locale : &quot;sv_SE&quot; , limit : 10 , offset : 5  }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">17</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">340</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">19:13:05.350 request:
+1 &gt; GET https://api.spotify.com/v1/browse/categories?country+%3D+%22SE%22+%2C+locale=sv_SE&amp;offset=5&amp;limit=10
+1 &gt; Authorization: Bearer BQDTnyMXlK2xseT6u6z2DW4lXP3XzAhyQA8mKYvk_0usIOrYaFmw9F1vAkUFW3hBZLJCH5io49bGLJGcDVHuiPI1CiAWcili0AIYJNeSVXy6xHwXj_97
+1 &gt; Host: api.spotify.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.14)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+19:13:05.685 response time in milliseconds: 333
+1 &lt; 200
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; cache-control: public, max-age=600
+1 &lt; x-robots-tag: noindex, nofollow
+1 &lt; access-control-allow-origin: *
+1 &lt; access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+1 &lt; access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-max-age: 604800
+1 &lt; strict-transport-security: max-age=31536000
+1 &lt; x-content-type-options: nosniff
+1 &lt; date: Sat, 08 Apr 2023 19:11:27 GMT
+1 &lt; server: envoy
+1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+1 &lt; Transfer-Encoding: chunked
+{
+  &quot;categories&quot; : {
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/browse/categories?country=MA&amp;offset=5&amp;limit=10&quot;,
+    &quot;items&quot; : [ {
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFNQ0fGp4byGU&quot;,
+      &quot;icons&quot; : [ {
+        &quot;height&quot; : null,
+        &quot;url&quot; : &quot;https://t.scdn.co/images/b505b01bbe0e490cbe43b07f16212892.jpeg&quot;,
+        &quot;width&quot; : null
+      } ],
+      &quot;id&quot; : &quot;0JQ5DAqbMKFNQ0fGp4byGU&quot;,
+      &quot;name&quot; : &quot;Afro&quot;
+    }, {
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFzHmL4tf05da&quot;,
+      &quot;icons&quot; : [ {
+        &quot;height&quot; : 274,
+        &quot;url&quot; : &quot;https://t.scdn.co/media/original/mood-274x274_976986a31ac8c49794cbdc7246fd5ad7_274x274.jpg&quot;,
+        &quot;width&quot; : 274
+      } ],
+      &quot;id&quot; : &quot;0JQ5DAqbMKFzHmL4tf05da&quot;,
+      &quot;name&quot; : &quot;Mood&quot;
+    }, {
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFHaib8N0cwey&quot;,
+      &quot;icons&quot; : [ {
+        &quot;height&quot; : null,
+        &quot;url&quot; : &quot;https://t.scdn.co/images/3a65e06ed84743b29df8c5d9102dd827.jpeg&quot;,
+        &quot;width&quot; : null
+      } ],
+      &quot;id&quot; : &quot;0JQ5DAqbMKFHaib8N0cwey&quot;,
+      &quot;name&quot; : &quot;Khaleeji&quot;
+    }, {
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFLVaM30PMBm4&quot;,
+      &quot;icons&quot; : [ {
+        &quot;height&quot; : null,
+        &quot;url&quot; : &quot;https://t.scdn.co/images/8e508d7eb5b843a89c368c9507ecc429.jpeg&quot;,
+        &quot;width&quot; : null
+      } ],
+      &quot;id&quot; : &quot;0JQ5DAqbMKFLVaM30PMBm4&quot;,
+      &quot;name&quot; : &quot;Summer&quot;
+    }, {
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFxXaXKP7zcDp&quot;,
+      &quot;icons&quot; : [ {
+        &quot;height&quot; : null,
+        &quot;url&quot; : &quot;https://t.scdn.co/images/26a60378-a374-4cd7-b894-28efa5e154cb.jpg&quot;,
+        &quot;width&quot; : null
+      } ],
+      &quot;id&quot; : &quot;0JQ5DAqbMKFxXaXKP7zcDp&quot;,
+      &quot;name&quot; : &quot;Latin&quot;
+    }, {
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFGvOw3O4nLAf&quot;,
+      &quot;icons&quot; : [ {
+        &quot;height&quot; : null,
+        &quot;url&quot; : &quot;https://t.scdn.co/images/2078afd91e4d431eb19efc5bee5ab131.jpeg&quot;,
+        &quot;width&quot; : null
+      } ],
+      &quot;id&quot; : &quot;0JQ5DAqbMKFGvOw3O4nLAf&quot;,
+      &quot;name&quot; : &quot;K-Pop&quot;
+    }, {
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFObNLOHydSW8&quot;,
+      &quot;icons&quot; : [ {
+        &quot;height&quot; : null,
+        &quot;url&quot; : &quot;https://t.scdn.co/images/495fadcefe234607b14b2db3381f3f5d.jpeg&quot;,
+        &quot;width&quot; : null
+      } ],
+      &quot;id&quot; : &quot;0JQ5DAqbMKFObNLOHydSW8&quot;,
+      &quot;name&quot; : &quot;Caribbean&quot;
+    }, {
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFCfObibaOZbv&quot;,
+      &quot;icons&quot; : [ {
+        &quot;height&quot; : null,
+        &quot;url&quot; : &quot;https://t.scdn.co/images/0d39395309ba47838ef12ce987f19d16.jpeg&quot;,
+        &quot;width&quot; : null
+      } ],
+      &quot;id&quot; : &quot;0JQ5DAqbMKFCfObibaOZbv&quot;,
+      &quot;name&quot; : &quot;Gaming&quot;
+    }, {
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFRKBHIxJ5hMm&quot;,
+      &quot;icons&quot; : [ {
+        &quot;height&quot; : null,
+        &quot;url&quot; : &quot;https://t.scdn.co/images/b4182906bf244b4994805084c057e9ee.jpeg&quot;,
+        &quot;width&quot; : null
+      } ],
+      &quot;id&quot; : &quot;0JQ5DAqbMKFRKBHIxJ5hMm&quot;,
+      &quot;name&quot; : &quot;Tastemakers&quot;
+    }, {
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFLb2EqgLtpjC&quot;,
+      &quot;icons&quot; : [ {
+        &quot;height&quot; : null,
+        &quot;url&quot; : &quot;https://t.scdn.co/images/3710b68657574bc79df14bd74629e5ac&quot;,
+        &quot;width&quot; : null
+      } ],
+      &quot;id&quot; : &quot;0JQ5DAqbMKFLb2EqgLtpjC&quot;,
+      &quot;name&quot; : &quot;Wellness&quot;
+    } ],
+    &quot;limit&quot; : 10,
+    &quot;next&quot; : &quot;https://api.spotify.com/v1/browse/categories?country=MA&amp;offset=15&amp;limit=10&quot;,
+    &quot;offset&quot; : 5,
+    &quot;previous&quot; : &quot;https://api.spotify.com/v1/browse/categories?country=MA&amp;offset=0&amp;limit=10&quot;,
+    &quot;total&quot; : 43
+  }
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">21</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">19:13:05.710 [print] {
+  &quot;categories&quot;: {
+    &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories?country=MA&amp;offset=5&amp;limit=10&quot;,
+    &quot;items&quot;: [
+      {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFNQ0fGp4byGU&quot;,
+        &quot;icons&quot;: [
+          {
+            &quot;height&quot;: null,
+            &quot;url&quot;: &quot;https://t.scdn.co/images/b505b01bbe0e490cbe43b07f16212892.jpeg&quot;,
+            &quot;width&quot;: null
+          }
+        ],
+        &quot;id&quot;: &quot;0JQ5DAqbMKFNQ0fGp4byGU&quot;,
+        &quot;name&quot;: &quot;Afro&quot;
+      },
+      {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFzHmL4tf05da&quot;,
+        &quot;icons&quot;: [
+          {
+            &quot;height&quot;: 274,
+            &quot;url&quot;: &quot;https://t.scdn.co/media/original/mood-274x274_976986a31ac8c49794cbdc7246fd5ad7_274x274.jpg&quot;,
+            &quot;width&quot;: 274
+          }
+        ],
+        &quot;id&quot;: &quot;0JQ5DAqbMKFzHmL4tf05da&quot;,
+        &quot;name&quot;: &quot;Mood&quot;
+      },
+      {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFHaib8N0cwey&quot;,
+        &quot;icons&quot;: [
+          {
+            &quot;height&quot;: null,
+            &quot;url&quot;: &quot;https://t.scdn.co/images/3a65e06ed84743b29df8c5d9102dd827.jpeg&quot;,
+            &quot;width&quot;: null
+          }
+        ],
+        &quot;id&quot;: &quot;0JQ5DAqbMKFHaib8N0cwey&quot;,
+        &quot;name&quot;: &quot;Khaleeji&quot;
+      },
+      {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFLVaM30PMBm4&quot;,
+        &quot;icons&quot;: [
+          {
+            &quot;height&quot;: null,
+            &quot;url&quot;: &quot;https://t.scdn.co/images/8e508d7eb5b843a89c368c9507ecc429.jpeg&quot;,
+            &quot;width&quot;: null
+          }
+        ],
+        &quot;id&quot;: &quot;0JQ5DAqbMKFLVaM30PMBm4&quot;,
+        &quot;name&quot;: &quot;Summer&quot;
+      },
+      {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFxXaXKP7zcDp&quot;,
+        &quot;icons&quot;: [
+          {
+            &quot;height&quot;: null,
+            &quot;url&quot;: &quot;https://t.scdn.co/images/26a60378-a374-4cd7-b894-28efa5e154cb.jpg&quot;,
+            &quot;width&quot;: null
+          }
+        ],
+        &quot;id&quot;: &quot;0JQ5DAqbMKFxXaXKP7zcDp&quot;,
+        &quot;name&quot;: &quot;Latin&quot;
+      },
+      {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFGvOw3O4nLAf&quot;,
+        &quot;icons&quot;: [
+          {
+            &quot;height&quot;: null,
+            &quot;url&quot;: &quot;https://t.scdn.co/images/2078afd91e4d431eb19efc5bee5ab131.jpeg&quot;,
+            &quot;width&quot;: null
+          }
+        ],
+        &quot;id&quot;: &quot;0JQ5DAqbMKFGvOw3O4nLAf&quot;,
+        &quot;name&quot;: &quot;K-Pop&quot;
+      },
+      {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFObNLOHydSW8&quot;,
+        &quot;icons&quot;: [
+          {
+            &quot;height&quot;: null,
+            &quot;url&quot;: &quot;https://t.scdn.co/images/495fadcefe234607b14b2db3381f3f5d.jpeg&quot;,
+            &quot;width&quot;: null
+          }
+        ],
+        &quot;id&quot;: &quot;0JQ5DAqbMKFObNLOHydSW8&quot;,
+        &quot;name&quot;: &quot;Caribbean&quot;
+      },
+      {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFCfObibaOZbv&quot;,
+        &quot;icons&quot;: [
+          {
+            &quot;height&quot;: null,
+            &quot;url&quot;: &quot;https://t.scdn.co/images/0d39395309ba47838ef12ce987f19d16.jpeg&quot;,
+            &quot;width&quot;: null
+          }
+        ],
+        &quot;id&quot;: &quot;0JQ5DAqbMKFCfObibaOZbv&quot;,
+        &quot;name&quot;: &quot;Gaming&quot;
+      },
+      {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFRKBHIxJ5hMm&quot;,
+        &quot;icons&quot;: [
+          {
+            &quot;height&quot;: null,
+            &quot;url&quot;: &quot;https://t.scdn.co/images/b4182906bf244b4994805084c057e9ee.jpeg&quot;,
+            &quot;width&quot;: null
+          }
+        ],
+        &quot;id&quot;: &quot;0JQ5DAqbMKFRKBHIxJ5hMm&quot;,
+        &quot;name&quot;: &quot;Tastemakers&quot;
+      },
+      {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFLb2EqgLtpjC&quot;,
+        &quot;icons&quot;: [
+          {
+            &quot;height&quot;: null,
+            &quot;url&quot;: &quot;https://t.scdn.co/images/3710b68657574bc79df14bd74629e5ac&quot;,
+            &quot;width&quot;: null
+          }
+        ],
+        &quot;id&quot;: &quot;0JQ5DAqbMKFLb2EqgLtpjC&quot;,
+        &quot;name&quot;: &quot;Wellness&quot;
+      }
+    ],
+    &quot;limit&quot;: 10,
+    &quot;next&quot;: &quot;https://api.spotify.com/v1/browse/categories?country=MA&amp;offset=15&amp;limit=10&quot;,
+    &quot;offset&quot;: 5,
+    &quot;previous&quot;: &quot;https://api.spotify.com/v1/browse/categories?country=MA&amp;offset=0&amp;limit=10&quot;,
+    &quot;total&quot;: 43
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:15]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:15]</span>
+                <span class="scenario-name">verify if the API returns an error if i send an invalid id</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>733</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:15]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def authorization_access = call read(&#39;classpath:Authorization/BearerToken.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">382</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">Authorization.BearerToken</div>
+      </div>
+      <div class="time-cell passed">368</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://accounts.spotify.com/api/token&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def Base64 = Java.type(&#39;Utils.Base64Encode&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def auth_string = client_authorization</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def encoded_string = Base64.encode(auth_string)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &quot;Basic &quot; + encoded_string</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field grant_type = &quot;client_credentials&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">365</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.11">19:13:05.738 request:
+1 &gt; POST https://accounts.spotify.com/api/token
+1 &gt; Authorization: Basic MzQ3NTdhOWZkOTIzNDM2OWIwOThkZGVkZTViMDQwMmM6YWViZDMyMDkyOTVlNGQxNThiN2I2M2M1ODljNGU5Mjc=
+1 &gt; Content-Type: application/x-www-form-urlencoded
+1 &gt; Content-Length: 29
+1 &gt; Host: accounts.spotify.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.14)
+1 &gt; Accept-Encoding: gzip,deflate
+grant_type=client_credentials
+
+19:13:06.100 response time in milliseconds: 359
+1 &lt; 200
+1 &lt; date: Sat, 08 Apr 2023 19:11:28 GMT
+1 &lt; content-type: application/json
+1 &lt; set-cookie: __Host-device_id=AQCuynxaTAyTyDTLZ2RNm0JYZ3xqY0QIfRBBj9QTWYBSyzAX_pu8JmoKSbP-JQzMa7QJkVg-talykg7de_n87wtHLmNLwBvF5AA;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly;SameSite=Lax
+1 &lt; set-cookie: sp_tr=false;Version=1;Domain=accounts.spotify.com;Path=/;Secure;SameSite=Lax
+1 &lt; sp-trace-id: 67391cfeb4e932c5
+1 &lt; x-envoy-upstream-service-time: 11
+1 &lt; server: envoy
+1 &lt; strict-transport-security: max-age=31536000
+1 &lt; x-content-type-options: nosniff
+1 &lt; vary: Accept-Encoding
+1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Set-Cookie: __Host-device_id=AQCuynxaTAyTyDTLZ2RNm0JYZ3xqY0QIfRBBj9QTWYBSyzAX_pu8JmoKSbP-JQzMa7QJkVg-talykg7de_n87wtHLmNLwBvF5AA;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly;SameSite=Lax
+1 &lt; Set-Cookie: sp_tr=false;Version=1;Domain=accounts.spotify.com;Path=/;Secure;SameSite=Lax
+{&quot;access_token&quot;:&quot;BQCmtnx0w-qq8bJ2RusNOjui-D7Hwn0WxnJ7j_ZTj7lmDnbg0F59I0M1j3kW8MuDO1fwYnA4xvDTsP3FMS-mM3eecFms4B9h85sLDoOnqQxcJsH0Ecam&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;expires_in&quot;:3600}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def bearer_token = response.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://api.spotify.com/v1/browse/Scategories&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authorization_access .bearer_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>params { country = &quot;SEEE&quot; , locale : &quot;sv_SE&quot; , limit : 10 , offset : 5  }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">333</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19">19:13:06.107 request:
+1 &gt; GET https://api.spotify.com/v1/browse/Scategories?offset=5&amp;limit=10&amp;country+%3D+%22SEEE%22+%2C+locale=sv_SE
+1 &gt; Authorization: Bearer BQCmtnx0w-qq8bJ2RusNOjui-D7Hwn0WxnJ7j_ZTj7lmDnbg0F59I0M1j3kW8MuDO1fwYnA4xvDTsP3FMS-mM3eecFms4B9h85sLDoOnqQxcJsH0Ecam
+1 &gt; Host: api.spotify.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.14)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+19:13:06.436 response time in milliseconds: 327
+1 &lt; 404
+1 &lt; cache-control: private, max-age=0
+1 &lt; access-control-allow-origin: *
+1 &lt; access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+1 &lt; access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-max-age: 604800
+1 &lt; Content-Length: 0
+1 &lt; strict-transport-security: max-age=31536000
+1 &lt; x-content-type-options: nosniff
+1 &lt; date: Sat, 08 Apr 2023 19:11:28 GMT
+1 &lt; server: envoy
+1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref failed">20</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell failed">16</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">19:13:06.466 src/test/resources/featureCategories/GetSeveralBrowseCategories.feature:20
+Then status 400
+status code was: 404, expected: 400, response time in milliseconds: 327, url: https://api.spotify.com/v1/browse/Scategories?offset=5&amp;limit=10&amp;country+%3D+%22SEEE%22+%2C+locale=sv_SE, response: 
+
+src/test/resources/featureCategories/GetSeveralBrowseCategories.feature:20
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

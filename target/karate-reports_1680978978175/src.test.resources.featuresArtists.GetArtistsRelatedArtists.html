@@ -1,0 +1,3582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"370ba96a-51f4-4cd7-b29b-888a5c0fd67a",karate_version:"1.4.0",karate_meta:"intellij:1.7.4.325"});
+  }
+});
+</script>
+
+    <title>src.test.resources.featuresArtists.GetArtistsRelatedArtists</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-04-08 06:36:02 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>Get Artists Related Artists</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2:14]"><span>[2:14]</span> <span>verify if the API returns an error if i send an invalid id</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/resources/featuresArtists/GetArtistsRelatedArtists.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Get Artist Related Artists</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">Get Artists Related Artists</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1843</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def authorization_access = call read(&#39;classpath:Authorization/BearerToken.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1475</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">Authorization.BearerToken</div>
+      </div>
+      <div class="time-cell passed">1355</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://accounts.spotify.com/api/token&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def Base64 = Java.type(&#39;Utils.Base64Encode&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def auth_string = client_authorization</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def encoded_string = Base64.encode(auth_string)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &quot;Basic &quot; + encoded_string</span>
+      </div>
+    </div>
+    <div class="time-cell passed">18</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field grant_type = &quot;client_credentials&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">138</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1176</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.11">18:36:00.864 request:
+1 &gt; POST https://accounts.spotify.com/api/token
+1 &gt; Authorization: Basic MzQ3NTdhOWZkOTIzNDM2OWIwOThkZGVkZTViMDQwMmM6YWViZDMyMDkyOTVlNGQxNThiN2I2M2M1ODljNGU5Mjc=
+1 &gt; Content-Type: application/x-www-form-urlencoded
+1 &gt; Content-Length: 29
+1 &gt; Host: accounts.spotify.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.14)
+1 &gt; Accept-Encoding: gzip,deflate
+grant_type=client_credentials
+
+18:36:01.420 response time in milliseconds: 548
+1 &lt; 200
+1 &lt; date: Sat, 08 Apr 2023 18:34:23 GMT
+1 &lt; content-type: application/json
+1 &lt; set-cookie: __Host-device_id=AQDmogYTudlW6qUCO3YQU1koAUlbJHUeCYO1kU34HTY2zy297qjxGCLHr13BdDg14dNKHqlbFVAtngVSrl3JZaFsctlF63ZiA0A;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly;SameSite=Lax
+1 &lt; set-cookie: sp_tr=false;Version=1;Domain=accounts.spotify.com;Path=/;Secure;SameSite=Lax
+1 &lt; sp-trace-id: b6ae4ff9078dd6b1
+1 &lt; x-envoy-upstream-service-time: 10
+1 &lt; server: envoy
+1 &lt; strict-transport-security: max-age=31536000
+1 &lt; x-content-type-options: nosniff
+1 &lt; vary: Accept-Encoding
+1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Set-Cookie: __Host-device_id=AQDmogYTudlW6qUCO3YQU1koAUlbJHUeCYO1kU34HTY2zy297qjxGCLHr13BdDg14dNKHqlbFVAtngVSrl3JZaFsctlF63ZiA0A;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly;SameSite=Lax
+1 &lt; Set-Cookie: sp_tr=false;Version=1;Domain=accounts.spotify.com;Path=/;Secure;SameSite=Lax
+{&quot;access_token&quot;:&quot;BQDyyVHn78RYcCTmbZV_0QYIe5rILDCbIF8FAK57Pqw_SaTbPHxQ1yWcGHpwpjTF_O_aXtX38qT6OuDxbq0ccxc1B_jDW7moRPZu2QfVVRbyN7X0Nk5D&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;expires_in&quot;:3600}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def bearer_token = response.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg/related-artists&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authorization_access .bearer_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">346</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">18:36:01.439 request:
+1 &gt; GET https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg/related-artists
+1 &gt; Authorization: Bearer BQDyyVHn78RYcCTmbZV_0QYIe5rILDCbIF8FAK57Pqw_SaTbPHxQ1yWcGHpwpjTF_O_aXtX38qT6OuDxbq0ccxc1B_jDW7moRPZu2QfVVRbyN7X0Nk5D
+1 &gt; Host: api.spotify.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.14)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:36:01.777 response time in milliseconds: 336
+1 &lt; 200
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; cache-control: public, max-age=72602
+1 &lt; x-robots-tag: noindex, nofollow
+1 &lt; access-control-allow-origin: *
+1 &lt; access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+1 &lt; access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-max-age: 604800
+1 &lt; strict-transport-security: max-age=31536000
+1 &lt; x-content-type-options: nosniff
+1 &lt; date: Sat, 08 Apr 2023 18:34:23 GMT
+1 &lt; server: envoy
+1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+1 &lt; Transfer-Encoding: chunked
+{
+  &quot;artists&quot; : [ {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/0jnsk9HBra6NMjO2oANoPY&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 8820834
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;miami hip hop&quot;, &quot;pop&quot;, &quot;pop rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/0jnsk9HBra6NMjO2oANoPY&quot;,
+    &quot;id&quot; : &quot;0jnsk9HBra6NMjO2oANoPY&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb655ca8f3196953554b479452&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174655ca8f3196953554b479452&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178655ca8f3196953554b479452&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Flo Rida&quot;,
+    &quot;popularity&quot; : 80,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:0jnsk9HBra6NMjO2oANoPY&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/6MF9fzBmfXghAz953czmBC&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 2218207
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;pop&quot;, &quot;pop rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/6MF9fzBmfXghAz953czmBC&quot;,
+    &quot;id&quot; : &quot;6MF9fzBmfXghAz953czmBC&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb153171480a6f22912253b9f1&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174153171480a6f22912253b9f1&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178153171480a6f22912253b9f1&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Taio Cruz&quot;,
+    &quot;popularity&quot; : 71,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:6MF9fzBmfXghAz953czmBC&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/085pc2PYOi8bGKj0PNjekA&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 3990354
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;pop&quot;, &quot;pop rap&quot;, &quot;post-teen pop&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/085pc2PYOi8bGKj0PNjekA&quot;,
+    &quot;id&quot; : &quot;085pc2PYOi8bGKj0PNjekA&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5ebc9ab8da6f7a3ce02f0b16fd8&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174c9ab8da6f7a3ce02f0b16fd8&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178c9ab8da6f7a3ce02f0b16fd8&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;will.i.am&quot;,
+    &quot;popularity&quot; : 74,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:085pc2PYOi8bGKj0PNjekA&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/3sgFRtyBnxXD5ESfmbK4dl&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 4185559
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;pop&quot;, &quot;pop rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/3sgFRtyBnxXD5ESfmbK4dl&quot;,
+    &quot;id&quot; : &quot;3sgFRtyBnxXD5ESfmbK4dl&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 675,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/2d75f5222d8a92d5e12419ae3e5238261f943df6&quot;,
+      &quot;width&quot; : 1000
+    }, {
+      &quot;height&quot; : 432,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/a91b72640d92fa70bfc7556d38114b3f010c5cc5&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 135,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/9b592e53e0ae00516c65580a254113bc7d0933e2&quot;,
+      &quot;width&quot; : 200
+    }, {
+      &quot;height&quot; : 43,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/e7a7f70dc456d6844e2c15b44c4ff1853aac54f8&quot;,
+      &quot;width&quot; : 64
+    } ],
+    &quot;name&quot; : &quot;LMFAO&quot;,
+    &quot;popularity&quot; : 68,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:3sgFRtyBnxXD5ESfmbK4dl&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/6S0dmVVn4udvppDhZIWxCr&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 2991561
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;miami hip hop&quot;, &quot;pop&quot;, &quot;post-teen pop&quot;, &quot;rap&quot;, &quot;urban contemporary&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/6S0dmVVn4udvppDhZIWxCr&quot;,
+    &quot;id&quot; : &quot;6S0dmVVn4udvppDhZIWxCr&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb88736ba90063ff3acb41d177&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000517488736ba90063ff3acb41d177&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f17888736ba90063ff3acb41d177&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Sean Kingston&quot;,
+    &quot;popularity&quot; : 70,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:6S0dmVVn4udvppDhZIWxCr&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/698hF4vcwHwPy8ltmXermq&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 1142510
+    },
+    &quot;genres&quot; : [ &quot;asian american hip hop&quot;, &quot;dance pop&quot;, &quot;edm&quot;, &quot;pop rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/698hF4vcwHwPy8ltmXermq&quot;,
+    &quot;id&quot; : &quot;698hF4vcwHwPy8ltmXermq&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb6f288ea7bd44c142791dc7cd&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab676161000051746f288ea7bd44c142791dc7cd&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f1786f288ea7bd44c142791dc7cd&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Far East Movement&quot;,
+    &quot;popularity&quot; : 66,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:698hF4vcwHwPy8ltmXermq&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/07YZf4WDAMNwqr4jfgOZ8y&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 11789313
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;pop&quot;, &quot;pop rap&quot;, &quot;post-teen pop&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/07YZf4WDAMNwqr4jfgOZ8y&quot;,
+    &quot;id&quot; : &quot;07YZf4WDAMNwqr4jfgOZ8y&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb654972693e0efed3f3f4d090&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174654972693e0efed3f3f4d090&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178654972693e0efed3f3f4d090&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Jason Derulo&quot;,
+    &quot;popularity&quot; : 80,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:07YZf4WDAMNwqr4jfgOZ8y&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/5ndkK3dpZLKtBklKjxNQwT&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 2082145
+    },
+    &quot;genres&quot; : [ &quot;atl hip hop&quot;, &quot;dance pop&quot;, &quot;hip hop&quot;, &quot;pop&quot;, &quot;pop rap&quot;, &quot;rap&quot;, &quot;southern hip hop&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/5ndkK3dpZLKtBklKjxNQwT&quot;,
+    &quot;id&quot; : &quot;5ndkK3dpZLKtBklKjxNQwT&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb3b6f1762e81e53df14990f57&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab676161000051743b6f1762e81e53df14990f57&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f1783b6f1762e81e53df14990f57&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;B.o.B&quot;,
+    &quot;popularity&quot; : 74,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:5ndkK3dpZLKtBklKjxNQwT&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/6LqNN22kT3074XbTVUrhzX&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 7534834
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;pop&quot;, &quot;post-teen pop&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/6LqNN22kT3074XbTVUrhzX&quot;,
+    &quot;id&quot; : &quot;6LqNN22kT3074XbTVUrhzX&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5ebf271138f95fbe8188d909d50&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174f271138f95fbe8188d909d50&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178f271138f95fbe8188d909d50&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Kesha&quot;,
+    &quot;popularity&quot; : 77,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:6LqNN22kT3074XbTVUrhzX&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/3Isy6kedDrgPYoTS1dazA9&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 4291880
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;dancehall&quot;, &quot;pop rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/3Isy6kedDrgPYoTS1dazA9&quot;,
+    &quot;id&quot; : &quot;3Isy6kedDrgPYoTS1dazA9&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb60c3e9abe7327c0097738f22&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000517460c3e9abe7327c0097738f22&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f17860c3e9abe7327c0097738f22&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Sean Paul&quot;,
+    &quot;popularity&quot; : 81,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:3Isy6kedDrgPYoTS1dazA9&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/5Y5TRrQiqgUO4S36tzjIRZ&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 2480053
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;hip hop&quot;, &quot;pop&quot;, &quot;pop rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/5Y5TRrQiqgUO4S36tzjIRZ&quot;,
+    &quot;id&quot; : &quot;5Y5TRrQiqgUO4S36tzjIRZ&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb2ec030557b0529c01639529b&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab676161000051742ec030557b0529c01639529b&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f1782ec030557b0529c01639529b&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Timbaland&quot;,
+    &quot;popularity&quot; : 78,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:5Y5TRrQiqgUO4S36tzjIRZ&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/6yTYR09WCvsgdnurDW4WQo&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 534410
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;pop dance&quot;, &quot;pop rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/6yTYR09WCvsgdnurDW4WQo&quot;,
+    &quot;id&quot; : &quot;6yTYR09WCvsgdnurDW4WQo&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5ebbe38428c93058d49e48021ed&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174be38428c93058d49e48021ed&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178be38428c93058d49e48021ed&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;DJ Antoine&quot;,
+    &quot;popularity&quot; : 63,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:6yTYR09WCvsgdnurDW4WQo&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/6c4sUNBgdonFJz8Kx2VsGz&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 431005
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;norwegian hip hop&quot;, &quot;pop rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/6c4sUNBgdonFJz8Kx2VsGz&quot;,
+    &quot;id&quot; : &quot;6c4sUNBgdonFJz8Kx2VsGz&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5ebf8805c34d9906f9c681d8c16&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174f8805c34d9906f9c681d8c16&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178f8805c34d9906f9c681d8c16&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Madcon&quot;,
+    &quot;popularity&quot; : 64,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:6c4sUNBgdonFJz8Kx2VsGz&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/1yxSLGMDHlW21z4YXirZDS&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 7357440
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;pop&quot;, &quot;pop rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/1yxSLGMDHlW21z4YXirZDS&quot;,
+    &quot;id&quot; : &quot;1yxSLGMDHlW21z4YXirZDS&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5ebabab30b094128cf4c0f2cef1&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174abab30b094128cf4c0f2cef1&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178abab30b094128cf4c0f2cef1&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Black Eyed Peas&quot;,
+    &quot;popularity&quot; : 82,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:1yxSLGMDHlW21z4YXirZDS&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/2KsP6tYLJlTBvSUxnwlVWa&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 1340120
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;edm&quot;, &quot;pop&quot;, &quot;pop rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/2KsP6tYLJlTBvSUxnwlVWa&quot;,
+    &quot;id&quot; : &quot;2KsP6tYLJlTBvSUxnwlVWa&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb5ca6c70cd9661b2eca98999f&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab676161000051745ca6c70cd9661b2eca98999f&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f1785ca6c70cd9661b2eca98999f&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Mike Posner&quot;,
+    &quot;popularity&quot; : 71,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:2KsP6tYLJlTBvSUxnwlVWa&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/2NhdGz9EDv2FeUw6udu2g1&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 2611415
+    },
+    &quot;genres&quot; : [ &quot;boy band&quot;, &quot;dance pop&quot;, &quot;pop&quot;, &quot;pop rock&quot;, &quot;post-teen pop&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/2NhdGz9EDv2FeUw6udu2g1&quot;,
+    &quot;id&quot; : &quot;2NhdGz9EDv2FeUw6udu2g1&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5ebd34d138ebcda9fca6716e70c&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174d34d138ebcda9fca6716e70c&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178d34d138ebcda9fca6716e70c&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;The Wanted&quot;,
+    &quot;popularity&quot; : 66,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:2NhdGz9EDv2FeUw6udu2g1&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/3r17AfJCCUqC9Lf0OAc73G&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 5384906
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;pop&quot;, &quot;post-teen pop&quot;, &quot;rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/3r17AfJCCUqC9Lf0OAc73G&quot;,
+    &quot;id&quot; : &quot;3r17AfJCCUqC9Lf0OAc73G&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb1fd1c6d465e03a904d63c9b5&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab676161000051741fd1c6d465e03a904d63c9b5&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f1781fd1c6d465e03a904d63c9b5&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Fergie&quot;,
+    &quot;popularity&quot; : 70,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:3r17AfJCCUqC9Lf0OAc73G&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/2DlGxzQSjYe5N6G9nkYghR&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 12329813
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;pop&quot;, &quot;pop rap&quot;, &quot;urban contemporary&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/2DlGxzQSjYe5N6G9nkYghR&quot;,
+    &quot;id&quot; : &quot;2DlGxzQSjYe5N6G9nkYghR&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5ebce391c85fb87d67d316d1413&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174ce391c85fb87d67d316d1413&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178ce391c85fb87d67d316d1413&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Jennifer Lopez&quot;,
+    &quot;popularity&quot; : 77,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:2DlGxzQSjYe5N6G9nkYghR&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/5BcAKTbp20cv7tC5VqPFoC&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 2612999
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;pop&quot;, &quot;pop rap&quot;, &quot;seattle hip hop&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/5BcAKTbp20cv7tC5VqPFoC&quot;,
+    &quot;id&quot; : &quot;5BcAKTbp20cv7tC5VqPFoC&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb3c2f1ba4c1a3de141e63d775&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab676161000051743c2f1ba4c1a3de141e63d775&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f1783c2f1ba4c1a3de141e63d775&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Macklemore &amp; Ryan Lewis&quot;,
+    &quot;popularity&quot; : 75,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:5BcAKTbp20cv7tC5VqPFoC&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/6GMYJwaziB4ekv1Y6wCDWS&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 1756339
+    },
+    &quot;genres&quot; : [ &quot;atl hip hop&quot;, &quot;chicago bop&quot;, &quot;dance pop&quot;, &quot;dirty south rap&quot;, &quot;pop rap&quot;, &quot;rap&quot;, &quot;southern hip hop&quot;, &quot;trap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/6GMYJwaziB4ekv1Y6wCDWS&quot;,
+    &quot;id&quot; : &quot;6GMYJwaziB4ekv1Y6wCDWS&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eba0b85051b7e8ea8c9739a87e&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174a0b85051b7e8ea8c9739a87e&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178a0b85051b7e8ea8c9739a87e&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Soulja Boy&quot;,
+    &quot;popularity&quot; : 70,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:6GMYJwaziB4ekv1Y6wCDWS&quot;
+  } ]
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">19</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">18:36:01.802 [print] {
+  &quot;artists&quot;: [
+    {
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/artist/0jnsk9HBra6NMjO2oANoPY&quot;
+      },
+      &quot;followers&quot;: {
+        &quot;href&quot;: null,
+        &quot;total&quot;: 8820834
+      },
+      &quot;genres&quot;: [
+        &quot;dance pop&quot;,
+        &quot;miami hip hop&quot;,
+        &quot;pop&quot;,
+        &quot;pop rap&quot;
+      ],
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/0jnsk9HBra6NMjO2oANoPY&quot;,
+      &quot;id&quot;: &quot;0jnsk9HBra6NMjO2oANoPY&quot;,
+      &quot;images&quot;: [
+        {
+          &quot;height&quot;: 640,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000e5eb655ca8f3196953554b479452&quot;,
+          &quot;width&quot;: 640
+        },
+        {
+          &quot;height&quot;: 320,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616100005174655ca8f3196953554b479452&quot;,
+          &quot;width&quot;: 320
+        },
+        {
+          &quot;height&quot;: 160,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000f178655ca8f3196953554b479452&quot;,
+          &quot;width&quot;: 160
+        }
+      ],
+      &quot;name&quot;: &quot;Flo Rida&quot;,
+      &quot;popularity&quot;: 80,
+      &quot;type&quot;: &quot;artist&quot;,
+      &quot;uri&quot;: &quot;spotify:artist:0jnsk9HBra6NMjO2oANoPY&quot;
+    },
+    {
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/artist/6MF9fzBmfXghAz953czmBC&quot;
+      },
+      &quot;followers&quot;: {
+        &quot;href&quot;: null,
+        &quot;total&quot;: 2218207
+      },
+      &quot;genres&quot;: [
+        &quot;dance pop&quot;,
+        &quot;pop&quot;,
+        &quot;pop rap&quot;
+      ],
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/6MF9fzBmfXghAz953czmBC&quot;,
+      &quot;id&quot;: &quot;6MF9fzBmfXghAz953czmBC&quot;,
+      &quot;images&quot;: [
+        {
+          &quot;height&quot;: 640,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000e5eb153171480a6f22912253b9f1&quot;,
+          &quot;width&quot;: 640
+        },
+        {
+          &quot;height&quot;: 320,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616100005174153171480a6f22912253b9f1&quot;,
+          &quot;width&quot;: 320
+        },
+        {
+          &quot;height&quot;: 160,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000f178153171480a6f22912253b9f1&quot;,
+          &quot;width&quot;: 160
+        }
+      ],
+      &quot;name&quot;: &quot;Taio Cruz&quot;,
+      &quot;popularity&quot;: 71,
+      &quot;type&quot;: &quot;artist&quot;,
+      &quot;uri&quot;: &quot;spotify:artist:6MF9fzBmfXghAz953czmBC&quot;
+    },
+    {
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/artist/085pc2PYOi8bGKj0PNjekA&quot;
+      },
+      &quot;followers&quot;: {
+        &quot;href&quot;: null,
+        &quot;total&quot;: 3990354
+      },
+      &quot;genres&quot;: [
+        &quot;dance pop&quot;,
+        &quot;pop&quot;,
+        &quot;pop rap&quot;,
+        &quot;post-teen pop&quot;
+      ],
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/085pc2PYOi8bGKj0PNjekA&quot;,
+      &quot;id&quot;: &quot;085pc2PYOi8bGKj0PNjekA&quot;,
+      &quot;images&quot;: [
+        {
+          &quot;height&quot;: 640,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000e5ebc9ab8da6f7a3ce02f0b16fd8&quot;,
+          &quot;width&quot;: 640
+        },
+        {
+          &quot;height&quot;: 320,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616100005174c9ab8da6f7a3ce02f0b16fd8&quot;,
+          &quot;width&quot;: 320
+        },
+        {
+          &quot;height&quot;: 160,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000f178c9ab8da6f7a3ce02f0b16fd8&quot;,
+          &quot;width&quot;: 160
+        }
+      ],
+      &quot;name&quot;: &quot;will.i.am&quot;,
+      &quot;popularity&quot;: 74,
+      &quot;type&quot;: &quot;artist&quot;,
+      &quot;uri&quot;: &quot;spotify:artist:085pc2PYOi8bGKj0PNjekA&quot;
+    },
+    {
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/artist/3sgFRtyBnxXD5ESfmbK4dl&quot;
+      },
+      &quot;followers&quot;: {
+        &quot;href&quot;: null,
+        &quot;total&quot;: 4185559
+      },
+      &quot;genres&quot;: [
+        &quot;dance pop&quot;,
+        &quot;pop&quot;,
+        &quot;pop rap&quot;
+      ],
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/3sgFRtyBnxXD5ESfmbK4dl&quot;,
+      &quot;id&quot;: &quot;3sgFRtyBnxXD5ESfmbK4dl&quot;,
+      &quot;images&quot;: [
+        {
+          &quot;height&quot;: 675,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/2d75f5222d8a92d5e12419ae3e5238261f943df6&quot;,
+          &quot;width&quot;: 1000
+        },
+        {
+          &quot;height&quot;: 432,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/a91b72640d92fa70bfc7556d38114b3f010c5cc5&quot;,
+          &quot;width&quot;: 640
+        },
+        {
+          &quot;height&quot;: 135,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/9b592e53e0ae00516c65580a254113bc7d0933e2&quot;,
+          &quot;width&quot;: 200
+        },
+        {
+          &quot;height&quot;: 43,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/e7a7f70dc456d6844e2c15b44c4ff1853aac54f8&quot;,
+          &quot;width&quot;: 64
+        }
+      ],
+      &quot;name&quot;: &quot;LMFAO&quot;,
+      &quot;popularity&quot;: 68,
+      &quot;type&quot;: &quot;artist&quot;,
+      &quot;uri&quot;: &quot;spotify:artist:3sgFRtyBnxXD5ESfmbK4dl&quot;
+    },
+    {
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/artist/6S0dmVVn4udvppDhZIWxCr&quot;
+      },
+      &quot;followers&quot;: {
+        &quot;href&quot;: null,
+        &quot;total&quot;: 2991561
+      },
+      &quot;genres&quot;: [
+        &quot;dance pop&quot;,
+        &quot;miami hip hop&quot;,
+        &quot;pop&quot;,
+        &quot;post-teen pop&quot;,
+        &quot;rap&quot;,
+        &quot;urban contemporary&quot;
+      ],
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/6S0dmVVn4udvppDhZIWxCr&quot;,
+      &quot;id&quot;: &quot;6S0dmVVn4udvppDhZIWxCr&quot;,
+      &quot;images&quot;: [
+        {
+          &quot;height&quot;: 640,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000e5eb88736ba90063ff3acb41d177&quot;,
+          &quot;width&quot;: 640
+        },
+        {
+          &quot;height&quot;: 320,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000517488736ba90063ff3acb41d177&quot;,
+          &quot;width&quot;: 320
+        },
+        {
+          &quot;height&quot;: 160,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000f17888736ba90063ff3acb41d177&quot;,
+          &quot;width&quot;: 160
+        }
+      ],
+      &quot;name&quot;: &quot;Sean Kingston&quot;,
+      &quot;popularity&quot;: 70,
+      &quot;type&quot;: &quot;artist&quot;,
+      &quot;uri&quot;: &quot;spotify:artist:6S0dmVVn4udvppDhZIWxCr&quot;
+    },
+    {
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/artist/698hF4vcwHwPy8ltmXermq&quot;
+      },
+      &quot;followers&quot;: {
+        &quot;href&quot;: null,
+        &quot;total&quot;: 1142510
+      },
+      &quot;genres&quot;: [
+        &quot;asian american hip hop&quot;,
+        &quot;dance pop&quot;,
+        &quot;edm&quot;,
+        &quot;pop rap&quot;
+      ],
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/698hF4vcwHwPy8ltmXermq&quot;,
+      &quot;id&quot;: &quot;698hF4vcwHwPy8ltmXermq&quot;,
+      &quot;images&quot;: [
+        {
+          &quot;height&quot;: 640,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000e5eb6f288ea7bd44c142791dc7cd&quot;,
+          &quot;width&quot;: 640
+        },
+        {
+          &quot;height&quot;: 320,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab676161000051746f288ea7bd44c142791dc7cd&quot;,
+          &quot;width&quot;: 320
+        },
+        {
+          &quot;height&quot;: 160,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000f1786f288ea7bd44c142791dc7cd&quot;,
+          &quot;width&quot;: 160
+        }
+      ],
+      &quot;name&quot;: &quot;Far East Movement&quot;,
+      &quot;popularity&quot;: 66,
+      &quot;type&quot;: &quot;artist&quot;,
+      &quot;uri&quot;: &quot;spotify:artist:698hF4vcwHwPy8ltmXermq&quot;
+    },
+    {
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/artist/07YZf4WDAMNwqr4jfgOZ8y&quot;
+      },
+      &quot;followers&quot;: {
+        &quot;href&quot;: null,
+        &quot;total&quot;: 11789313
+      },
+      &quot;genres&quot;: [
+        &quot;dance pop&quot;,
+        &quot;pop&quot;,
+        &quot;pop rap&quot;,
+        &quot;post-teen pop&quot;
+      ],
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/07YZf4WDAMNwqr4jfgOZ8y&quot;,
+      &quot;id&quot;: &quot;07YZf4WDAMNwqr4jfgOZ8y&quot;,
+      &quot;images&quot;: [
+        {
+          &quot;height&quot;: 640,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000e5eb654972693e0efed3f3f4d090&quot;,
+          &quot;width&quot;: 640
+        },
+        {
+          &quot;height&quot;: 320,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616100005174654972693e0efed3f3f4d090&quot;,
+          &quot;width&quot;: 320
+        },
+        {
+          &quot;height&quot;: 160,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000f178654972693e0efed3f3f4d090&quot;,
+          &quot;width&quot;: 160
+        }
+      ],
+      &quot;name&quot;: &quot;Jason Derulo&quot;,
+      &quot;popularity&quot;: 80,
+      &quot;type&quot;: &quot;artist&quot;,
+      &quot;uri&quot;: &quot;spotify:artist:07YZf4WDAMNwqr4jfgOZ8y&quot;
+    },
+    {
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/artist/5ndkK3dpZLKtBklKjxNQwT&quot;
+      },
+      &quot;followers&quot;: {
+        &quot;href&quot;: null,
+        &quot;total&quot;: 2082145
+      },
+      &quot;genres&quot;: [
+        &quot;atl hip hop&quot;,
+        &quot;dance pop&quot;,
+        &quot;hip hop&quot;,
+        &quot;pop&quot;,
+        &quot;pop rap&quot;,
+        &quot;rap&quot;,
+        &quot;southern hip hop&quot;
+      ],
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/5ndkK3dpZLKtBklKjxNQwT&quot;,
+      &quot;id&quot;: &quot;5ndkK3dpZLKtBklKjxNQwT&quot;,
+      &quot;images&quot;: [
+        {
+          &quot;height&quot;: 640,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000e5eb3b6f1762e81e53df14990f57&quot;,
+          &quot;width&quot;: 640
+        },
+        {
+          &quot;height&quot;: 320,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab676161000051743b6f1762e81e53df14990f57&quot;,
+          &quot;width&quot;: 320
+        },
+        {
+          &quot;height&quot;: 160,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000f1783b6f1762e81e53df14990f57&quot;,
+          &quot;width&quot;: 160
+        }
+      ],
+      &quot;name&quot;: &quot;B.o.B&quot;,
+      &quot;popularity&quot;: 74,
+      &quot;type&quot;: &quot;artist&quot;,
+      &quot;uri&quot;: &quot;spotify:artist:5ndkK3dpZLKtBklKjxNQwT&quot;
+    },
+    {
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/artist/6LqNN22kT3074XbTVUrhzX&quot;
+      },
+      &quot;followers&quot;: {
+        &quot;href&quot;: null,
+        &quot;total&quot;: 7534834
+      },
+      &quot;genres&quot;: [
+        &quot;dance pop&quot;,
+        &quot;pop&quot;,
+        &quot;post-teen pop&quot;
+      ],
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/6LqNN22kT3074XbTVUrhzX&quot;,
+      &quot;id&quot;: &quot;6LqNN22kT3074XbTVUrhzX&quot;,
+      &quot;images&quot;: [
+        {
+          &quot;height&quot;: 640,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000e5ebf271138f95fbe8188d909d50&quot;,
+          &quot;width&quot;: 640
+        },
+        {
+          &quot;height&quot;: 320,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616100005174f271138f95fbe8188d909d50&quot;,
+          &quot;width&quot;: 320
+        },
+        {
+          &quot;height&quot;: 160,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000f178f271138f95fbe8188d909d50&quot;,
+          &quot;width&quot;: 160
+        }
+      ],
+      &quot;name&quot;: &quot;Kesha&quot;,
+      &quot;popularity&quot;: 77,
+      &quot;type&quot;: &quot;artist&quot;,
+      &quot;uri&quot;: &quot;spotify:artist:6LqNN22kT3074XbTVUrhzX&quot;
+    },
+    {
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/artist/3Isy6kedDrgPYoTS1dazA9&quot;
+      },
+      &quot;followers&quot;: {
+        &quot;href&quot;: null,
+        &quot;total&quot;: 4291880
+      },
+      &quot;genres&quot;: [
+        &quot;dance pop&quot;,
+        &quot;dancehall&quot;,
+        &quot;pop rap&quot;
+      ],
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/3Isy6kedDrgPYoTS1dazA9&quot;,
+      &quot;id&quot;: &quot;3Isy6kedDrgPYoTS1dazA9&quot;,
+      &quot;images&quot;: [
+        {
+          &quot;height&quot;: 640,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000e5eb60c3e9abe7327c0097738f22&quot;,
+          &quot;width&quot;: 640
+        },
+        {
+          &quot;height&quot;: 320,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000517460c3e9abe7327c0097738f22&quot;,
+          &quot;width&quot;: 320
+        },
+        {
+          &quot;height&quot;: 160,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000f17860c3e9abe7327c0097738f22&quot;,
+          &quot;width&quot;: 160
+        }
+      ],
+      &quot;name&quot;: &quot;Sean Paul&quot;,
+      &quot;popularity&quot;: 81,
+      &quot;type&quot;: &quot;artist&quot;,
+      &quot;uri&quot;: &quot;spotify:artist:3Isy6kedDrgPYoTS1dazA9&quot;
+    },
+    {
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/artist/5Y5TRrQiqgUO4S36tzjIRZ&quot;
+      },
+      &quot;followers&quot;: {
+        &quot;href&quot;: null,
+        &quot;total&quot;: 2480053
+      },
+      &quot;genres&quot;: [
+        &quot;dance pop&quot;,
+        &quot;hip hop&quot;,
+        &quot;pop&quot;,
+        &quot;pop rap&quot;
+      ],
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/5Y5TRrQiqgUO4S36tzjIRZ&quot;,
+      &quot;id&quot;: &quot;5Y5TRrQiqgUO4S36tzjIRZ&quot;,
+      &quot;images&quot;: [
+        {
+          &quot;height&quot;: 640,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000e5eb2ec030557b0529c01639529b&quot;,
+          &quot;width&quot;: 640
+        },
+        {
+          &quot;height&quot;: 320,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab676161000051742ec030557b0529c01639529b&quot;,
+          &quot;width&quot;: 320
+        },
+        {
+          &quot;height&quot;: 160,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000f1782ec030557b0529c01639529b&quot;,
+          &quot;width&quot;: 160
+        }
+      ],
+      &quot;name&quot;: &quot;Timbaland&quot;,
+      &quot;popularity&quot;: 78,
+      &quot;type&quot;: &quot;artist&quot;,
+      &quot;uri&quot;: &quot;spotify:artist:5Y5TRrQiqgUO4S36tzjIRZ&quot;
+    },
+    {
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/artist/6yTYR09WCvsgdnurDW4WQo&quot;
+      },
+      &quot;followers&quot;: {
+        &quot;href&quot;: null,
+        &quot;total&quot;: 534410
+      },
+      &quot;genres&quot;: [
+        &quot;dance pop&quot;,
+        &quot;pop dance&quot;,
+        &quot;pop rap&quot;
+      ],
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/6yTYR09WCvsgdnurDW4WQo&quot;,
+      &quot;id&quot;: &quot;6yTYR09WCvsgdnurDW4WQo&quot;,
+      &quot;images&quot;: [
+        {
+          &quot;height&quot;: 640,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000e5ebbe38428c93058d49e48021ed&quot;,
+          &quot;width&quot;: 640
+        },
+        {
+          &quot;height&quot;: 320,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616100005174be38428c93058d49e48021ed&quot;,
+          &quot;width&quot;: 320
+        },
+        {
+          &quot;height&quot;: 160,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000f178be38428c93058d49e48021ed&quot;,
+          &quot;width&quot;: 160
+        }
+      ],
+      &quot;name&quot;: &quot;DJ Antoine&quot;,
+      &quot;popularity&quot;: 63,
+      &quot;type&quot;: &quot;artist&quot;,
+      &quot;uri&quot;: &quot;spotify:artist:6yTYR09WCvsgdnurDW4WQo&quot;
+    },
+    {
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/artist/6c4sUNBgdonFJz8Kx2VsGz&quot;
+      },
+      &quot;followers&quot;: {
+        &quot;href&quot;: null,
+        &quot;total&quot;: 431005
+      },
+      &quot;genres&quot;: [
+        &quot;dance pop&quot;,
+        &quot;norwegian hip hop&quot;,
+        &quot;pop rap&quot;
+      ],
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/6c4sUNBgdonFJz8Kx2VsGz&quot;,
+      &quot;id&quot;: &quot;6c4sUNBgdonFJz8Kx2VsGz&quot;,
+      &quot;images&quot;: [
+        {
+          &quot;height&quot;: 640,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000e5ebf8805c34d9906f9c681d8c16&quot;,
+          &quot;width&quot;: 640
+        },
+        {
+          &quot;height&quot;: 320,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616100005174f8805c34d9906f9c681d8c16&quot;,
+          &quot;width&quot;: 320
+        },
+        {
+          &quot;height&quot;: 160,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000f178f8805c34d9906f9c681d8c16&quot;,
+          &quot;width&quot;: 160
+        }
+      ],
+      &quot;name&quot;: &quot;Madcon&quot;,
+      &quot;popularity&quot;: 64,
+      &quot;type&quot;: &quot;artist&quot;,
+      &quot;uri&quot;: &quot;spotify:artist:6c4sUNBgdonFJz8Kx2VsGz&quot;
+    },
+    {
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/artist/1yxSLGMDHlW21z4YXirZDS&quot;
+      },
+      &quot;followers&quot;: {
+        &quot;href&quot;: null,
+        &quot;total&quot;: 7357440
+      },
+      &quot;genres&quot;: [
+        &quot;dance pop&quot;,
+        &quot;pop&quot;,
+        &quot;pop rap&quot;
+      ],
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/1yxSLGMDHlW21z4YXirZDS&quot;,
+      &quot;id&quot;: &quot;1yxSLGMDHlW21z4YXirZDS&quot;,
+      &quot;images&quot;: [
+        {
+          &quot;height&quot;: 640,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000e5ebabab30b094128cf4c0f2cef1&quot;,
+          &quot;width&quot;: 640
+        },
+        {
+          &quot;height&quot;: 320,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616100005174abab30b094128cf4c0f2cef1&quot;,
+          &quot;width&quot;: 320
+        },
+        {
+          &quot;height&quot;: 160,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000f178abab30b094128cf4c0f2cef1&quot;,
+          &quot;width&quot;: 160
+        }
+      ],
+      &quot;name&quot;: &quot;Black Eyed Peas&quot;,
+      &quot;popularity&quot;: 82,
+      &quot;type&quot;: &quot;artist&quot;,
+      &quot;uri&quot;: &quot;spotify:artist:1yxSLGMDHlW21z4YXirZDS&quot;
+    },
+    {
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/artist/2KsP6tYLJlTBvSUxnwlVWa&quot;
+      },
+      &quot;followers&quot;: {
+        &quot;href&quot;: null,
+        &quot;total&quot;: 1340120
+      },
+      &quot;genres&quot;: [
+        &quot;dance pop&quot;,
+        &quot;edm&quot;,
+        &quot;pop&quot;,
+        &quot;pop rap&quot;
+      ],
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/2KsP6tYLJlTBvSUxnwlVWa&quot;,
+      &quot;id&quot;: &quot;2KsP6tYLJlTBvSUxnwlVWa&quot;,
+      &quot;images&quot;: [
+        {
+          &quot;height&quot;: 640,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000e5eb5ca6c70cd9661b2eca98999f&quot;,
+          &quot;width&quot;: 640
+        },
+        {
+          &quot;height&quot;: 320,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab676161000051745ca6c70cd9661b2eca98999f&quot;,
+          &quot;width&quot;: 320
+        },
+        {
+          &quot;height&quot;: 160,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000f1785ca6c70cd9661b2eca98999f&quot;,
+          &quot;width&quot;: 160
+        }
+      ],
+      &quot;name&quot;: &quot;Mike Posner&quot;,
+      &quot;popularity&quot;: 71,
+      &quot;type&quot;: &quot;artist&quot;,
+      &quot;uri&quot;: &quot;spotify:artist:2KsP6tYLJlTBvSUxnwlVWa&quot;
+    },
+    {
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/artist/2NhdGz9EDv2FeUw6udu2g1&quot;
+      },
+      &quot;followers&quot;: {
+        &quot;href&quot;: null,
+        &quot;total&quot;: 2611415
+      },
+      &quot;genres&quot;: [
+        &quot;boy band&quot;,
+        &quot;dance pop&quot;,
+        &quot;pop&quot;,
+        &quot;pop rock&quot;,
+        &quot;post-teen pop&quot;
+      ],
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/2NhdGz9EDv2FeUw6udu2g1&quot;,
+      &quot;id&quot;: &quot;2NhdGz9EDv2FeUw6udu2g1&quot;,
+      &quot;images&quot;: [
+        {
+          &quot;height&quot;: 640,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000e5ebd34d138ebcda9fca6716e70c&quot;,
+          &quot;width&quot;: 640
+        },
+        {
+          &quot;height&quot;: 320,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616100005174d34d138ebcda9fca6716e70c&quot;,
+          &quot;width&quot;: 320
+        },
+        {
+          &quot;height&quot;: 160,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000f178d34d138ebcda9fca6716e70c&quot;,
+          &quot;width&quot;: 160
+        }
+      ],
+      &quot;name&quot;: &quot;The Wanted&quot;,
+      &quot;popularity&quot;: 66,
+      &quot;type&quot;: &quot;artist&quot;,
+      &quot;uri&quot;: &quot;spotify:artist:2NhdGz9EDv2FeUw6udu2g1&quot;
+    },
+    {
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/artist/3r17AfJCCUqC9Lf0OAc73G&quot;
+      },
+      &quot;followers&quot;: {
+        &quot;href&quot;: null,
+        &quot;total&quot;: 5384906
+      },
+      &quot;genres&quot;: [
+        &quot;dance pop&quot;,
+        &quot;pop&quot;,
+        &quot;post-teen pop&quot;,
+        &quot;rap&quot;
+      ],
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/3r17AfJCCUqC9Lf0OAc73G&quot;,
+      &quot;id&quot;: &quot;3r17AfJCCUqC9Lf0OAc73G&quot;,
+      &quot;images&quot;: [
+        {
+          &quot;height&quot;: 640,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000e5eb1fd1c6d465e03a904d63c9b5&quot;,
+          &quot;width&quot;: 640
+        },
+        {
+          &quot;height&quot;: 320,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab676161000051741fd1c6d465e03a904d63c9b5&quot;,
+          &quot;width&quot;: 320
+        },
+        {
+          &quot;height&quot;: 160,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000f1781fd1c6d465e03a904d63c9b5&quot;,
+          &quot;width&quot;: 160
+        }
+      ],
+      &quot;name&quot;: &quot;Fergie&quot;,
+      &quot;popularity&quot;: 70,
+      &quot;type&quot;: &quot;artist&quot;,
+      &quot;uri&quot;: &quot;spotify:artist:3r17AfJCCUqC9Lf0OAc73G&quot;
+    },
+    {
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/artist/2DlGxzQSjYe5N6G9nkYghR&quot;
+      },
+      &quot;followers&quot;: {
+        &quot;href&quot;: null,
+        &quot;total&quot;: 12329813
+      },
+      &quot;genres&quot;: [
+        &quot;dance pop&quot;,
+        &quot;pop&quot;,
+        &quot;pop rap&quot;,
+        &quot;urban contemporary&quot;
+      ],
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/2DlGxzQSjYe5N6G9nkYghR&quot;,
+      &quot;id&quot;: &quot;2DlGxzQSjYe5N6G9nkYghR&quot;,
+      &quot;images&quot;: [
+        {
+          &quot;height&quot;: 640,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000e5ebce391c85fb87d67d316d1413&quot;,
+          &quot;width&quot;: 640
+        },
+        {
+          &quot;height&quot;: 320,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616100005174ce391c85fb87d67d316d1413&quot;,
+          &quot;width&quot;: 320
+        },
+        {
+          &quot;height&quot;: 160,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000f178ce391c85fb87d67d316d1413&quot;,
+          &quot;width&quot;: 160
+        }
+      ],
+      &quot;name&quot;: &quot;Jennifer Lopez&quot;,
+      &quot;popularity&quot;: 77,
+      &quot;type&quot;: &quot;artist&quot;,
+      &quot;uri&quot;: &quot;spotify:artist:2DlGxzQSjYe5N6G9nkYghR&quot;
+    },
+    {
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/artist/5BcAKTbp20cv7tC5VqPFoC&quot;
+      },
+      &quot;followers&quot;: {
+        &quot;href&quot;: null,
+        &quot;total&quot;: 2612999
+      },
+      &quot;genres&quot;: [
+        &quot;dance pop&quot;,
+        &quot;pop&quot;,
+        &quot;pop rap&quot;,
+        &quot;seattle hip hop&quot;
+      ],
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/5BcAKTbp20cv7tC5VqPFoC&quot;,
+      &quot;id&quot;: &quot;5BcAKTbp20cv7tC5VqPFoC&quot;,
+      &quot;images&quot;: [
+        {
+          &quot;height&quot;: 640,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000e5eb3c2f1ba4c1a3de141e63d775&quot;,
+          &quot;width&quot;: 640
+        },
+        {
+          &quot;height&quot;: 320,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab676161000051743c2f1ba4c1a3de141e63d775&quot;,
+          &quot;width&quot;: 320
+        },
+        {
+          &quot;height&quot;: 160,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000f1783c2f1ba4c1a3de141e63d775&quot;,
+          &quot;width&quot;: 160
+        }
+      ],
+      &quot;name&quot;: &quot;Macklemore &amp; Ryan Lewis&quot;,
+      &quot;popularity&quot;: 75,
+      &quot;type&quot;: &quot;artist&quot;,
+      &quot;uri&quot;: &quot;spotify:artist:5BcAKTbp20cv7tC5VqPFoC&quot;
+    },
+    {
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/artist/6GMYJwaziB4ekv1Y6wCDWS&quot;
+      },
+      &quot;followers&quot;: {
+        &quot;href&quot;: null,
+        &quot;total&quot;: 1756339
+      },
+      &quot;genres&quot;: [
+        &quot;atl hip hop&quot;,
+        &quot;chicago bop&quot;,
+        &quot;dance pop&quot;,
+        &quot;dirty south rap&quot;,
+        &quot;pop rap&quot;,
+        &quot;rap&quot;,
+        &quot;southern hip hop&quot;,
+        &quot;trap&quot;
+      ],
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/6GMYJwaziB4ekv1Y6wCDWS&quot;,
+      &quot;id&quot;: &quot;6GMYJwaziB4ekv1Y6wCDWS&quot;,
+      &quot;images&quot;: [
+        {
+          &quot;height&quot;: 640,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000e5eba0b85051b7e8ea8c9739a87e&quot;,
+          &quot;width&quot;: 640
+        },
+        {
+          &quot;height&quot;: 320,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616100005174a0b85051b7e8ea8c9739a87e&quot;,
+          &quot;width&quot;: 320
+        },
+        {
+          &quot;height&quot;: 160,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000f178a0b85051b7e8ea8c9739a87e&quot;,
+          &quot;width&quot;: 160
+        }
+      ],
+      &quot;name&quot;: &quot;Soulja Boy&quot;,
+      &quot;popularity&quot;: 70,
+      &quot;type&quot;: &quot;artist&quot;,
+      &quot;uri&quot;: &quot;spotify:artist:6GMYJwaziB4ekv1Y6wCDWS&quot;
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:14]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:14]</span>
+                <span class="scenario-name">verify if the API returns an error if i send an invalid id</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>776</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:14]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:14]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def authorization_access = call read(&#39;classpath:Authorization/BearerToken.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">368</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">Authorization.BearerToken</div>
+      </div>
+      <div class="time-cell passed">356</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://accounts.spotify.com/api/token&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def Base64 = Java.type(&#39;Utils.Base64Encode&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def auth_string = client_authorization</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def encoded_string = Base64.encode(auth_string)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &quot;Basic &quot; + encoded_string</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field grant_type = &quot;client_credentials&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">352</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.11">18:36:01.826 request:
+1 &gt; POST https://accounts.spotify.com/api/token
+1 &gt; Authorization: Basic MzQ3NTdhOWZkOTIzNDM2OWIwOThkZGVkZTViMDQwMmM6YWViZDMyMDkyOTVlNGQxNThiN2I2M2M1ODljNGU5Mjc=
+1 &gt; Content-Type: application/x-www-form-urlencoded
+1 &gt; Content-Length: 29
+1 &gt; Host: accounts.spotify.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.14)
+1 &gt; Accept-Encoding: gzip,deflate
+grant_type=client_credentials
+
+18:36:02.173 response time in milliseconds: 344
+1 &lt; 200
+1 &lt; date: Sat, 08 Apr 2023 18:34:24 GMT
+1 &lt; content-type: application/json
+1 &lt; set-cookie: __Host-device_id=AQBalaOV9kHm_6FH1H_51fr1SYnSpuQvgf_9s91nj5SnhieIjQdEolqZAJ1kbT5vfnFoD95c-6SoRYnmIg2ec9xd5rLxNekn94o;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly;SameSite=Lax
+1 &lt; set-cookie: sp_tr=false;Version=1;Domain=accounts.spotify.com;Path=/;Secure;SameSite=Lax
+1 &lt; sp-trace-id: cd58a6184f0867e9
+1 &lt; x-envoy-upstream-service-time: 11
+1 &lt; server: envoy
+1 &lt; strict-transport-security: max-age=31536000
+1 &lt; x-content-type-options: nosniff
+1 &lt; vary: Accept-Encoding
+1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Set-Cookie: __Host-device_id=AQBalaOV9kHm_6FH1H_51fr1SYnSpuQvgf_9s91nj5SnhieIjQdEolqZAJ1kbT5vfnFoD95c-6SoRYnmIg2ec9xd5rLxNekn94o;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly;SameSite=Lax
+1 &lt; Set-Cookie: sp_tr=false;Version=1;Domain=accounts.spotify.com;Path=/;Secure;SameSite=Lax
+{&quot;access_token&quot;:&quot;BQDDGjC0tKAtuCc6nb-2aTUbwN9dsZKY_K6Rmf_lFCNlm9btvP5-Bgl3CrITu4tWjTWspamQS-Mg9ILEYW3hcJyGq5rYJa8vpmxeY68GbAFltKtlE49t&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;expires_in&quot;:3600}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def bearer_token = response.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg/related-artists&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authorization_access .bearer_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">395</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17">18:36:02.184 request:
+1 &gt; GET https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg/related-artists
+1 &gt; Authorization: Bearer BQDDGjC0tKAtuCc6nb-2aTUbwN9dsZKY_K6Rmf_lFCNlm9btvP5-Bgl3CrITu4tWjTWspamQS-Mg9ILEYW3hcJyGq5rYJa8vpmxeY68GbAFltKtlE49t
+1 &gt; Host: api.spotify.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.14)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+18:36:02.572 response time in milliseconds: 386
+1 &lt; 200
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; cache-control: public, max-age=72231
+1 &lt; x-robots-tag: noindex, nofollow
+1 &lt; access-control-allow-origin: *
+1 &lt; access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+1 &lt; access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-max-age: 604800
+1 &lt; strict-transport-security: max-age=31536000
+1 &lt; x-content-type-options: nosniff
+1 &lt; date: Sat, 08 Apr 2023 18:34:24 GMT
+1 &lt; server: envoy
+1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+1 &lt; Transfer-Encoding: chunked
+{
+  &quot;artists&quot; : [ {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/0jnsk9HBra6NMjO2oANoPY&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 8820834
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;miami hip hop&quot;, &quot;pop&quot;, &quot;pop rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/0jnsk9HBra6NMjO2oANoPY&quot;,
+    &quot;id&quot; : &quot;0jnsk9HBra6NMjO2oANoPY&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb655ca8f3196953554b479452&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174655ca8f3196953554b479452&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178655ca8f3196953554b479452&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Flo Rida&quot;,
+    &quot;popularity&quot; : 80,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:0jnsk9HBra6NMjO2oANoPY&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/6MF9fzBmfXghAz953czmBC&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 2218207
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;pop&quot;, &quot;pop rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/6MF9fzBmfXghAz953czmBC&quot;,
+    &quot;id&quot; : &quot;6MF9fzBmfXghAz953czmBC&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb153171480a6f22912253b9f1&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174153171480a6f22912253b9f1&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178153171480a6f22912253b9f1&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Taio Cruz&quot;,
+    &quot;popularity&quot; : 71,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:6MF9fzBmfXghAz953czmBC&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/085pc2PYOi8bGKj0PNjekA&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 3990354
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;pop&quot;, &quot;pop rap&quot;, &quot;post-teen pop&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/085pc2PYOi8bGKj0PNjekA&quot;,
+    &quot;id&quot; : &quot;085pc2PYOi8bGKj0PNjekA&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5ebc9ab8da6f7a3ce02f0b16fd8&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174c9ab8da6f7a3ce02f0b16fd8&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178c9ab8da6f7a3ce02f0b16fd8&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;will.i.am&quot;,
+    &quot;popularity&quot; : 74,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:085pc2PYOi8bGKj0PNjekA&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/3sgFRtyBnxXD5ESfmbK4dl&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 4185559
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;pop&quot;, &quot;pop rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/3sgFRtyBnxXD5ESfmbK4dl&quot;,
+    &quot;id&quot; : &quot;3sgFRtyBnxXD5ESfmbK4dl&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 675,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/2d75f5222d8a92d5e12419ae3e5238261f943df6&quot;,
+      &quot;width&quot; : 1000
+    }, {
+      &quot;height&quot; : 432,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/a91b72640d92fa70bfc7556d38114b3f010c5cc5&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 135,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/9b592e53e0ae00516c65580a254113bc7d0933e2&quot;,
+      &quot;width&quot; : 200
+    }, {
+      &quot;height&quot; : 43,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/e7a7f70dc456d6844e2c15b44c4ff1853aac54f8&quot;,
+      &quot;width&quot; : 64
+    } ],
+    &quot;name&quot; : &quot;LMFAO&quot;,
+    &quot;popularity&quot; : 68,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:3sgFRtyBnxXD5ESfmbK4dl&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/6S0dmVVn4udvppDhZIWxCr&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 2991561
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;miami hip hop&quot;, &quot;pop&quot;, &quot;post-teen pop&quot;, &quot;rap&quot;, &quot;urban contemporary&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/6S0dmVVn4udvppDhZIWxCr&quot;,
+    &quot;id&quot; : &quot;6S0dmVVn4udvppDhZIWxCr&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb88736ba90063ff3acb41d177&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000517488736ba90063ff3acb41d177&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f17888736ba90063ff3acb41d177&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Sean Kingston&quot;,
+    &quot;popularity&quot; : 70,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:6S0dmVVn4udvppDhZIWxCr&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/698hF4vcwHwPy8ltmXermq&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 1142510
+    },
+    &quot;genres&quot; : [ &quot;asian american hip hop&quot;, &quot;dance pop&quot;, &quot;edm&quot;, &quot;pop rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/698hF4vcwHwPy8ltmXermq&quot;,
+    &quot;id&quot; : &quot;698hF4vcwHwPy8ltmXermq&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb6f288ea7bd44c142791dc7cd&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab676161000051746f288ea7bd44c142791dc7cd&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f1786f288ea7bd44c142791dc7cd&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Far East Movement&quot;,
+    &quot;popularity&quot; : 66,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:698hF4vcwHwPy8ltmXermq&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/07YZf4WDAMNwqr4jfgOZ8y&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 11789313
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;pop&quot;, &quot;pop rap&quot;, &quot;post-teen pop&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/07YZf4WDAMNwqr4jfgOZ8y&quot;,
+    &quot;id&quot; : &quot;07YZf4WDAMNwqr4jfgOZ8y&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb654972693e0efed3f3f4d090&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174654972693e0efed3f3f4d090&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178654972693e0efed3f3f4d090&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Jason Derulo&quot;,
+    &quot;popularity&quot; : 80,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:07YZf4WDAMNwqr4jfgOZ8y&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/5ndkK3dpZLKtBklKjxNQwT&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 2082145
+    },
+    &quot;genres&quot; : [ &quot;atl hip hop&quot;, &quot;dance pop&quot;, &quot;hip hop&quot;, &quot;pop&quot;, &quot;pop rap&quot;, &quot;rap&quot;, &quot;southern hip hop&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/5ndkK3dpZLKtBklKjxNQwT&quot;,
+    &quot;id&quot; : &quot;5ndkK3dpZLKtBklKjxNQwT&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb3b6f1762e81e53df14990f57&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab676161000051743b6f1762e81e53df14990f57&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f1783b6f1762e81e53df14990f57&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;B.o.B&quot;,
+    &quot;popularity&quot; : 74,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:5ndkK3dpZLKtBklKjxNQwT&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/6LqNN22kT3074XbTVUrhzX&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 7534834
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;pop&quot;, &quot;post-teen pop&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/6LqNN22kT3074XbTVUrhzX&quot;,
+    &quot;id&quot; : &quot;6LqNN22kT3074XbTVUrhzX&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5ebf271138f95fbe8188d909d50&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174f271138f95fbe8188d909d50&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178f271138f95fbe8188d909d50&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Kesha&quot;,
+    &quot;popularity&quot; : 77,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:6LqNN22kT3074XbTVUrhzX&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/3Isy6kedDrgPYoTS1dazA9&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 4291880
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;dancehall&quot;, &quot;pop rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/3Isy6kedDrgPYoTS1dazA9&quot;,
+    &quot;id&quot; : &quot;3Isy6kedDrgPYoTS1dazA9&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb60c3e9abe7327c0097738f22&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000517460c3e9abe7327c0097738f22&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f17860c3e9abe7327c0097738f22&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Sean Paul&quot;,
+    &quot;popularity&quot; : 81,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:3Isy6kedDrgPYoTS1dazA9&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/5Y5TRrQiqgUO4S36tzjIRZ&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 2480053
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;hip hop&quot;, &quot;pop&quot;, &quot;pop rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/5Y5TRrQiqgUO4S36tzjIRZ&quot;,
+    &quot;id&quot; : &quot;5Y5TRrQiqgUO4S36tzjIRZ&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb2ec030557b0529c01639529b&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab676161000051742ec030557b0529c01639529b&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f1782ec030557b0529c01639529b&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Timbaland&quot;,
+    &quot;popularity&quot; : 78,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:5Y5TRrQiqgUO4S36tzjIRZ&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/6yTYR09WCvsgdnurDW4WQo&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 534410
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;pop dance&quot;, &quot;pop rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/6yTYR09WCvsgdnurDW4WQo&quot;,
+    &quot;id&quot; : &quot;6yTYR09WCvsgdnurDW4WQo&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5ebbe38428c93058d49e48021ed&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174be38428c93058d49e48021ed&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178be38428c93058d49e48021ed&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;DJ Antoine&quot;,
+    &quot;popularity&quot; : 63,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:6yTYR09WCvsgdnurDW4WQo&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/6c4sUNBgdonFJz8Kx2VsGz&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 431005
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;norwegian hip hop&quot;, &quot;pop rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/6c4sUNBgdonFJz8Kx2VsGz&quot;,
+    &quot;id&quot; : &quot;6c4sUNBgdonFJz8Kx2VsGz&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5ebf8805c34d9906f9c681d8c16&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174f8805c34d9906f9c681d8c16&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178f8805c34d9906f9c681d8c16&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Madcon&quot;,
+    &quot;popularity&quot; : 64,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:6c4sUNBgdonFJz8Kx2VsGz&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/1yxSLGMDHlW21z4YXirZDS&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 7357440
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;pop&quot;, &quot;pop rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/1yxSLGMDHlW21z4YXirZDS&quot;,
+    &quot;id&quot; : &quot;1yxSLGMDHlW21z4YXirZDS&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5ebabab30b094128cf4c0f2cef1&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174abab30b094128cf4c0f2cef1&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178abab30b094128cf4c0f2cef1&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Black Eyed Peas&quot;,
+    &quot;popularity&quot; : 82,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:1yxSLGMDHlW21z4YXirZDS&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/2KsP6tYLJlTBvSUxnwlVWa&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 1340120
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;edm&quot;, &quot;pop&quot;, &quot;pop rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/2KsP6tYLJlTBvSUxnwlVWa&quot;,
+    &quot;id&quot; : &quot;2KsP6tYLJlTBvSUxnwlVWa&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb5ca6c70cd9661b2eca98999f&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab676161000051745ca6c70cd9661b2eca98999f&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f1785ca6c70cd9661b2eca98999f&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Mike Posner&quot;,
+    &quot;popularity&quot; : 71,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:2KsP6tYLJlTBvSUxnwlVWa&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/2NhdGz9EDv2FeUw6udu2g1&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 2611415
+    },
+    &quot;genres&quot; : [ &quot;boy band&quot;, &quot;dance pop&quot;, &quot;pop&quot;, &quot;pop rock&quot;, &quot;post-teen pop&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/2NhdGz9EDv2FeUw6udu2g1&quot;,
+    &quot;id&quot; : &quot;2NhdGz9EDv2FeUw6udu2g1&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5ebd34d138ebcda9fca6716e70c&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174d34d138ebcda9fca6716e70c&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178d34d138ebcda9fca6716e70c&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;The Wanted&quot;,
+    &quot;popularity&quot; : 66,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:2NhdGz9EDv2FeUw6udu2g1&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/3r17AfJCCUqC9Lf0OAc73G&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 5384906
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;pop&quot;, &quot;post-teen pop&quot;, &quot;rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/3r17AfJCCUqC9Lf0OAc73G&quot;,
+    &quot;id&quot; : &quot;3r17AfJCCUqC9Lf0OAc73G&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb1fd1c6d465e03a904d63c9b5&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab676161000051741fd1c6d465e03a904d63c9b5&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f1781fd1c6d465e03a904d63c9b5&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Fergie&quot;,
+    &quot;popularity&quot; : 70,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:3r17AfJCCUqC9Lf0OAc73G&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/2DlGxzQSjYe5N6G9nkYghR&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 12329813
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;pop&quot;, &quot;pop rap&quot;, &quot;urban contemporary&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/2DlGxzQSjYe5N6G9nkYghR&quot;,
+    &quot;id&quot; : &quot;2DlGxzQSjYe5N6G9nkYghR&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5ebce391c85fb87d67d316d1413&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174ce391c85fb87d67d316d1413&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178ce391c85fb87d67d316d1413&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Jennifer Lopez&quot;,
+    &quot;popularity&quot; : 77,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:2DlGxzQSjYe5N6G9nkYghR&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/5BcAKTbp20cv7tC5VqPFoC&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 2612999
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;pop&quot;, &quot;pop rap&quot;, &quot;seattle hip hop&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/5BcAKTbp20cv7tC5VqPFoC&quot;,
+    &quot;id&quot; : &quot;5BcAKTbp20cv7tC5VqPFoC&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb3c2f1ba4c1a3de141e63d775&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab676161000051743c2f1ba4c1a3de141e63d775&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f1783c2f1ba4c1a3de141e63d775&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Macklemore &amp; Ryan Lewis&quot;,
+    &quot;popularity&quot; : 75,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:5BcAKTbp20cv7tC5VqPFoC&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/6GMYJwaziB4ekv1Y6wCDWS&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 1756339
+    },
+    &quot;genres&quot; : [ &quot;atl hip hop&quot;, &quot;chicago bop&quot;, &quot;dance pop&quot;, &quot;dirty south rap&quot;, &quot;pop rap&quot;, &quot;rap&quot;, &quot;southern hip hop&quot;, &quot;trap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/6GMYJwaziB4ekv1Y6wCDWS&quot;,
+    &quot;id&quot; : &quot;6GMYJwaziB4ekv1Y6wCDWS&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eba0b85051b7e8ea8c9739a87e&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174a0b85051b7e8ea8c9739a87e&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178a0b85051b7e8ea8c9739a87e&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Soulja Boy&quot;,
+    &quot;popularity&quot; : 70,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:6GMYJwaziB4ekv1Y6wCDWS&quot;
+  } ]
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref failed">18</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell failed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">18:36:02.601 src/test/resources/featuresArtists/GetArtistsRelatedArtists.feature:18
+Then status 400
+status code was: 200, expected: 400, response time in milliseconds: 386, url: https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg/related-artists, response: 
+{
+  &quot;artists&quot; : [ {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/0jnsk9HBra6NMjO2oANoPY&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 8820834
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;miami hip hop&quot;, &quot;pop&quot;, &quot;pop rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/0jnsk9HBra6NMjO2oANoPY&quot;,
+    &quot;id&quot; : &quot;0jnsk9HBra6NMjO2oANoPY&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb655ca8f3196953554b479452&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174655ca8f3196953554b479452&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178655ca8f3196953554b479452&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Flo Rida&quot;,
+    &quot;popularity&quot; : 80,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:0jnsk9HBra6NMjO2oANoPY&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/6MF9fzBmfXghAz953czmBC&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 2218207
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;pop&quot;, &quot;pop rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/6MF9fzBmfXghAz953czmBC&quot;,
+    &quot;id&quot; : &quot;6MF9fzBmfXghAz953czmBC&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb153171480a6f22912253b9f1&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174153171480a6f22912253b9f1&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178153171480a6f22912253b9f1&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Taio Cruz&quot;,
+    &quot;popularity&quot; : 71,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:6MF9fzBmfXghAz953czmBC&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/085pc2PYOi8bGKj0PNjekA&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 3990354
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;pop&quot;, &quot;pop rap&quot;, &quot;post-teen pop&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/085pc2PYOi8bGKj0PNjekA&quot;,
+    &quot;id&quot; : &quot;085pc2PYOi8bGKj0PNjekA&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5ebc9ab8da6f7a3ce02f0b16fd8&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174c9ab8da6f7a3ce02f0b16fd8&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178c9ab8da6f7a3ce02f0b16fd8&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;will.i.am&quot;,
+    &quot;popularity&quot; : 74,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:085pc2PYOi8bGKj0PNjekA&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/3sgFRtyBnxXD5ESfmbK4dl&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 4185559
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;pop&quot;, &quot;pop rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/3sgFRtyBnxXD5ESfmbK4dl&quot;,
+    &quot;id&quot; : &quot;3sgFRtyBnxXD5ESfmbK4dl&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 675,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/2d75f5222d8a92d5e12419ae3e5238261f943df6&quot;,
+      &quot;width&quot; : 1000
+    }, {
+      &quot;height&quot; : 432,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/a91b72640d92fa70bfc7556d38114b3f010c5cc5&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 135,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/9b592e53e0ae00516c65580a254113bc7d0933e2&quot;,
+      &quot;width&quot; : 200
+    }, {
+      &quot;height&quot; : 43,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/e7a7f70dc456d6844e2c15b44c4ff1853aac54f8&quot;,
+      &quot;width&quot; : 64
+    } ],
+    &quot;name&quot; : &quot;LMFAO&quot;,
+    &quot;popularity&quot; : 68,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:3sgFRtyBnxXD5ESfmbK4dl&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/6S0dmVVn4udvppDhZIWxCr&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 2991561
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;miami hip hop&quot;, &quot;pop&quot;, &quot;post-teen pop&quot;, &quot;rap&quot;, &quot;urban contemporary&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/6S0dmVVn4udvppDhZIWxCr&quot;,
+    &quot;id&quot; : &quot;6S0dmVVn4udvppDhZIWxCr&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb88736ba90063ff3acb41d177&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000517488736ba90063ff3acb41d177&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f17888736ba90063ff3acb41d177&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Sean Kingston&quot;,
+    &quot;popularity&quot; : 70,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:6S0dmVVn4udvppDhZIWxCr&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/698hF4vcwHwPy8ltmXermq&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 1142510
+    },
+    &quot;genres&quot; : [ &quot;asian american hip hop&quot;, &quot;dance pop&quot;, &quot;edm&quot;, &quot;pop rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/698hF4vcwHwPy8ltmXermq&quot;,
+    &quot;id&quot; : &quot;698hF4vcwHwPy8ltmXermq&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb6f288ea7bd44c142791dc7cd&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab676161000051746f288ea7bd44c142791dc7cd&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f1786f288ea7bd44c142791dc7cd&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Far East Movement&quot;,
+    &quot;popularity&quot; : 66,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:698hF4vcwHwPy8ltmXermq&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/07YZf4WDAMNwqr4jfgOZ8y&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 11789313
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;pop&quot;, &quot;pop rap&quot;, &quot;post-teen pop&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/07YZf4WDAMNwqr4jfgOZ8y&quot;,
+    &quot;id&quot; : &quot;07YZf4WDAMNwqr4jfgOZ8y&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb654972693e0efed3f3f4d090&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174654972693e0efed3f3f4d090&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178654972693e0efed3f3f4d090&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Jason Derulo&quot;,
+    &quot;popularity&quot; : 80,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:07YZf4WDAMNwqr4jfgOZ8y&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/5ndkK3dpZLKtBklKjxNQwT&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 2082145
+    },
+    &quot;genres&quot; : [ &quot;atl hip hop&quot;, &quot;dance pop&quot;, &quot;hip hop&quot;, &quot;pop&quot;, &quot;pop rap&quot;, &quot;rap&quot;, &quot;southern hip hop&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/5ndkK3dpZLKtBklKjxNQwT&quot;,
+    &quot;id&quot; : &quot;5ndkK3dpZLKtBklKjxNQwT&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb3b6f1762e81e53df14990f57&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab676161000051743b6f1762e81e53df14990f57&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f1783b6f1762e81e53df14990f57&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;B.o.B&quot;,
+    &quot;popularity&quot; : 74,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:5ndkK3dpZLKtBklKjxNQwT&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/6LqNN22kT3074XbTVUrhzX&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 7534834
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;pop&quot;, &quot;post-teen pop&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/6LqNN22kT3074XbTVUrhzX&quot;,
+    &quot;id&quot; : &quot;6LqNN22kT3074XbTVUrhzX&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5ebf271138f95fbe8188d909d50&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174f271138f95fbe8188d909d50&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178f271138f95fbe8188d909d50&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Kesha&quot;,
+    &quot;popularity&quot; : 77,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:6LqNN22kT3074XbTVUrhzX&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/3Isy6kedDrgPYoTS1dazA9&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 4291880
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;dancehall&quot;, &quot;pop rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/3Isy6kedDrgPYoTS1dazA9&quot;,
+    &quot;id&quot; : &quot;3Isy6kedDrgPYoTS1dazA9&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb60c3e9abe7327c0097738f22&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000517460c3e9abe7327c0097738f22&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f17860c3e9abe7327c0097738f22&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Sean Paul&quot;,
+    &quot;popularity&quot; : 81,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:3Isy6kedDrgPYoTS1dazA9&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/5Y5TRrQiqgUO4S36tzjIRZ&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 2480053
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;hip hop&quot;, &quot;pop&quot;, &quot;pop rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/5Y5TRrQiqgUO4S36tzjIRZ&quot;,
+    &quot;id&quot; : &quot;5Y5TRrQiqgUO4S36tzjIRZ&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb2ec030557b0529c01639529b&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab676161000051742ec030557b0529c01639529b&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f1782ec030557b0529c01639529b&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Timbaland&quot;,
+    &quot;popularity&quot; : 78,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:5Y5TRrQiqgUO4S36tzjIRZ&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/6yTYR09WCvsgdnurDW4WQo&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 534410
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;pop dance&quot;, &quot;pop rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/6yTYR09WCvsgdnurDW4WQo&quot;,
+    &quot;id&quot; : &quot;6yTYR09WCvsgdnurDW4WQo&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5ebbe38428c93058d49e48021ed&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174be38428c93058d49e48021ed&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178be38428c93058d49e48021ed&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;DJ Antoine&quot;,
+    &quot;popularity&quot; : 63,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:6yTYR09WCvsgdnurDW4WQo&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/6c4sUNBgdonFJz8Kx2VsGz&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 431005
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;norwegian hip hop&quot;, &quot;pop rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/6c4sUNBgdonFJz8Kx2VsGz&quot;,
+    &quot;id&quot; : &quot;6c4sUNBgdonFJz8Kx2VsGz&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5ebf8805c34d9906f9c681d8c16&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174f8805c34d9906f9c681d8c16&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178f8805c34d9906f9c681d8c16&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Madcon&quot;,
+    &quot;popularity&quot; : 64,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:6c4sUNBgdonFJz8Kx2VsGz&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/1yxSLGMDHlW21z4YXirZDS&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 7357440
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;pop&quot;, &quot;pop rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/1yxSLGMDHlW21z4YXirZDS&quot;,
+    &quot;id&quot; : &quot;1yxSLGMDHlW21z4YXirZDS&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5ebabab30b094128cf4c0f2cef1&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174abab30b094128cf4c0f2cef1&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178abab30b094128cf4c0f2cef1&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Black Eyed Peas&quot;,
+    &quot;popularity&quot; : 82,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:1yxSLGMDHlW21z4YXirZDS&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/2KsP6tYLJlTBvSUxnwlVWa&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 1340120
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;edm&quot;, &quot;pop&quot;, &quot;pop rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/2KsP6tYLJlTBvSUxnwlVWa&quot;,
+    &quot;id&quot; : &quot;2KsP6tYLJlTBvSUxnwlVWa&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb5ca6c70cd9661b2eca98999f&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab676161000051745ca6c70cd9661b2eca98999f&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f1785ca6c70cd9661b2eca98999f&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Mike Posner&quot;,
+    &quot;popularity&quot; : 71,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:2KsP6tYLJlTBvSUxnwlVWa&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/2NhdGz9EDv2FeUw6udu2g1&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 2611415
+    },
+    &quot;genres&quot; : [ &quot;boy band&quot;, &quot;dance pop&quot;, &quot;pop&quot;, &quot;pop rock&quot;, &quot;post-teen pop&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/2NhdGz9EDv2FeUw6udu2g1&quot;,
+    &quot;id&quot; : &quot;2NhdGz9EDv2FeUw6udu2g1&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5ebd34d138ebcda9fca6716e70c&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174d34d138ebcda9fca6716e70c&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178d34d138ebcda9fca6716e70c&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;The Wanted&quot;,
+    &quot;popularity&quot; : 66,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:2NhdGz9EDv2FeUw6udu2g1&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/3r17AfJCCUqC9Lf0OAc73G&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 5384906
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;pop&quot;, &quot;post-teen pop&quot;, &quot;rap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/3r17AfJCCUqC9Lf0OAc73G&quot;,
+    &quot;id&quot; : &quot;3r17AfJCCUqC9Lf0OAc73G&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb1fd1c6d465e03a904d63c9b5&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab676161000051741fd1c6d465e03a904d63c9b5&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f1781fd1c6d465e03a904d63c9b5&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Fergie&quot;,
+    &quot;popularity&quot; : 70,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:3r17AfJCCUqC9Lf0OAc73G&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/2DlGxzQSjYe5N6G9nkYghR&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 12329813
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;pop&quot;, &quot;pop rap&quot;, &quot;urban contemporary&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/2DlGxzQSjYe5N6G9nkYghR&quot;,
+    &quot;id&quot; : &quot;2DlGxzQSjYe5N6G9nkYghR&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5ebce391c85fb87d67d316d1413&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174ce391c85fb87d67d316d1413&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178ce391c85fb87d67d316d1413&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Jennifer Lopez&quot;,
+    &quot;popularity&quot; : 77,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:2DlGxzQSjYe5N6G9nkYghR&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/5BcAKTbp20cv7tC5VqPFoC&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 2612999
+    },
+    &quot;genres&quot; : [ &quot;dance pop&quot;, &quot;pop&quot;, &quot;pop rap&quot;, &quot;seattle hip hop&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/5BcAKTbp20cv7tC5VqPFoC&quot;,
+    &quot;id&quot; : &quot;5BcAKTbp20cv7tC5VqPFoC&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eb3c2f1ba4c1a3de141e63d775&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab676161000051743c2f1ba4c1a3de141e63d775&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f1783c2f1ba4c1a3de141e63d775&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Macklemore &amp; Ryan Lewis&quot;,
+    &quot;popularity&quot; : 75,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:5BcAKTbp20cv7tC5VqPFoC&quot;
+  }, {
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/artist/6GMYJwaziB4ekv1Y6wCDWS&quot;
+    },
+    &quot;followers&quot; : {
+      &quot;href&quot; : null,
+      &quot;total&quot; : 1756339
+    },
+    &quot;genres&quot; : [ &quot;atl hip hop&quot;, &quot;chicago bop&quot;, &quot;dance pop&quot;, &quot;dirty south rap&quot;, &quot;pop rap&quot;, &quot;rap&quot;, &quot;southern hip hop&quot;, &quot;trap&quot; ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/6GMYJwaziB4ekv1Y6wCDWS&quot;,
+    &quot;id&quot; : &quot;6GMYJwaziB4ekv1Y6wCDWS&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000e5eba0b85051b7e8ea8c9739a87e&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 320,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616100005174a0b85051b7e8ea8c9739a87e&quot;,
+      &quot;width&quot; : 320
+    }, {
+      &quot;height&quot; : 160,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab6761610000f178a0b85051b7e8ea8c9739a87e&quot;,
+      &quot;width&quot; : 160
+    } ],
+    &quot;name&quot; : &quot;Soulja Boy&quot;,
+    &quot;popularity&quot; : 70,
+    &quot;type&quot; : &quot;artist&quot;,
+    &quot;uri&quot; : &quot;spotify:artist:6GMYJwaziB4ekv1Y6wCDWS&quot;
+  } ]
+}
+src/test/resources/featuresArtists/GetArtistsRelatedArtists.feature:18
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref skipped">19</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

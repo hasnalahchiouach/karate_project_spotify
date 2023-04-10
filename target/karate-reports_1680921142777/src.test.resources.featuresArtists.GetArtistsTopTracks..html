@@ -1,0 +1,2717 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"370ba96a-51f4-4cd7-b29b-888a5c0fd67a",karate_version:"1.4.0",karate_meta:"intellij:1.7.4.325"});
+  }
+});
+</script>
+
+    <title>src.test.resources.featuresArtists.GetArtistsTopTracks.</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-04-08 02:30:55 AM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:15]"><span>[1:15]</span> <span>Get Artists Top Tracks</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:24]"><span>[2:24]</span> <span>verify if the API returns an error if i send an invalid id</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/resources/featuresArtists/GetArtistsTopTracks..feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Get the bearer token</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:15]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:15]</span>
+                <span class="scenario-name">Get Artists Top Tracks</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1761</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:15]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://accounts.spotify.com/api/token&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">92</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def Base64 = Java.type(&#39;Utils.Base64Encode&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">44</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def auth_string = &quot;34757a9fd9234369b098ddede5b0402c:aebd3209295e4d158b7b63c589c4e927&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def encoded_string = Base64.encode(auth_string)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">36</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &quot;Basic &quot; + encoded_string</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field grant_type = &quot;client_credentials&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">109</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref bg-step">11</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">970</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">02:30:53.251 request:
+1 &gt; POST https://accounts.spotify.com/api/token
+1 &gt; Authorization: Basic MzQ3NTdhOWZkOTIzNDM2OWIwOThkZGVkZTViMDQwMmM6YWViZDMyMDkyOTVlNGQxNThiN2I2M2M1ODljNGU5Mjc=
+1 &gt; Content-Type: application/x-www-form-urlencoded
+1 &gt; Content-Length: 29
+1 &gt; Host: accounts.spotify.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.14)
+1 &gt; Accept-Encoding: gzip,deflate
+grant_type=client_credentials
+
+02:30:53.814 response time in milliseconds: 554
+1 &lt; 200
+1 &lt; date: Sat, 08 Apr 2023 02:29:16 GMT
+1 &lt; content-type: application/json
+1 &lt; set-cookie: __Host-device_id=AQAG6-H0_d-c7O4pLzBnov1cBYpkqFEZxVlPMOYn5LQqEvt6IzpZGiESdqHTq6k1bWzzLgSbkB0OfePaSWYZi9feB6fzdyXatZQ;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly;SameSite=Lax
+1 &lt; set-cookie: sp_tr=false;Version=1;Domain=accounts.spotify.com;Path=/;Secure;SameSite=Lax
+1 &lt; sp-trace-id: 4229ae7e77e163a6
+1 &lt; x-envoy-upstream-service-time: 9
+1 &lt; server: envoy
+1 &lt; strict-transport-security: max-age=31536000
+1 &lt; x-content-type-options: nosniff
+1 &lt; vary: Accept-Encoding
+1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Set-Cookie: __Host-device_id=AQAG6-H0_d-c7O4pLzBnov1cBYpkqFEZxVlPMOYn5LQqEvt6IzpZGiESdqHTq6k1bWzzLgSbkB0OfePaSWYZi9feB6fzdyXatZQ;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly;SameSite=Lax
+1 &lt; Set-Cookie: sp_tr=false;Version=1;Domain=accounts.spotify.com;Path=/;Secure;SameSite=Lax
+{&quot;access_token&quot;:&quot;BQCb-WJ21F9RJ01o0maIqnUYFxJxcVFLbGdSN7pQIMc2klcI8BhNYPzjEXVetcPeoZBX4G2SvrM0yagQOWgDWgwsry3sumQw0MvBggHhDrLXadsYxlXj&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;expires_in&quot;:3600}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:15]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def bearer_token = response.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg/top-tracks&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + bearer_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param market = &quot;ES&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">469</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">02:30:53.839 request:
+2 &gt; GET https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg/top-tracks?market=ES
+2 &gt; Authorization: Bearer BQCb-WJ21F9RJ01o0maIqnUYFxJxcVFLbGdSN7pQIMc2klcI8BhNYPzjEXVetcPeoZBX4G2SvrM0yagQOWgDWgwsry3sumQw0MvBggHhDrLXadsYxlXj
+2 &gt; Cookie: sp_tr=false; __Host-device_id=AQAG6-H0_d-c7O4pLzBnov1cBYpkqFEZxVlPMOYn5LQqEvt6IzpZGiESdqHTq6k1bWzzLgSbkB0OfePaSWYZi9feB6fzdyXatZQ
+2 &gt; Host: api.spotify.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.14)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+02:30:54.292 response time in milliseconds: 448
+2 &lt; 200
+2 &lt; content-type: application/json; charset=utf-8
+2 &lt; cache-control: public, max-age=84828
+2 &lt; x-robots-tag: noindex, nofollow
+2 &lt; access-control-allow-origin: *
+2 &lt; access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+2 &lt; access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+2 &lt; access-control-allow-credentials: true
+2 &lt; access-control-max-age: 604800
+2 &lt; strict-transport-security: max-age=31536000
+2 &lt; x-content-type-options: nosniff
+2 &lt; date: Sat, 08 Apr 2023 02:29:16 GMT
+2 &lt; server: envoy
+2 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+2 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+2 &lt; Transfer-Encoding: chunked
+{
+  &quot;tracks&quot; : [ {
+    &quot;album&quot; : {
+      &quot;album_group&quot; : &quot;album&quot;,
+      &quot;album_type&quot; : &quot;album&quot;,
+      &quot;artists&quot; : [ {
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+        &quot;id&quot; : &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+        &quot;name&quot; : &quot;Pitbull&quot;,
+        &quot;type&quot; : &quot;artist&quot;,
+        &quot;uri&quot; : &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+      } ],
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/album/2F7tejLHzTqFq2XLol9ZGy&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/albums/2F7tejLHzTqFq2XLol9ZGy&quot;,
+      &quot;id&quot; : &quot;2F7tejLHzTqFq2XLol9ZGy&quot;,
+      &quot;images&quot; : [ {
+        &quot;height&quot; : 640,
+        &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d0000b273f2486b438645e97b523e4f90&quot;,
+        &quot;width&quot; : 640
+      }, {
+        &quot;height&quot; : 300,
+        &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d00001e02f2486b438645e97b523e4f90&quot;,
+        &quot;width&quot; : 300
+      }, {
+        &quot;height&quot; : 64,
+        &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d00004851f2486b438645e97b523e4f90&quot;,
+        &quot;width&quot; : 64
+      } ],
+      &quot;is_playable&quot; : true,
+      &quot;name&quot; : &quot;Global Warming: Meltdown (Deluxe Version)&quot;,
+      &quot;release_date&quot; : &quot;2012&quot;,
+      &quot;release_date_precision&quot; : &quot;year&quot;,
+      &quot;total_tracks&quot; : 17,
+      &quot;type&quot; : &quot;album&quot;,
+      &quot;uri&quot; : &quot;spotify:album:2F7tejLHzTqFq2XLol9ZGy&quot;
+    },
+    &quot;artists&quot; : [ {
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+      &quot;id&quot; : &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+      &quot;name&quot; : &quot;Pitbull&quot;,
+      &quot;type&quot; : &quot;artist&quot;,
+      &quot;uri&quot; : &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+    }, {
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/artist/6LqNN22kT3074XbTVUrhzX&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/6LqNN22kT3074XbTVUrhzX&quot;,
+      &quot;id&quot; : &quot;6LqNN22kT3074XbTVUrhzX&quot;,
+      &quot;name&quot; : &quot;Kesha&quot;,
+      &quot;type&quot; : &quot;artist&quot;,
+      &quot;uri&quot; : &quot;spotify:artist:6LqNN22kT3074XbTVUrhzX&quot;
+    } ],
+    &quot;disc_number&quot; : 1,
+    &quot;duration_ms&quot; : 204160,
+    &quot;explicit&quot; : false,
+    &quot;external_ids&quot; : {
+      &quot;isrc&quot; : &quot;USRC11301695&quot;
+    },
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/track/3cHyrEgdyYRjgJKSOiOtcS&quot;
+    },
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/3cHyrEgdyYRjgJKSOiOtcS&quot;,
+    &quot;id&quot; : &quot;3cHyrEgdyYRjgJKSOiOtcS&quot;,
+    &quot;is_local&quot; : false,
+    &quot;is_playable&quot; : true,
+    &quot;name&quot; : &quot;Timber (feat. Ke$ha)&quot;,
+    &quot;popularity&quot; : 82,
+    &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/54825c719d56bd5b737ac7c1aa3ce41ad3eef338?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+    &quot;track_number&quot; : 13,
+    &quot;type&quot; : &quot;track&quot;,
+    &quot;uri&quot; : &quot;spotify:track:3cHyrEgdyYRjgJKSOiOtcS&quot;
+  }, {
+    &quot;album&quot; : {
+      &quot;album_group&quot; : &quot;album&quot;,
+      &quot;album_type&quot; : &quot;album&quot;,
+      &quot;artists&quot; : [ {
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+        &quot;id&quot; : &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+        &quot;name&quot; : &quot;Pitbull&quot;,
+        &quot;type&quot; : &quot;artist&quot;,
+        &quot;uri&quot; : &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+      } ],
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/album/4rG0MhkU6UojACJxkMHIXB&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/albums/4rG0MhkU6UojACJxkMHIXB&quot;,
+      &quot;id&quot; : &quot;4rG0MhkU6UojACJxkMHIXB&quot;,
+      &quot;images&quot; : [ {
+        &quot;height&quot; : 640,
+        &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d0000b2731dc7483a9fcfce54822a2f19&quot;,
+        &quot;width&quot; : 640
+      }, {
+        &quot;height&quot; : 300,
+        &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d00001e021dc7483a9fcfce54822a2f19&quot;,
+        &quot;width&quot; : 300
+      }, {
+        &quot;height&quot; : 64,
+        &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d000048511dc7483a9fcfce54822a2f19&quot;,
+        &quot;width&quot; : 64
+      } ],
+      &quot;is_playable&quot; : true,
+      &quot;name&quot; : &quot;Planet Pit (Deluxe Version)&quot;,
+      &quot;release_date&quot; : &quot;2011-06-17&quot;,
+      &quot;release_date_precision&quot; : &quot;day&quot;,
+      &quot;total_tracks&quot; : 16,
+      &quot;type&quot; : &quot;album&quot;,
+      &quot;uri&quot; : &quot;spotify:album:4rG0MhkU6UojACJxkMHIXB&quot;
+    },
+    &quot;artists&quot; : [ {
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+      &quot;id&quot; : &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+      &quot;name&quot; : &quot;Pitbull&quot;,
+      &quot;type&quot; : &quot;artist&quot;,
+      &quot;uri&quot; : &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+    }, {
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/artist/21E3waRsmPlU7jZsS13rcj&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/21E3waRsmPlU7jZsS13rcj&quot;,
+      &quot;id&quot; : &quot;21E3waRsmPlU7jZsS13rcj&quot;,
+      &quot;name&quot; : &quot;Ne-Yo&quot;,
+      &quot;type&quot; : &quot;artist&quot;,
+      &quot;uri&quot; : &quot;spotify:artist:21E3waRsmPlU7jZsS13rcj&quot;
+    }, {
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4D75GcNG95ebPtNvoNVXhz&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4D75GcNG95ebPtNvoNVXhz&quot;,
+      &quot;id&quot; : &quot;4D75GcNG95ebPtNvoNVXhz&quot;,
+      &quot;name&quot; : &quot;AFROJACK&quot;,
+      &quot;type&quot; : &quot;artist&quot;,
+      &quot;uri&quot; : &quot;spotify:artist:4D75GcNG95ebPtNvoNVXhz&quot;
+    }, {
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/artist/1ruutHJcECI7cos2n5TqpO&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/1ruutHJcECI7cos2n5TqpO&quot;,
+      &quot;id&quot; : &quot;1ruutHJcECI7cos2n5TqpO&quot;,
+      &quot;name&quot; : &quot;Nayer&quot;,
+      &quot;type&quot; : &quot;artist&quot;,
+      &quot;uri&quot; : &quot;spotify:artist:1ruutHJcECI7cos2n5TqpO&quot;
+    } ],
+    &quot;disc_number&quot; : 1,
+    &quot;duration_ms&quot; : 252306,
+    &quot;explicit&quot; : false,
+    &quot;external_ids&quot; : {
+      &quot;isrc&quot; : &quot;USJAY1100032&quot;
+    },
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/track/4QNpBfC0zvjKqPJcyqBy9W&quot;
+    },
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/4QNpBfC0zvjKqPJcyqBy9W&quot;,
+    &quot;id&quot; : &quot;4QNpBfC0zvjKqPJcyqBy9W&quot;,
+    &quot;is_local&quot; : false,
+    &quot;is_playable&quot; : true,
+    &quot;name&quot; : &quot;Give Me Everything (feat. Ne-Yo, Afrojack &amp; Nayer)&quot;,
+    &quot;popularity&quot; : 82,
+    &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/6eafa4293d2b35b2e75ffab5ec1bba8ec00d5082?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+    &quot;track_number&quot; : 2,
+    &quot;type&quot; : &quot;track&quot;,
+    &quot;uri&quot; : &quot;spotify:track:4QNpBfC0zvjKqPJcyqBy9W&quot;
+  }, {
+    &quot;album&quot; : {
+      &quot;album_group&quot; : &quot;album&quot;,
+      &quot;album_type&quot; : &quot;album&quot;,
+      &quot;artists&quot; : [ {
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+        &quot;id&quot; : &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+        &quot;name&quot; : &quot;Pitbull&quot;,
+        &quot;type&quot; : &quot;artist&quot;,
+        &quot;uri&quot; : &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+      } ],
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/album/4EUf4YyNjuXypWY6W5wEDm&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/albums/4EUf4YyNjuXypWY6W5wEDm&quot;,
+      &quot;id&quot; : &quot;4EUf4YyNjuXypWY6W5wEDm&quot;,
+      &quot;images&quot; : [ {
+        &quot;height&quot; : 640,
+        &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d0000b2731e340d1480e7bb29a45e3bd7&quot;,
+        &quot;width&quot; : 640
+      }, {
+        &quot;height&quot; : 300,
+        &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d00001e021e340d1480e7bb29a45e3bd7&quot;,
+        &quot;width&quot; : 300
+      }, {
+        &quot;height&quot; : 64,
+        &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d000048511e340d1480e7bb29a45e3bd7&quot;,
+        &quot;width&quot; : 64
+      } ],
+      &quot;is_playable&quot; : true,
+      &quot;name&quot; : &quot;Globalization&quot;,
+      &quot;release_date&quot; : &quot;2014-11-21&quot;,
+      &quot;release_date_precision&quot; : &quot;day&quot;,
+      &quot;total_tracks&quot; : 11,
+      &quot;type&quot; : &quot;album&quot;,
+      &quot;uri&quot; : &quot;spotify:album:4EUf4YyNjuXypWY6W5wEDm&quot;
+    },
+    &quot;artists&quot; : [ {
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+      &quot;id&quot; : &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+      &quot;name&quot; : &quot;Pitbull&quot;,
+      &quot;type&quot; : &quot;artist&quot;,
+      &quot;uri&quot; : &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+    }, {
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/artist/21E3waRsmPlU7jZsS13rcj&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/21E3waRsmPlU7jZsS13rcj&quot;,
+      &quot;id&quot; : &quot;21E3waRsmPlU7jZsS13rcj&quot;,
+      &quot;name&quot; : &quot;Ne-Yo&quot;,
+      &quot;type&quot; : &quot;artist&quot;,
+      &quot;uri&quot; : &quot;spotify:artist:21E3waRsmPlU7jZsS13rcj&quot;
+    } ],
+    &quot;disc_number&quot; : 1,
+    &quot;duration_ms&quot; : 229360,
+    &quot;explicit&quot; : true,
+    &quot;external_ids&quot; : {
+      &quot;isrc&quot; : &quot;USRC11402647&quot;
+    },
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/track/2bJvI42r8EF3wxjOuDav4r&quot;
+    },
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/2bJvI42r8EF3wxjOuDav4r&quot;,
+    &quot;id&quot; : &quot;2bJvI42r8EF3wxjOuDav4r&quot;,
+    &quot;is_local&quot; : false,
+    &quot;is_playable&quot; : true,
+    &quot;name&quot; : &quot;Time of Our Lives&quot;,
+    &quot;popularity&quot; : 81,
+    &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/d508371276a297486ace8d4ff596c54ae9e65260?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+    &quot;track_number&quot; : 4,
+    &quot;type&quot; : &quot;track&quot;,
+    &quot;uri&quot; : &quot;spotify:track:2bJvI42r8EF3wxjOuDav4r&quot;
+  }, {
+    &quot;album&quot; : {
+      &quot;album_group&quot; : &quot;album&quot;,
+      &quot;album_type&quot; : &quot;album&quot;,
+      &quot;artists&quot; : [ {
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+        &quot;id&quot; : &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+        &quot;name&quot; : &quot;Pitbull&quot;,
+        &quot;type&quot; : &quot;artist&quot;,
+        &quot;uri&quot; : &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+      } ],
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/album/2F7tejLHzTqFq2XLol9ZGy&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/albums/2F7tejLHzTqFq2XLol9ZGy&quot;,
+      &quot;id&quot; : &quot;2F7tejLHzTqFq2XLol9ZGy&quot;,
+      &quot;images&quot; : [ {
+        &quot;height&quot; : 640,
+        &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d0000b273f2486b438645e97b523e4f90&quot;,
+        &quot;width&quot; : 640
+      }, {
+        &quot;height&quot; : 300,
+        &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d00001e02f2486b438645e97b523e4f90&quot;,
+        &quot;width&quot; : 300
+      }, {
+        &quot;height&quot; : 64,
+        &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d00004851f2486b438645e97b523e4f90&quot;,
+        &quot;width&quot; : 64
+      } ],
+      &quot;is_playable&quot; : true,
+      &quot;name&quot; : &quot;Global Warming: Meltdown (Deluxe Version)&quot;,
+      &quot;release_date&quot; : &quot;2012&quot;,
+      &quot;release_date_precision&quot; : &quot;year&quot;,
+      &quot;total_tracks&quot; : 17,
+      &quot;type&quot; : &quot;album&quot;,
+      &quot;uri&quot; : &quot;spotify:album:2F7tejLHzTqFq2XLol9ZGy&quot;
+    },
+    &quot;artists&quot; : [ {
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+      &quot;id&quot; : &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+      &quot;name&quot; : &quot;Pitbull&quot;,
+      &quot;type&quot; : &quot;artist&quot;,
+      &quot;uri&quot; : &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+    }, {
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/artist/1l7ZsJRRS8wlW3WfJfPfNS&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/1l7ZsJRRS8wlW3WfJfPfNS&quot;,
+      &quot;id&quot; : &quot;1l7ZsJRRS8wlW3WfJfPfNS&quot;,
+      &quot;name&quot; : &quot;Christina Aguilera&quot;,
+      &quot;type&quot; : &quot;artist&quot;,
+      &quot;uri&quot; : &quot;spotify:artist:1l7ZsJRRS8wlW3WfJfPfNS&quot;
+    } ],
+    &quot;disc_number&quot; : 1,
+    &quot;duration_ms&quot; : 229506,
+    &quot;explicit&quot; : false,
+    &quot;external_ids&quot; : {
+      &quot;isrc&quot; : &quot;USRC11201328&quot;
+    },
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/track/0Hf4aIJpsN4Os2f0y0VqWl&quot;
+    },
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/0Hf4aIJpsN4Os2f0y0VqWl&quot;,
+    &quot;id&quot; : &quot;0Hf4aIJpsN4Os2f0y0VqWl&quot;,
+    &quot;is_local&quot; : false,
+    &quot;is_playable&quot; : true,
+    &quot;name&quot; : &quot;Feel This Moment (feat. Christina Aguilera)&quot;,
+    &quot;popularity&quot; : 78,
+    &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/deb34682637ed436b1d85841d7ac385541a1225c?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+    &quot;track_number&quot; : 3,
+    &quot;type&quot; : &quot;track&quot;,
+    &quot;uri&quot; : &quot;spotify:track:0Hf4aIJpsN4Os2f0y0VqWl&quot;
+  }, {
+    &quot;album&quot; : {
+      &quot;album_group&quot; : &quot;album&quot;,
+      &quot;album_type&quot; : &quot;album&quot;,
+      &quot;artists&quot; : [ {
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+        &quot;id&quot; : &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+        &quot;name&quot; : &quot;Pitbull&quot;,
+        &quot;type&quot; : &quot;artist&quot;,
+        &quot;uri&quot; : &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+      } ],
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/album/4RaAjieYFIZRF8uh6GY43r&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/albums/4RaAjieYFIZRF8uh6GY43r&quot;,
+      &quot;id&quot; : &quot;4RaAjieYFIZRF8uh6GY43r&quot;,
+      &quot;images&quot; : [ {
+        &quot;height&quot; : 640,
+        &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d0000b273a511f69870fa68e7ba78c099&quot;,
+        &quot;width&quot; : 640
+      }, {
+        &quot;height&quot; : 300,
+        &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d00001e02a511f69870fa68e7ba78c099&quot;,
+        &quot;width&quot; : 300
+      }, {
+        &quot;height&quot; : 64,
+        &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d00004851a511f69870fa68e7ba78c099&quot;,
+        &quot;width&quot; : 64
+      } ],
+      &quot;is_playable&quot; : true,
+      &quot;name&quot; : &quot;Pitbull Starring In Rebelution&quot;,
+      &quot;release_date&quot; : &quot;2009-08-27&quot;,
+      &quot;release_date_precision&quot; : &quot;day&quot;,
+      &quot;total_tracks&quot; : 14,
+      &quot;type&quot; : &quot;album&quot;,
+      &quot;uri&quot; : &quot;spotify:album:4RaAjieYFIZRF8uh6GY43r&quot;
+    },
+    &quot;artists&quot; : [ {
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+      &quot;id&quot; : &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+      &quot;name&quot; : &quot;Pitbull&quot;,
+      &quot;type&quot; : &quot;artist&quot;,
+      &quot;uri&quot; : &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+    } ],
+    &quot;disc_number&quot; : 1,
+    &quot;duration_ms&quot; : 237600,
+    &quot;explicit&quot; : false,
+    &quot;external_ids&quot; : {
+      &quot;isrc&quot; : &quot;USJAY0900063&quot;
+    },
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/track/0OPyDgTRuIdCJ9B4bYSths&quot;
+    },
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/0OPyDgTRuIdCJ9B4bYSths&quot;,
+    &quot;id&quot; : &quot;0OPyDgTRuIdCJ9B4bYSths&quot;,
+    &quot;is_local&quot; : false,
+    &quot;is_playable&quot; : true,
+    &quot;name&quot; : &quot;Hotel Room Service&quot;,
+    &quot;popularity&quot; : 71,
+    &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/614935c52f5f7c7054c603ce35928b7c87201dd9?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+    &quot;track_number&quot; : 8,
+    &quot;type&quot; : &quot;track&quot;,
+    &quot;uri&quot; : &quot;spotify:track:0OPyDgTRuIdCJ9B4bYSths&quot;
+  }, {
+    &quot;album&quot; : {
+      &quot;album_group&quot; : &quot;album&quot;,
+      &quot;album_type&quot; : &quot;album&quot;,
+      &quot;artists&quot; : [ {
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+        &quot;id&quot; : &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+        &quot;name&quot; : &quot;Pitbull&quot;,
+        &quot;type&quot; : &quot;artist&quot;,
+        &quot;uri&quot; : &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+      } ],
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/album/4rG0MhkU6UojACJxkMHIXB&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/albums/4rG0MhkU6UojACJxkMHIXB&quot;,
+      &quot;id&quot; : &quot;4rG0MhkU6UojACJxkMHIXB&quot;,
+      &quot;images&quot; : [ {
+        &quot;height&quot; : 640,
+        &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d0000b2731dc7483a9fcfce54822a2f19&quot;,
+        &quot;width&quot; : 640
+      }, {
+        &quot;height&quot; : 300,
+        &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d00001e021dc7483a9fcfce54822a2f19&quot;,
+        &quot;width&quot; : 300
+      }, {
+        &quot;height&quot; : 64,
+        &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d000048511dc7483a9fcfce54822a2f19&quot;,
+        &quot;width&quot; : 64
+      } ],
+      &quot;is_playable&quot; : true,
+      &quot;name&quot; : &quot;Planet Pit (Deluxe Version)&quot;,
+      &quot;release_date&quot; : &quot;2011-06-17&quot;,
+      &quot;release_date_precision&quot; : &quot;day&quot;,
+      &quot;total_tracks&quot; : 16,
+      &quot;type&quot; : &quot;album&quot;,
+      &quot;uri&quot; : &quot;spotify:album:4rG0MhkU6UojACJxkMHIXB&quot;
+    },
+    &quot;artists&quot; : [ {
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+      &quot;id&quot; : &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+      &quot;name&quot; : &quot;Pitbull&quot;,
+      &quot;type&quot; : &quot;artist&quot;,
+      &quot;uri&quot; : &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+    }, {
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/artist/7bXgB6jMjp9ATFy66eO08Z&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/7bXgB6jMjp9ATFy66eO08Z&quot;,
+      &quot;id&quot; : &quot;7bXgB6jMjp9ATFy66eO08Z&quot;,
+      &quot;name&quot; : &quot;Chris Brown&quot;,
+      &quot;type&quot; : &quot;artist&quot;,
+      &quot;uri&quot; : &quot;spotify:artist:7bXgB6jMjp9ATFy66eO08Z&quot;
+    } ],
+    &quot;disc_number&quot; : 1,
+    &quot;duration_ms&quot; : 227280,
+    &quot;explicit&quot; : false,
+    &quot;external_ids&quot; : {
+      &quot;isrc&quot; : &quot;USJAY1100015&quot;
+    },
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/track/62zFEHfAYl5kdHYOivj4BC&quot;
+    },
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/62zFEHfAYl5kdHYOivj4BC&quot;,
+    &quot;id&quot; : &quot;62zFEHfAYl5kdHYOivj4BC&quot;,
+    &quot;is_local&quot; : false,
+    &quot;is_playable&quot; : true,
+    &quot;name&quot; : &quot;International Love (feat. Chris Brown)&quot;,
+    &quot;popularity&quot; : 76,
+    &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/796c030b6336cedd4a816f931c818a5507bf4607?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+    &quot;track_number&quot; : 8,
+    &quot;type&quot; : &quot;track&quot;,
+    &quot;uri&quot; : &quot;spotify:track:62zFEHfAYl5kdHYOivj4BC&quot;
+  }, {
+    &quot;album&quot; : {
+      &quot;album_group&quot; : &quot;album&quot;,
+      &quot;album_type&quot; : &quot;album&quot;,
+      &quot;artists&quot; : [ {
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+        &quot;id&quot; : &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+        &quot;name&quot; : &quot;Pitbull&quot;,
+        &quot;type&quot; : &quot;artist&quot;,
+        &quot;uri&quot; : &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+      } ],
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/album/4EUf4YyNjuXypWY6W5wEDm&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/albums/4EUf4YyNjuXypWY6W5wEDm&quot;,
+      &quot;id&quot; : &quot;4EUf4YyNjuXypWY6W5wEDm&quot;,
+      &quot;images&quot; : [ {
+        &quot;height&quot; : 640,
+        &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d0000b2731e340d1480e7bb29a45e3bd7&quot;,
+        &quot;width&quot; : 640
+      }, {
+        &quot;height&quot; : 300,
+        &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d00001e021e340d1480e7bb29a45e3bd7&quot;,
+        &quot;width&quot; : 300
+      }, {
+        &quot;height&quot; : 64,
+        &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d000048511e340d1480e7bb29a45e3bd7&quot;,
+        &quot;width&quot; : 64
+      } ],
+      &quot;is_playable&quot; : true,
+      &quot;name&quot; : &quot;Globalization&quot;,
+      &quot;release_date&quot; : &quot;2014-11-21&quot;,
+      &quot;release_date_precision&quot; : &quot;day&quot;,
+      &quot;total_tracks&quot; : 11,
+      &quot;type&quot; : &quot;album&quot;,
+      &quot;uri&quot; : &quot;spotify:album:4EUf4YyNjuXypWY6W5wEDm&quot;
+    },
+    &quot;artists&quot; : [ {
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+      &quot;id&quot; : &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+      &quot;name&quot; : &quot;Pitbull&quot;,
+      &quot;type&quot; : &quot;artist&quot;,
+      &quot;uri&quot; : &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+    }, {
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/artist/3s73tswJycj6HTBNNN393z&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/3s73tswJycj6HTBNNN393z&quot;,
+      &quot;id&quot; : &quot;3s73tswJycj6HTBNNN393z&quot;,
+      &quot;name&quot; : &quot;John Ryan&quot;,
+      &quot;type&quot; : &quot;artist&quot;,
+      &quot;uri&quot; : &quot;spotify:artist:3s73tswJycj6HTBNNN393z&quot;
+    } ],
+    &quot;disc_number&quot; : 1,
+    &quot;duration_ms&quot; : 236200,
+    &quot;explicit&quot; : false,
+    &quot;external_ids&quot; : {
+      &quot;isrc&quot; : &quot;USRC11401783&quot;
+    },
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/track/4Y7XAxTANhu3lmnLAzhWJW&quot;
+    },
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/4Y7XAxTANhu3lmnLAzhWJW&quot;,
+    &quot;id&quot; : &quot;4Y7XAxTANhu3lmnLAzhWJW&quot;,
+    &quot;is_local&quot; : false,
+    &quot;is_playable&quot; : true,
+    &quot;name&quot; : &quot;Fireball (feat. John Ryan)&quot;,
+    &quot;popularity&quot; : 74,
+    &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/35405481ffdcf06063ceb15cc7943e772e2f2e86?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+    &quot;track_number&quot; : 3,
+    &quot;type&quot; : &quot;track&quot;,
+    &quot;uri&quot; : &quot;spotify:track:4Y7XAxTANhu3lmnLAzhWJW&quot;
+  }, {
+    &quot;album&quot; : {
+      &quot;album_group&quot; : &quot;album&quot;,
+      &quot;album_type&quot; : &quot;album&quot;,
+      &quot;artists&quot; : [ {
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+        &quot;id&quot; : &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+        &quot;name&quot; : &quot;Pitbull&quot;,
+        &quot;type&quot; : &quot;artist&quot;,
+        &quot;uri&quot; : &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+      } ],
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/album/4RaAjieYFIZRF8uh6GY43r&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/albums/4RaAjieYFIZRF8uh6GY43r&quot;,
+      &quot;id&quot; : &quot;4RaAjieYFIZRF8uh6GY43r&quot;,
+      &quot;images&quot; : [ {
+        &quot;height&quot; : 640,
+        &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d0000b273a511f69870fa68e7ba78c099&quot;,
+        &quot;width&quot; : 640
+      }, {
+        &quot;height&quot; : 300,
+        &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d00001e02a511f69870fa68e7ba78c099&quot;,
+        &quot;width&quot; : 300
+      }, {
+        &quot;height&quot; : 64,
+        &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d00004851a511f69870fa68e7ba78c099&quot;,
+        &quot;width&quot; : 64
+      } ],
+      &quot;is_playable&quot; : true,
+      &quot;name&quot; : &quot;Pitbull Starring In Rebelution&quot;,
+      &quot;release_date&quot; : &quot;2009-08-27&quot;,
+      &quot;release_date_precision&quot; : &quot;day&quot;,
+      &quot;total_tracks&quot; : 14,
+      &quot;type&quot; : &quot;album&quot;,
+      &quot;uri&quot; : &quot;spotify:album:4RaAjieYFIZRF8uh6GY43r&quot;
+    },
+    &quot;artists&quot; : [ {
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+      &quot;id&quot; : &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+      &quot;name&quot; : &quot;Pitbull&quot;,
+      &quot;type&quot; : &quot;artist&quot;,
+      &quot;uri&quot; : &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+    } ],
+    &quot;disc_number&quot; : 1,
+    &quot;duration_ms&quot; : 237120,
+    &quot;explicit&quot; : false,
+    &quot;external_ids&quot; : {
+      &quot;isrc&quot; : &quot;USJAY0900144&quot;
+    },
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/track/13plQdOoWSSXPRUSZc5FuM&quot;
+    },
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/13plQdOoWSSXPRUSZc5FuM&quot;,
+    &quot;id&quot; : &quot;13plQdOoWSSXPRUSZc5FuM&quot;,
+    &quot;is_local&quot; : false,
+    &quot;is_playable&quot; : true,
+    &quot;name&quot; : &quot;I Know You Want Me (Calle Ocho)&quot;,
+    &quot;popularity&quot; : 69,
+    &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/e27a3944f79d215f1e65ff091a53735f8907a504?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+    &quot;track_number&quot; : 3,
+    &quot;type&quot; : &quot;track&quot;,
+    &quot;uri&quot; : &quot;spotify:track:13plQdOoWSSXPRUSZc5FuM&quot;
+  }, {
+    &quot;album&quot; : {
+      &quot;album_group&quot; : &quot;album&quot;,
+      &quot;album_type&quot; : &quot;album&quot;,
+      &quot;artists&quot; : [ {
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+        &quot;id&quot; : &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+        &quot;name&quot; : &quot;Pitbull&quot;,
+        &quot;type&quot; : &quot;artist&quot;,
+        &quot;uri&quot; : &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+      } ],
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/album/4rG0MhkU6UojACJxkMHIXB&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/albums/4rG0MhkU6UojACJxkMHIXB&quot;,
+      &quot;id&quot; : &quot;4rG0MhkU6UojACJxkMHIXB&quot;,
+      &quot;images&quot; : [ {
+        &quot;height&quot; : 640,
+        &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d0000b2731dc7483a9fcfce54822a2f19&quot;,
+        &quot;width&quot; : 640
+      }, {
+        &quot;height&quot; : 300,
+        &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d00001e021dc7483a9fcfce54822a2f19&quot;,
+        &quot;width&quot; : 300
+      }, {
+        &quot;height&quot; : 64,
+        &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d000048511dc7483a9fcfce54822a2f19&quot;,
+        &quot;width&quot; : 64
+      } ],
+      &quot;is_playable&quot; : true,
+      &quot;name&quot; : &quot;Planet Pit (Deluxe Version)&quot;,
+      &quot;release_date&quot; : &quot;2011-06-17&quot;,
+      &quot;release_date_precision&quot; : &quot;day&quot;,
+      &quot;total_tracks&quot; : 16,
+      &quot;type&quot; : &quot;album&quot;,
+      &quot;uri&quot; : &quot;spotify:album:4rG0MhkU6UojACJxkMHIXB&quot;
+    },
+    &quot;artists&quot; : [ {
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+      &quot;id&quot; : &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+      &quot;name&quot; : &quot;Pitbull&quot;,
+      &quot;type&quot; : &quot;artist&quot;,
+      &quot;uri&quot; : &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+    }, {
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/artist/3aQeKQSyrW4qWr35idm0cy&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/3aQeKQSyrW4qWr35idm0cy&quot;,
+      &quot;id&quot; : &quot;3aQeKQSyrW4qWr35idm0cy&quot;,
+      &quot;name&quot; : &quot;T-Pain&quot;,
+      &quot;type&quot; : &quot;artist&quot;,
+      &quot;uri&quot; : &quot;spotify:artist:3aQeKQSyrW4qWr35idm0cy&quot;
+    } ],
+    &quot;disc_number&quot; : 1,
+    &quot;duration_ms&quot; : 234453,
+    &quot;explicit&quot; : false,
+    &quot;external_ids&quot; : {
+      &quot;isrc&quot; : &quot;USJAY1000153&quot;
+    },
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/track/3rfhI32Il2hVRKDkuGeeen&quot;
+    },
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/3rfhI32Il2hVRKDkuGeeen&quot;,
+    &quot;id&quot; : &quot;3rfhI32Il2hVRKDkuGeeen&quot;,
+    &quot;is_local&quot; : false,
+    &quot;is_playable&quot; : true,
+    &quot;name&quot; : &quot;Hey Baby (Drop It to the Floor) (feat. T-Pain)&quot;,
+    &quot;popularity&quot; : 72,
+    &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/01321c3e80ab86e0e642e8cf8a4fcbc7a0603e36?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+    &quot;track_number&quot; : 4,
+    &quot;type&quot; : &quot;track&quot;,
+    &quot;uri&quot; : &quot;spotify:track:3rfhI32Il2hVRKDkuGeeen&quot;
+  }, {
+    &quot;album&quot; : {
+      &quot;album_group&quot; : &quot;album&quot;,
+      &quot;album_type&quot; : &quot;album&quot;,
+      &quot;artists&quot; : [ {
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+        &quot;id&quot; : &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+        &quot;name&quot; : &quot;Pitbull&quot;,
+        &quot;type&quot; : &quot;artist&quot;,
+        &quot;uri&quot; : &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+      } ],
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/album/4EUf4YyNjuXypWY6W5wEDm&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/albums/4EUf4YyNjuXypWY6W5wEDm&quot;,
+      &quot;id&quot; : &quot;4EUf4YyNjuXypWY6W5wEDm&quot;,
+      &quot;images&quot; : [ {
+        &quot;height&quot; : 640,
+        &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d0000b2731e340d1480e7bb29a45e3bd7&quot;,
+        &quot;width&quot; : 640
+      }, {
+        &quot;height&quot; : 300,
+        &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d00001e021e340d1480e7bb29a45e3bd7&quot;,
+        &quot;width&quot; : 300
+      }, {
+        &quot;height&quot; : 64,
+        &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d000048511e340d1480e7bb29a45e3bd7&quot;,
+        &quot;width&quot; : 64
+      } ],
+      &quot;is_playable&quot; : true,
+      &quot;name&quot; : &quot;Globalization&quot;,
+      &quot;release_date&quot; : &quot;2014-11-21&quot;,
+      &quot;release_date_precision&quot; : &quot;day&quot;,
+      &quot;total_tracks&quot; : 11,
+      &quot;type&quot; : &quot;album&quot;,
+      &quot;uri&quot; : &quot;spotify:album:4EUf4YyNjuXypWY6W5wEDm&quot;
+    },
+    &quot;artists&quot; : [ {
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+      &quot;id&quot; : &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+      &quot;name&quot; : &quot;Pitbull&quot;,
+      &quot;type&quot; : &quot;artist&quot;,
+      &quot;uri&quot; : &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+    }, {
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/artist/2DlGxzQSjYe5N6G9nkYghR&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/2DlGxzQSjYe5N6G9nkYghR&quot;,
+      &quot;id&quot; : &quot;2DlGxzQSjYe5N6G9nkYghR&quot;,
+      &quot;name&quot; : &quot;Jennifer Lopez&quot;,
+      &quot;type&quot; : &quot;artist&quot;,
+      &quot;uri&quot; : &quot;spotify:artist:2DlGxzQSjYe5N6G9nkYghR&quot;
+    }, {
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/artist/2OjoIDVPQKT9B7loZbPEfp&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/2OjoIDVPQKT9B7loZbPEfp&quot;,
+      &quot;id&quot; : &quot;2OjoIDVPQKT9B7loZbPEfp&quot;,
+      &quot;name&quot; : &quot;Claudia Leitte&quot;,
+      &quot;type&quot; : &quot;artist&quot;,
+      &quot;uri&quot; : &quot;spotify:artist:2OjoIDVPQKT9B7loZbPEfp&quot;
+    } ],
+    &quot;disc_number&quot; : 1,
+    &quot;duration_ms&quot; : 222520,
+    &quot;explicit&quot; : false,
+    &quot;external_ids&quot; : {
+      &quot;isrc&quot; : &quot;USRC11400285&quot;
+    },
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/track/1PCvKFPWnTXAe2oaReVUcr&quot;
+    },
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/1PCvKFPWnTXAe2oaReVUcr&quot;,
+    &quot;id&quot; : &quot;1PCvKFPWnTXAe2oaReVUcr&quot;,
+    &quot;is_local&quot; : false,
+    &quot;is_playable&quot; : true,
+    &quot;name&quot; : &quot;We Are One (Ole Ola) [The Official 2014 FIFA World Cup Song] (feat. Jennifer Lopez &amp; Claudia Leitte)&quot;,
+    &quot;popularity&quot; : 72,
+    &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/1eab08cf70c31ca1ba3d8d63f67cca536086118a?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+    &quot;track_number&quot; : 11,
+    &quot;type&quot; : &quot;track&quot;,
+    &quot;uri&quot; : &quot;spotify:track:1PCvKFPWnTXAe2oaReVUcr&quot;
+  } ]
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">21</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.22">02:30:54.322 [print] {
+  &quot;tracks&quot;: [
+    {
+      &quot;album&quot;: {
+        &quot;album_group&quot;: &quot;album&quot;,
+        &quot;album_type&quot;: &quot;album&quot;,
+        &quot;artists&quot;: [
+          {
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+            &quot;id&quot;: &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+            &quot;name&quot;: &quot;Pitbull&quot;,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;uri&quot;: &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+          }
+        ],
+        &quot;external_urls&quot;: {
+          &quot;spotify&quot;: &quot;https://open.spotify.com/album/2F7tejLHzTqFq2XLol9ZGy&quot;
+        },
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/albums/2F7tejLHzTqFq2XLol9ZGy&quot;,
+        &quot;id&quot;: &quot;2F7tejLHzTqFq2XLol9ZGy&quot;,
+        &quot;images&quot;: [
+          {
+            &quot;height&quot;: 640,
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d0000b273f2486b438645e97b523e4f90&quot;,
+            &quot;width&quot;: 640
+          },
+          {
+            &quot;height&quot;: 300,
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d00001e02f2486b438645e97b523e4f90&quot;,
+            &quot;width&quot;: 300
+          },
+          {
+            &quot;height&quot;: 64,
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d00004851f2486b438645e97b523e4f90&quot;,
+            &quot;width&quot;: 64
+          }
+        ],
+        &quot;is_playable&quot;: true,
+        &quot;name&quot;: &quot;Global Warming: Meltdown (Deluxe Version)&quot;,
+        &quot;release_date&quot;: &quot;2012&quot;,
+        &quot;release_date_precision&quot;: &quot;year&quot;,
+        &quot;total_tracks&quot;: 17,
+        &quot;type&quot;: &quot;album&quot;,
+        &quot;uri&quot;: &quot;spotify:album:2F7tejLHzTqFq2XLol9ZGy&quot;
+      },
+      &quot;artists&quot;: [
+        {
+          &quot;external_urls&quot;: {
+            &quot;spotify&quot;: &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+          },
+          &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+          &quot;id&quot;: &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+          &quot;name&quot;: &quot;Pitbull&quot;,
+          &quot;type&quot;: &quot;artist&quot;,
+          &quot;uri&quot;: &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+        },
+        {
+          &quot;external_urls&quot;: {
+            &quot;spotify&quot;: &quot;https://open.spotify.com/artist/6LqNN22kT3074XbTVUrhzX&quot;
+          },
+          &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/6LqNN22kT3074XbTVUrhzX&quot;,
+          &quot;id&quot;: &quot;6LqNN22kT3074XbTVUrhzX&quot;,
+          &quot;name&quot;: &quot;Kesha&quot;,
+          &quot;type&quot;: &quot;artist&quot;,
+          &quot;uri&quot;: &quot;spotify:artist:6LqNN22kT3074XbTVUrhzX&quot;
+        }
+      ],
+      &quot;disc_number&quot;: 1,
+      &quot;duration_ms&quot;: 204160,
+      &quot;explicit&quot;: false,
+      &quot;external_ids&quot;: {
+        &quot;isrc&quot;: &quot;USRC11301695&quot;
+      },
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/track/3cHyrEgdyYRjgJKSOiOtcS&quot;
+      },
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/3cHyrEgdyYRjgJKSOiOtcS&quot;,
+      &quot;id&quot;: &quot;3cHyrEgdyYRjgJKSOiOtcS&quot;,
+      &quot;is_local&quot;: false,
+      &quot;is_playable&quot;: true,
+      &quot;name&quot;: &quot;Timber (feat. Ke$ha)&quot;,
+      &quot;popularity&quot;: 82,
+      &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/54825c719d56bd5b737ac7c1aa3ce41ad3eef338?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+      &quot;track_number&quot;: 13,
+      &quot;type&quot;: &quot;track&quot;,
+      &quot;uri&quot;: &quot;spotify:track:3cHyrEgdyYRjgJKSOiOtcS&quot;
+    },
+    {
+      &quot;album&quot;: {
+        &quot;album_group&quot;: &quot;album&quot;,
+        &quot;album_type&quot;: &quot;album&quot;,
+        &quot;artists&quot;: [
+          {
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+            &quot;id&quot;: &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+            &quot;name&quot;: &quot;Pitbull&quot;,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;uri&quot;: &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+          }
+        ],
+        &quot;external_urls&quot;: {
+          &quot;spotify&quot;: &quot;https://open.spotify.com/album/4rG0MhkU6UojACJxkMHIXB&quot;
+        },
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/albums/4rG0MhkU6UojACJxkMHIXB&quot;,
+        &quot;id&quot;: &quot;4rG0MhkU6UojACJxkMHIXB&quot;,
+        &quot;images&quot;: [
+          {
+            &quot;height&quot;: 640,
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d0000b2731dc7483a9fcfce54822a2f19&quot;,
+            &quot;width&quot;: 640
+          },
+          {
+            &quot;height&quot;: 300,
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d00001e021dc7483a9fcfce54822a2f19&quot;,
+            &quot;width&quot;: 300
+          },
+          {
+            &quot;height&quot;: 64,
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d000048511dc7483a9fcfce54822a2f19&quot;,
+            &quot;width&quot;: 64
+          }
+        ],
+        &quot;is_playable&quot;: true,
+        &quot;name&quot;: &quot;Planet Pit (Deluxe Version)&quot;,
+        &quot;release_date&quot;: &quot;2011-06-17&quot;,
+        &quot;release_date_precision&quot;: &quot;day&quot;,
+        &quot;total_tracks&quot;: 16,
+        &quot;type&quot;: &quot;album&quot;,
+        &quot;uri&quot;: &quot;spotify:album:4rG0MhkU6UojACJxkMHIXB&quot;
+      },
+      &quot;artists&quot;: [
+        {
+          &quot;external_urls&quot;: {
+            &quot;spotify&quot;: &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+          },
+          &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+          &quot;id&quot;: &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+          &quot;name&quot;: &quot;Pitbull&quot;,
+          &quot;type&quot;: &quot;artist&quot;,
+          &quot;uri&quot;: &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+        },
+        {
+          &quot;external_urls&quot;: {
+            &quot;spotify&quot;: &quot;https://open.spotify.com/artist/21E3waRsmPlU7jZsS13rcj&quot;
+          },
+          &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/21E3waRsmPlU7jZsS13rcj&quot;,
+          &quot;id&quot;: &quot;21E3waRsmPlU7jZsS13rcj&quot;,
+          &quot;name&quot;: &quot;Ne-Yo&quot;,
+          &quot;type&quot;: &quot;artist&quot;,
+          &quot;uri&quot;: &quot;spotify:artist:21E3waRsmPlU7jZsS13rcj&quot;
+        },
+        {
+          &quot;external_urls&quot;: {
+            &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4D75GcNG95ebPtNvoNVXhz&quot;
+          },
+          &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4D75GcNG95ebPtNvoNVXhz&quot;,
+          &quot;id&quot;: &quot;4D75GcNG95ebPtNvoNVXhz&quot;,
+          &quot;name&quot;: &quot;AFROJACK&quot;,
+          &quot;type&quot;: &quot;artist&quot;,
+          &quot;uri&quot;: &quot;spotify:artist:4D75GcNG95ebPtNvoNVXhz&quot;
+        },
+        {
+          &quot;external_urls&quot;: {
+            &quot;spotify&quot;: &quot;https://open.spotify.com/artist/1ruutHJcECI7cos2n5TqpO&quot;
+          },
+          &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/1ruutHJcECI7cos2n5TqpO&quot;,
+          &quot;id&quot;: &quot;1ruutHJcECI7cos2n5TqpO&quot;,
+          &quot;name&quot;: &quot;Nayer&quot;,
+          &quot;type&quot;: &quot;artist&quot;,
+          &quot;uri&quot;: &quot;spotify:artist:1ruutHJcECI7cos2n5TqpO&quot;
+        }
+      ],
+      &quot;disc_number&quot;: 1,
+      &quot;duration_ms&quot;: 252306,
+      &quot;explicit&quot;: false,
+      &quot;external_ids&quot;: {
+        &quot;isrc&quot;: &quot;USJAY1100032&quot;
+      },
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/track/4QNpBfC0zvjKqPJcyqBy9W&quot;
+      },
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/4QNpBfC0zvjKqPJcyqBy9W&quot;,
+      &quot;id&quot;: &quot;4QNpBfC0zvjKqPJcyqBy9W&quot;,
+      &quot;is_local&quot;: false,
+      &quot;is_playable&quot;: true,
+      &quot;name&quot;: &quot;Give Me Everything (feat. Ne-Yo, Afrojack &amp; Nayer)&quot;,
+      &quot;popularity&quot;: 82,
+      &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/6eafa4293d2b35b2e75ffab5ec1bba8ec00d5082?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+      &quot;track_number&quot;: 2,
+      &quot;type&quot;: &quot;track&quot;,
+      &quot;uri&quot;: &quot;spotify:track:4QNpBfC0zvjKqPJcyqBy9W&quot;
+    },
+    {
+      &quot;album&quot;: {
+        &quot;album_group&quot;: &quot;album&quot;,
+        &quot;album_type&quot;: &quot;album&quot;,
+        &quot;artists&quot;: [
+          {
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+            &quot;id&quot;: &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+            &quot;name&quot;: &quot;Pitbull&quot;,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;uri&quot;: &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+          }
+        ],
+        &quot;external_urls&quot;: {
+          &quot;spotify&quot;: &quot;https://open.spotify.com/album/4EUf4YyNjuXypWY6W5wEDm&quot;
+        },
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/albums/4EUf4YyNjuXypWY6W5wEDm&quot;,
+        &quot;id&quot;: &quot;4EUf4YyNjuXypWY6W5wEDm&quot;,
+        &quot;images&quot;: [
+          {
+            &quot;height&quot;: 640,
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d0000b2731e340d1480e7bb29a45e3bd7&quot;,
+            &quot;width&quot;: 640
+          },
+          {
+            &quot;height&quot;: 300,
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d00001e021e340d1480e7bb29a45e3bd7&quot;,
+            &quot;width&quot;: 300
+          },
+          {
+            &quot;height&quot;: 64,
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d000048511e340d1480e7bb29a45e3bd7&quot;,
+            &quot;width&quot;: 64
+          }
+        ],
+        &quot;is_playable&quot;: true,
+        &quot;name&quot;: &quot;Globalization&quot;,
+        &quot;release_date&quot;: &quot;2014-11-21&quot;,
+        &quot;release_date_precision&quot;: &quot;day&quot;,
+        &quot;total_tracks&quot;: 11,
+        &quot;type&quot;: &quot;album&quot;,
+        &quot;uri&quot;: &quot;spotify:album:4EUf4YyNjuXypWY6W5wEDm&quot;
+      },
+      &quot;artists&quot;: [
+        {
+          &quot;external_urls&quot;: {
+            &quot;spotify&quot;: &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+          },
+          &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+          &quot;id&quot;: &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+          &quot;name&quot;: &quot;Pitbull&quot;,
+          &quot;type&quot;: &quot;artist&quot;,
+          &quot;uri&quot;: &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+        },
+        {
+          &quot;external_urls&quot;: {
+            &quot;spotify&quot;: &quot;https://open.spotify.com/artist/21E3waRsmPlU7jZsS13rcj&quot;
+          },
+          &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/21E3waRsmPlU7jZsS13rcj&quot;,
+          &quot;id&quot;: &quot;21E3waRsmPlU7jZsS13rcj&quot;,
+          &quot;name&quot;: &quot;Ne-Yo&quot;,
+          &quot;type&quot;: &quot;artist&quot;,
+          &quot;uri&quot;: &quot;spotify:artist:21E3waRsmPlU7jZsS13rcj&quot;
+        }
+      ],
+      &quot;disc_number&quot;: 1,
+      &quot;duration_ms&quot;: 229360,
+      &quot;explicit&quot;: true,
+      &quot;external_ids&quot;: {
+        &quot;isrc&quot;: &quot;USRC11402647&quot;
+      },
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/track/2bJvI42r8EF3wxjOuDav4r&quot;
+      },
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/2bJvI42r8EF3wxjOuDav4r&quot;,
+      &quot;id&quot;: &quot;2bJvI42r8EF3wxjOuDav4r&quot;,
+      &quot;is_local&quot;: false,
+      &quot;is_playable&quot;: true,
+      &quot;name&quot;: &quot;Time of Our Lives&quot;,
+      &quot;popularity&quot;: 81,
+      &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/d508371276a297486ace8d4ff596c54ae9e65260?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+      &quot;track_number&quot;: 4,
+      &quot;type&quot;: &quot;track&quot;,
+      &quot;uri&quot;: &quot;spotify:track:2bJvI42r8EF3wxjOuDav4r&quot;
+    },
+    {
+      &quot;album&quot;: {
+        &quot;album_group&quot;: &quot;album&quot;,
+        &quot;album_type&quot;: &quot;album&quot;,
+        &quot;artists&quot;: [
+          {
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+            &quot;id&quot;: &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+            &quot;name&quot;: &quot;Pitbull&quot;,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;uri&quot;: &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+          }
+        ],
+        &quot;external_urls&quot;: {
+          &quot;spotify&quot;: &quot;https://open.spotify.com/album/2F7tejLHzTqFq2XLol9ZGy&quot;
+        },
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/albums/2F7tejLHzTqFq2XLol9ZGy&quot;,
+        &quot;id&quot;: &quot;2F7tejLHzTqFq2XLol9ZGy&quot;,
+        &quot;images&quot;: [
+          {
+            &quot;height&quot;: 640,
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d0000b273f2486b438645e97b523e4f90&quot;,
+            &quot;width&quot;: 640
+          },
+          {
+            &quot;height&quot;: 300,
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d00001e02f2486b438645e97b523e4f90&quot;,
+            &quot;width&quot;: 300
+          },
+          {
+            &quot;height&quot;: 64,
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d00004851f2486b438645e97b523e4f90&quot;,
+            &quot;width&quot;: 64
+          }
+        ],
+        &quot;is_playable&quot;: true,
+        &quot;name&quot;: &quot;Global Warming: Meltdown (Deluxe Version)&quot;,
+        &quot;release_date&quot;: &quot;2012&quot;,
+        &quot;release_date_precision&quot;: &quot;year&quot;,
+        &quot;total_tracks&quot;: 17,
+        &quot;type&quot;: &quot;album&quot;,
+        &quot;uri&quot;: &quot;spotify:album:2F7tejLHzTqFq2XLol9ZGy&quot;
+      },
+      &quot;artists&quot;: [
+        {
+          &quot;external_urls&quot;: {
+            &quot;spotify&quot;: &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+          },
+          &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+          &quot;id&quot;: &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+          &quot;name&quot;: &quot;Pitbull&quot;,
+          &quot;type&quot;: &quot;artist&quot;,
+          &quot;uri&quot;: &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+        },
+        {
+          &quot;external_urls&quot;: {
+            &quot;spotify&quot;: &quot;https://open.spotify.com/artist/1l7ZsJRRS8wlW3WfJfPfNS&quot;
+          },
+          &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/1l7ZsJRRS8wlW3WfJfPfNS&quot;,
+          &quot;id&quot;: &quot;1l7ZsJRRS8wlW3WfJfPfNS&quot;,
+          &quot;name&quot;: &quot;Christina Aguilera&quot;,
+          &quot;type&quot;: &quot;artist&quot;,
+          &quot;uri&quot;: &quot;spotify:artist:1l7ZsJRRS8wlW3WfJfPfNS&quot;
+        }
+      ],
+      &quot;disc_number&quot;: 1,
+      &quot;duration_ms&quot;: 229506,
+      &quot;explicit&quot;: false,
+      &quot;external_ids&quot;: {
+        &quot;isrc&quot;: &quot;USRC11201328&quot;
+      },
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/track/0Hf4aIJpsN4Os2f0y0VqWl&quot;
+      },
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/0Hf4aIJpsN4Os2f0y0VqWl&quot;,
+      &quot;id&quot;: &quot;0Hf4aIJpsN4Os2f0y0VqWl&quot;,
+      &quot;is_local&quot;: false,
+      &quot;is_playable&quot;: true,
+      &quot;name&quot;: &quot;Feel This Moment (feat. Christina Aguilera)&quot;,
+      &quot;popularity&quot;: 78,
+      &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/deb34682637ed436b1d85841d7ac385541a1225c?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+      &quot;track_number&quot;: 3,
+      &quot;type&quot;: &quot;track&quot;,
+      &quot;uri&quot;: &quot;spotify:track:0Hf4aIJpsN4Os2f0y0VqWl&quot;
+    },
+    {
+      &quot;album&quot;: {
+        &quot;album_group&quot;: &quot;album&quot;,
+        &quot;album_type&quot;: &quot;album&quot;,
+        &quot;artists&quot;: [
+          {
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+            &quot;id&quot;: &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+            &quot;name&quot;: &quot;Pitbull&quot;,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;uri&quot;: &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+          }
+        ],
+        &quot;external_urls&quot;: {
+          &quot;spotify&quot;: &quot;https://open.spotify.com/album/4RaAjieYFIZRF8uh6GY43r&quot;
+        },
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/albums/4RaAjieYFIZRF8uh6GY43r&quot;,
+        &quot;id&quot;: &quot;4RaAjieYFIZRF8uh6GY43r&quot;,
+        &quot;images&quot;: [
+          {
+            &quot;height&quot;: 640,
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d0000b273a511f69870fa68e7ba78c099&quot;,
+            &quot;width&quot;: 640
+          },
+          {
+            &quot;height&quot;: 300,
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d00001e02a511f69870fa68e7ba78c099&quot;,
+            &quot;width&quot;: 300
+          },
+          {
+            &quot;height&quot;: 64,
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d00004851a511f69870fa68e7ba78c099&quot;,
+            &quot;width&quot;: 64
+          }
+        ],
+        &quot;is_playable&quot;: true,
+        &quot;name&quot;: &quot;Pitbull Starring In Rebelution&quot;,
+        &quot;release_date&quot;: &quot;2009-08-27&quot;,
+        &quot;release_date_precision&quot;: &quot;day&quot;,
+        &quot;total_tracks&quot;: 14,
+        &quot;type&quot;: &quot;album&quot;,
+        &quot;uri&quot;: &quot;spotify:album:4RaAjieYFIZRF8uh6GY43r&quot;
+      },
+      &quot;artists&quot;: [
+        {
+          &quot;external_urls&quot;: {
+            &quot;spotify&quot;: &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+          },
+          &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+          &quot;id&quot;: &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+          &quot;name&quot;: &quot;Pitbull&quot;,
+          &quot;type&quot;: &quot;artist&quot;,
+          &quot;uri&quot;: &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+        }
+      ],
+      &quot;disc_number&quot;: 1,
+      &quot;duration_ms&quot;: 237600,
+      &quot;explicit&quot;: false,
+      &quot;external_ids&quot;: {
+        &quot;isrc&quot;: &quot;USJAY0900063&quot;
+      },
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/track/0OPyDgTRuIdCJ9B4bYSths&quot;
+      },
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/0OPyDgTRuIdCJ9B4bYSths&quot;,
+      &quot;id&quot;: &quot;0OPyDgTRuIdCJ9B4bYSths&quot;,
+      &quot;is_local&quot;: false,
+      &quot;is_playable&quot;: true,
+      &quot;name&quot;: &quot;Hotel Room Service&quot;,
+      &quot;popularity&quot;: 71,
+      &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/614935c52f5f7c7054c603ce35928b7c87201dd9?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+      &quot;track_number&quot;: 8,
+      &quot;type&quot;: &quot;track&quot;,
+      &quot;uri&quot;: &quot;spotify:track:0OPyDgTRuIdCJ9B4bYSths&quot;
+    },
+    {
+      &quot;album&quot;: {
+        &quot;album_group&quot;: &quot;album&quot;,
+        &quot;album_type&quot;: &quot;album&quot;,
+        &quot;artists&quot;: [
+          {
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+            &quot;id&quot;: &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+            &quot;name&quot;: &quot;Pitbull&quot;,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;uri&quot;: &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+          }
+        ],
+        &quot;external_urls&quot;: {
+          &quot;spotify&quot;: &quot;https://open.spotify.com/album/4rG0MhkU6UojACJxkMHIXB&quot;
+        },
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/albums/4rG0MhkU6UojACJxkMHIXB&quot;,
+        &quot;id&quot;: &quot;4rG0MhkU6UojACJxkMHIXB&quot;,
+        &quot;images&quot;: [
+          {
+            &quot;height&quot;: 640,
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d0000b2731dc7483a9fcfce54822a2f19&quot;,
+            &quot;width&quot;: 640
+          },
+          {
+            &quot;height&quot;: 300,
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d00001e021dc7483a9fcfce54822a2f19&quot;,
+            &quot;width&quot;: 300
+          },
+          {
+            &quot;height&quot;: 64,
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d000048511dc7483a9fcfce54822a2f19&quot;,
+            &quot;width&quot;: 64
+          }
+        ],
+        &quot;is_playable&quot;: true,
+        &quot;name&quot;: &quot;Planet Pit (Deluxe Version)&quot;,
+        &quot;release_date&quot;: &quot;2011-06-17&quot;,
+        &quot;release_date_precision&quot;: &quot;day&quot;,
+        &quot;total_tracks&quot;: 16,
+        &quot;type&quot;: &quot;album&quot;,
+        &quot;uri&quot;: &quot;spotify:album:4rG0MhkU6UojACJxkMHIXB&quot;
+      },
+      &quot;artists&quot;: [
+        {
+          &quot;external_urls&quot;: {
+            &quot;spotify&quot;: &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+          },
+          &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+          &quot;id&quot;: &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+          &quot;name&quot;: &quot;Pitbull&quot;,
+          &quot;type&quot;: &quot;artist&quot;,
+          &quot;uri&quot;: &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+        },
+        {
+          &quot;external_urls&quot;: {
+            &quot;spotify&quot;: &quot;https://open.spotify.com/artist/7bXgB6jMjp9ATFy66eO08Z&quot;
+          },
+          &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/7bXgB6jMjp9ATFy66eO08Z&quot;,
+          &quot;id&quot;: &quot;7bXgB6jMjp9ATFy66eO08Z&quot;,
+          &quot;name&quot;: &quot;Chris Brown&quot;,
+          &quot;type&quot;: &quot;artist&quot;,
+          &quot;uri&quot;: &quot;spotify:artist:7bXgB6jMjp9ATFy66eO08Z&quot;
+        }
+      ],
+      &quot;disc_number&quot;: 1,
+      &quot;duration_ms&quot;: 227280,
+      &quot;explicit&quot;: false,
+      &quot;external_ids&quot;: {
+        &quot;isrc&quot;: &quot;USJAY1100015&quot;
+      },
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/track/62zFEHfAYl5kdHYOivj4BC&quot;
+      },
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/62zFEHfAYl5kdHYOivj4BC&quot;,
+      &quot;id&quot;: &quot;62zFEHfAYl5kdHYOivj4BC&quot;,
+      &quot;is_local&quot;: false,
+      &quot;is_playable&quot;: true,
+      &quot;name&quot;: &quot;International Love (feat. Chris Brown)&quot;,
+      &quot;popularity&quot;: 76,
+      &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/796c030b6336cedd4a816f931c818a5507bf4607?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+      &quot;track_number&quot;: 8,
+      &quot;type&quot;: &quot;track&quot;,
+      &quot;uri&quot;: &quot;spotify:track:62zFEHfAYl5kdHYOivj4BC&quot;
+    },
+    {
+      &quot;album&quot;: {
+        &quot;album_group&quot;: &quot;album&quot;,
+        &quot;album_type&quot;: &quot;album&quot;,
+        &quot;artists&quot;: [
+          {
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+            &quot;id&quot;: &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+            &quot;name&quot;: &quot;Pitbull&quot;,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;uri&quot;: &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+          }
+        ],
+        &quot;external_urls&quot;: {
+          &quot;spotify&quot;: &quot;https://open.spotify.com/album/4EUf4YyNjuXypWY6W5wEDm&quot;
+        },
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/albums/4EUf4YyNjuXypWY6W5wEDm&quot;,
+        &quot;id&quot;: &quot;4EUf4YyNjuXypWY6W5wEDm&quot;,
+        &quot;images&quot;: [
+          {
+            &quot;height&quot;: 640,
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d0000b2731e340d1480e7bb29a45e3bd7&quot;,
+            &quot;width&quot;: 640
+          },
+          {
+            &quot;height&quot;: 300,
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d00001e021e340d1480e7bb29a45e3bd7&quot;,
+            &quot;width&quot;: 300
+          },
+          {
+            &quot;height&quot;: 64,
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d000048511e340d1480e7bb29a45e3bd7&quot;,
+            &quot;width&quot;: 64
+          }
+        ],
+        &quot;is_playable&quot;: true,
+        &quot;name&quot;: &quot;Globalization&quot;,
+        &quot;release_date&quot;: &quot;2014-11-21&quot;,
+        &quot;release_date_precision&quot;: &quot;day&quot;,
+        &quot;total_tracks&quot;: 11,
+        &quot;type&quot;: &quot;album&quot;,
+        &quot;uri&quot;: &quot;spotify:album:4EUf4YyNjuXypWY6W5wEDm&quot;
+      },
+      &quot;artists&quot;: [
+        {
+          &quot;external_urls&quot;: {
+            &quot;spotify&quot;: &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+          },
+          &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+          &quot;id&quot;: &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+          &quot;name&quot;: &quot;Pitbull&quot;,
+          &quot;type&quot;: &quot;artist&quot;,
+          &quot;uri&quot;: &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+        },
+        {
+          &quot;external_urls&quot;: {
+            &quot;spotify&quot;: &quot;https://open.spotify.com/artist/3s73tswJycj6HTBNNN393z&quot;
+          },
+          &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/3s73tswJycj6HTBNNN393z&quot;,
+          &quot;id&quot;: &quot;3s73tswJycj6HTBNNN393z&quot;,
+          &quot;name&quot;: &quot;John Ryan&quot;,
+          &quot;type&quot;: &quot;artist&quot;,
+          &quot;uri&quot;: &quot;spotify:artist:3s73tswJycj6HTBNNN393z&quot;
+        }
+      ],
+      &quot;disc_number&quot;: 1,
+      &quot;duration_ms&quot;: 236200,
+      &quot;explicit&quot;: false,
+      &quot;external_ids&quot;: {
+        &quot;isrc&quot;: &quot;USRC11401783&quot;
+      },
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/track/4Y7XAxTANhu3lmnLAzhWJW&quot;
+      },
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/4Y7XAxTANhu3lmnLAzhWJW&quot;,
+      &quot;id&quot;: &quot;4Y7XAxTANhu3lmnLAzhWJW&quot;,
+      &quot;is_local&quot;: false,
+      &quot;is_playable&quot;: true,
+      &quot;name&quot;: &quot;Fireball (feat. John Ryan)&quot;,
+      &quot;popularity&quot;: 74,
+      &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/35405481ffdcf06063ceb15cc7943e772e2f2e86?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+      &quot;track_number&quot;: 3,
+      &quot;type&quot;: &quot;track&quot;,
+      &quot;uri&quot;: &quot;spotify:track:4Y7XAxTANhu3lmnLAzhWJW&quot;
+    },
+    {
+      &quot;album&quot;: {
+        &quot;album_group&quot;: &quot;album&quot;,
+        &quot;album_type&quot;: &quot;album&quot;,
+        &quot;artists&quot;: [
+          {
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+            &quot;id&quot;: &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+            &quot;name&quot;: &quot;Pitbull&quot;,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;uri&quot;: &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+          }
+        ],
+        &quot;external_urls&quot;: {
+          &quot;spotify&quot;: &quot;https://open.spotify.com/album/4RaAjieYFIZRF8uh6GY43r&quot;
+        },
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/albums/4RaAjieYFIZRF8uh6GY43r&quot;,
+        &quot;id&quot;: &quot;4RaAjieYFIZRF8uh6GY43r&quot;,
+        &quot;images&quot;: [
+          {
+            &quot;height&quot;: 640,
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d0000b273a511f69870fa68e7ba78c099&quot;,
+            &quot;width&quot;: 640
+          },
+          {
+            &quot;height&quot;: 300,
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d00001e02a511f69870fa68e7ba78c099&quot;,
+            &quot;width&quot;: 300
+          },
+          {
+            &quot;height&quot;: 64,
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d00004851a511f69870fa68e7ba78c099&quot;,
+            &quot;width&quot;: 64
+          }
+        ],
+        &quot;is_playable&quot;: true,
+        &quot;name&quot;: &quot;Pitbull Starring In Rebelution&quot;,
+        &quot;release_date&quot;: &quot;2009-08-27&quot;,
+        &quot;release_date_precision&quot;: &quot;day&quot;,
+        &quot;total_tracks&quot;: 14,
+        &quot;type&quot;: &quot;album&quot;,
+        &quot;uri&quot;: &quot;spotify:album:4RaAjieYFIZRF8uh6GY43r&quot;
+      },
+      &quot;artists&quot;: [
+        {
+          &quot;external_urls&quot;: {
+            &quot;spotify&quot;: &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+          },
+          &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+          &quot;id&quot;: &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+          &quot;name&quot;: &quot;Pitbull&quot;,
+          &quot;type&quot;: &quot;artist&quot;,
+          &quot;uri&quot;: &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+        }
+      ],
+      &quot;disc_number&quot;: 1,
+      &quot;duration_ms&quot;: 237120,
+      &quot;explicit&quot;: false,
+      &quot;external_ids&quot;: {
+        &quot;isrc&quot;: &quot;USJAY0900144&quot;
+      },
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/track/13plQdOoWSSXPRUSZc5FuM&quot;
+      },
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/13plQdOoWSSXPRUSZc5FuM&quot;,
+      &quot;id&quot;: &quot;13plQdOoWSSXPRUSZc5FuM&quot;,
+      &quot;is_local&quot;: false,
+      &quot;is_playable&quot;: true,
+      &quot;name&quot;: &quot;I Know You Want Me (Calle Ocho)&quot;,
+      &quot;popularity&quot;: 69,
+      &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/e27a3944f79d215f1e65ff091a53735f8907a504?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+      &quot;track_number&quot;: 3,
+      &quot;type&quot;: &quot;track&quot;,
+      &quot;uri&quot;: &quot;spotify:track:13plQdOoWSSXPRUSZc5FuM&quot;
+    },
+    {
+      &quot;album&quot;: {
+        &quot;album_group&quot;: &quot;album&quot;,
+        &quot;album_type&quot;: &quot;album&quot;,
+        &quot;artists&quot;: [
+          {
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+            &quot;id&quot;: &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+            &quot;name&quot;: &quot;Pitbull&quot;,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;uri&quot;: &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+          }
+        ],
+        &quot;external_urls&quot;: {
+          &quot;spotify&quot;: &quot;https://open.spotify.com/album/4rG0MhkU6UojACJxkMHIXB&quot;
+        },
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/albums/4rG0MhkU6UojACJxkMHIXB&quot;,
+        &quot;id&quot;: &quot;4rG0MhkU6UojACJxkMHIXB&quot;,
+        &quot;images&quot;: [
+          {
+            &quot;height&quot;: 640,
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d0000b2731dc7483a9fcfce54822a2f19&quot;,
+            &quot;width&quot;: 640
+          },
+          {
+            &quot;height&quot;: 300,
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d00001e021dc7483a9fcfce54822a2f19&quot;,
+            &quot;width&quot;: 300
+          },
+          {
+            &quot;height&quot;: 64,
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d000048511dc7483a9fcfce54822a2f19&quot;,
+            &quot;width&quot;: 64
+          }
+        ],
+        &quot;is_playable&quot;: true,
+        &quot;name&quot;: &quot;Planet Pit (Deluxe Version)&quot;,
+        &quot;release_date&quot;: &quot;2011-06-17&quot;,
+        &quot;release_date_precision&quot;: &quot;day&quot;,
+        &quot;total_tracks&quot;: 16,
+        &quot;type&quot;: &quot;album&quot;,
+        &quot;uri&quot;: &quot;spotify:album:4rG0MhkU6UojACJxkMHIXB&quot;
+      },
+      &quot;artists&quot;: [
+        {
+          &quot;external_urls&quot;: {
+            &quot;spotify&quot;: &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+          },
+          &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+          &quot;id&quot;: &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+          &quot;name&quot;: &quot;Pitbull&quot;,
+          &quot;type&quot;: &quot;artist&quot;,
+          &quot;uri&quot;: &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+        },
+        {
+          &quot;external_urls&quot;: {
+            &quot;spotify&quot;: &quot;https://open.spotify.com/artist/3aQeKQSyrW4qWr35idm0cy&quot;
+          },
+          &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/3aQeKQSyrW4qWr35idm0cy&quot;,
+          &quot;id&quot;: &quot;3aQeKQSyrW4qWr35idm0cy&quot;,
+          &quot;name&quot;: &quot;T-Pain&quot;,
+          &quot;type&quot;: &quot;artist&quot;,
+          &quot;uri&quot;: &quot;spotify:artist:3aQeKQSyrW4qWr35idm0cy&quot;
+        }
+      ],
+      &quot;disc_number&quot;: 1,
+      &quot;duration_ms&quot;: 234453,
+      &quot;explicit&quot;: false,
+      &quot;external_ids&quot;: {
+        &quot;isrc&quot;: &quot;USJAY1000153&quot;
+      },
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/track/3rfhI32Il2hVRKDkuGeeen&quot;
+      },
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/3rfhI32Il2hVRKDkuGeeen&quot;,
+      &quot;id&quot;: &quot;3rfhI32Il2hVRKDkuGeeen&quot;,
+      &quot;is_local&quot;: false,
+      &quot;is_playable&quot;: true,
+      &quot;name&quot;: &quot;Hey Baby (Drop It to the Floor) (feat. T-Pain)&quot;,
+      &quot;popularity&quot;: 72,
+      &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/01321c3e80ab86e0e642e8cf8a4fcbc7a0603e36?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+      &quot;track_number&quot;: 4,
+      &quot;type&quot;: &quot;track&quot;,
+      &quot;uri&quot;: &quot;spotify:track:3rfhI32Il2hVRKDkuGeeen&quot;
+    },
+    {
+      &quot;album&quot;: {
+        &quot;album_group&quot;: &quot;album&quot;,
+        &quot;album_type&quot;: &quot;album&quot;,
+        &quot;artists&quot;: [
+          {
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+            &quot;id&quot;: &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+            &quot;name&quot;: &quot;Pitbull&quot;,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;uri&quot;: &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+          }
+        ],
+        &quot;external_urls&quot;: {
+          &quot;spotify&quot;: &quot;https://open.spotify.com/album/4EUf4YyNjuXypWY6W5wEDm&quot;
+        },
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/albums/4EUf4YyNjuXypWY6W5wEDm&quot;,
+        &quot;id&quot;: &quot;4EUf4YyNjuXypWY6W5wEDm&quot;,
+        &quot;images&quot;: [
+          {
+            &quot;height&quot;: 640,
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d0000b2731e340d1480e7bb29a45e3bd7&quot;,
+            &quot;width&quot;: 640
+          },
+          {
+            &quot;height&quot;: 300,
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d00001e021e340d1480e7bb29a45e3bd7&quot;,
+            &quot;width&quot;: 300
+          },
+          {
+            &quot;height&quot;: 64,
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d000048511e340d1480e7bb29a45e3bd7&quot;,
+            &quot;width&quot;: 64
+          }
+        ],
+        &quot;is_playable&quot;: true,
+        &quot;name&quot;: &quot;Globalization&quot;,
+        &quot;release_date&quot;: &quot;2014-11-21&quot;,
+        &quot;release_date_precision&quot;: &quot;day&quot;,
+        &quot;total_tracks&quot;: 11,
+        &quot;type&quot;: &quot;album&quot;,
+        &quot;uri&quot;: &quot;spotify:album:4EUf4YyNjuXypWY6W5wEDm&quot;
+      },
+      &quot;artists&quot;: [
+        {
+          &quot;external_urls&quot;: {
+            &quot;spotify&quot;: &quot;https://open.spotify.com/artist/0TnOYISbd1XYRBk9myaseg&quot;
+          },
+          &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg&quot;,
+          &quot;id&quot;: &quot;0TnOYISbd1XYRBk9myaseg&quot;,
+          &quot;name&quot;: &quot;Pitbull&quot;,
+          &quot;type&quot;: &quot;artist&quot;,
+          &quot;uri&quot;: &quot;spotify:artist:0TnOYISbd1XYRBk9myaseg&quot;
+        },
+        {
+          &quot;external_urls&quot;: {
+            &quot;spotify&quot;: &quot;https://open.spotify.com/artist/2DlGxzQSjYe5N6G9nkYghR&quot;
+          },
+          &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/2DlGxzQSjYe5N6G9nkYghR&quot;,
+          &quot;id&quot;: &quot;2DlGxzQSjYe5N6G9nkYghR&quot;,
+          &quot;name&quot;: &quot;Jennifer Lopez&quot;,
+          &quot;type&quot;: &quot;artist&quot;,
+          &quot;uri&quot;: &quot;spotify:artist:2DlGxzQSjYe5N6G9nkYghR&quot;
+        },
+        {
+          &quot;external_urls&quot;: {
+            &quot;spotify&quot;: &quot;https://open.spotify.com/artist/2OjoIDVPQKT9B7loZbPEfp&quot;
+          },
+          &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/2OjoIDVPQKT9B7loZbPEfp&quot;,
+          &quot;id&quot;: &quot;2OjoIDVPQKT9B7loZbPEfp&quot;,
+          &quot;name&quot;: &quot;Claudia Leitte&quot;,
+          &quot;type&quot;: &quot;artist&quot;,
+          &quot;uri&quot;: &quot;spotify:artist:2OjoIDVPQKT9B7loZbPEfp&quot;
+        }
+      ],
+      &quot;disc_number&quot;: 1,
+      &quot;duration_ms&quot;: 222520,
+      &quot;explicit&quot;: false,
+      &quot;external_ids&quot;: {
+        &quot;isrc&quot;: &quot;USRC11400285&quot;
+      },
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/track/1PCvKFPWnTXAe2oaReVUcr&quot;
+      },
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/1PCvKFPWnTXAe2oaReVUcr&quot;,
+      &quot;id&quot;: &quot;1PCvKFPWnTXAe2oaReVUcr&quot;,
+      &quot;is_local&quot;: false,
+      &quot;is_playable&quot;: true,
+      &quot;name&quot;: &quot;We Are One (Ole Ola) [The Official 2014 FIFA World Cup Song] (feat. Jennifer Lopez &amp; Claudia Leitte)&quot;,
+      &quot;popularity&quot;: 72,
+      &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/1eab08cf70c31ca1ba3d8d63f67cca536086118a?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+      &quot;track_number&quot;: 11,
+      &quot;type&quot;: &quot;track&quot;,
+      &quot;uri&quot;: &quot;spotify:track:1PCvKFPWnTXAe2oaReVUcr&quot;
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:24]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:24]</span>
+                <span class="scenario-name">verify if the API returns an error if i send an invalid id</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>694</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:24]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://accounts.spotify.com/api/token&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def Base64 = Java.type(&#39;Utils.Base64Encode&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def auth_string = &quot;34757a9fd9234369b098ddede5b0402c:aebd3209295e4d158b7b63c589c4e927&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def encoded_string = Base64.encode(auth_string)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &quot;Basic &quot; + encoded_string</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field grant_type = &quot;client_credentials&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref bg-step">11</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">359</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">02:30:54.332 request:
+1 &gt; POST https://accounts.spotify.com/api/token
+1 &gt; Authorization: Basic MzQ3NTdhOWZkOTIzNDM2OWIwOThkZGVkZTViMDQwMmM6YWViZDMyMDkyOTVlNGQxNThiN2I2M2M1ODljNGU5Mjc=
+1 &gt; Content-Type: application/x-www-form-urlencoded
+1 &gt; Content-Length: 29
+1 &gt; Host: accounts.spotify.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.14)
+1 &gt; Accept-Encoding: gzip,deflate
+grant_type=client_credentials
+
+02:30:54.687 response time in milliseconds: 352
+1 &lt; 200
+1 &lt; date: Sat, 08 Apr 2023 02:29:17 GMT
+1 &lt; content-type: application/json
+1 &lt; set-cookie: __Host-device_id=AQDVwwIJj98yxXL4_uFxLURNhi767RNgBuMvja-MUnLokFK-AaYF12NUWmAYhlrbm39uGii5mArKuPyAJuDLfB5TRBBXf_elDFk;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly;SameSite=Lax
+1 &lt; set-cookie: sp_tr=false;Version=1;Domain=accounts.spotify.com;Path=/;Secure;SameSite=Lax
+1 &lt; sp-trace-id: aec1e085a3723aa4
+1 &lt; x-envoy-upstream-service-time: 9
+1 &lt; server: envoy
+1 &lt; strict-transport-security: max-age=31536000
+1 &lt; x-content-type-options: nosniff
+1 &lt; vary: Accept-Encoding
+1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Set-Cookie: __Host-device_id=AQDVwwIJj98yxXL4_uFxLURNhi767RNgBuMvja-MUnLokFK-AaYF12NUWmAYhlrbm39uGii5mArKuPyAJuDLfB5TRBBXf_elDFk;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly;SameSite=Lax
+1 &lt; Set-Cookie: sp_tr=false;Version=1;Domain=accounts.spotify.com;Path=/;Secure;SameSite=Lax
+{&quot;access_token&quot;:&quot;BQCUkAfYlJKsn8DrXknH7h7hCGLypw4KBlhmi-pHzfjDxSm8tPMKH6ropxpkt0TNbZ6JH0oNcolIt4IdsOVGXrAW4nGIIvJXWUsYzOwR71sua4Dfbx05&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;expires_in&quot;:3600}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def bearer_token = response.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg/top-tracks&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param market = &quot;ES&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">331</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.27">02:30:54.697 request:
+2 &gt; GET https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg/top-tracks?market=ES
+2 &gt; Cookie: sp_tr=false; __Host-device_id=AQDVwwIJj98yxXL4_uFxLURNhi767RNgBuMvja-MUnLokFK-AaYF12NUWmAYhlrbm39uGii5mArKuPyAJuDLfB5TRBBXf_elDFk
+2 &gt; Host: api.spotify.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.14)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+02:30:55.022 response time in milliseconds: 325
+2 &lt; 401
+2 &lt; www-authenticate: Bearer realm=&quot;spotify&quot;
+2 &lt; access-control-allow-origin: *
+2 &lt; access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+2 &lt; access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+2 &lt; access-control-allow-credentials: true
+2 &lt; access-control-max-age: 604800
+2 &lt; content-type: application/json
+2 &lt; strict-transport-security: max-age=31536000
+2 &lt; x-content-type-options: nosniff
+2 &lt; date: Sat, 08 Apr 2023 02:29:17 GMT
+2 &lt; server: envoy
+2 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+2 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+2 &lt; Transfer-Encoding: chunked
+{
+  &quot;error&quot;: {
+    &quot;status&quot;: 401,
+    &quot;message&quot;: &quot;No token provided&quot;
+  }
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 401</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

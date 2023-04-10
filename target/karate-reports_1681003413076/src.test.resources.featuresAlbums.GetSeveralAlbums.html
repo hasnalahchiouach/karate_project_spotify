@@ -1,0 +1,4246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"370ba96a-51f4-4cd7-b29b-888a5c0fd67a",karate_version:"1.4.0",karate_meta:"intellij:1.7.4.325"});
+  }
+});
+</script>
+
+    <title>src.test.resources.featuresAlbums.GetSeveralAlbums</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-04-09 01:20:20 AM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>Get Several Albums</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:16]"><span>[2:16]</span> <span>verify if the API returns an error if i send an invalid values</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/resources/featuresAlbums/GetSeveralAlbums.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Get Several album</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">Get Several Albums</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2044</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def authorization_access = call read(&#39;classpath:Authorization/BearerToken.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1543</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">Authorization.BearerToken</div>
+      </div>
+      <div class="time-cell passed">1438</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://accounts.spotify.com/api/token&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def Base64 = Java.type(&#39;Utils.Base64Encode&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def auth_string = client_authorization</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def encoded_string = Base64.encode(auth_string)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &quot;Basic &quot; + encoded_string</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field grant_type = &quot;client_credentials&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">136</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1259</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.11">01:20:18.214 request:
+1 &gt; POST https://accounts.spotify.com/api/token
+1 &gt; Authorization: Basic MzQ3NTdhOWZkOTIzNDM2OWIwOThkZGVkZTViMDQwMmM6YWViZDMyMDkyOTVlNGQxNThiN2I2M2M1ODljNGU5Mjc=
+1 &gt; Content-Type: application/x-www-form-urlencoded
+1 &gt; Content-Length: 29
+1 &gt; Host: accounts.spotify.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.14)
+1 &gt; Accept-Encoding: gzip,deflate
+grant_type=client_credentials
+
+01:20:18.838 response time in milliseconds: 616
+1 &lt; 200
+1 &lt; date: Sun, 09 Apr 2023 01:18:41 GMT
+1 &lt; content-type: application/json
+1 &lt; set-cookie: __Host-device_id=AQBnmCtM6NMV0TNxWPCHoPcbHpvY3SWa0DuKAyRLsBjEfsN5ec8Co_Hlk1GoUsX43j3NKL98JWOe-fRAVeArfr24pGsCe5rU3fI;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly;SameSite=Lax
+1 &lt; set-cookie: sp_tr=false;Version=1;Domain=accounts.spotify.com;Path=/;Secure;SameSite=Lax
+1 &lt; sp-trace-id: 443e3cc2f68a4ec7
+1 &lt; x-envoy-upstream-service-time: 10
+1 &lt; server: envoy
+1 &lt; strict-transport-security: max-age=31536000
+1 &lt; x-content-type-options: nosniff
+1 &lt; vary: Accept-Encoding
+1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Set-Cookie: __Host-device_id=AQBnmCtM6NMV0TNxWPCHoPcbHpvY3SWa0DuKAyRLsBjEfsN5ec8Co_Hlk1GoUsX43j3NKL98JWOe-fRAVeArfr24pGsCe5rU3fI;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly;SameSite=Lax
+1 &lt; Set-Cookie: sp_tr=false;Version=1;Domain=accounts.spotify.com;Path=/;Secure;SameSite=Lax
+{&quot;access_token&quot;:&quot;BQBxzjlToHbI5SI6CqC0MAZg1GfNQlMk1uRGi8h5SbFhxFoXLkx70h46R-718nsBqC7xQ6VnESwRsrz2z_PLKjK2Govz5VgHGIl-0ISTMbKxlSqHxzv0&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;expires_in&quot;:3600}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def bearer_token = response.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://api.spotify.com/v1/albums&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param ids = &quot;382ObEPsp2rxGrnsizN5TX,1A2GTWGtFfWp7KSQTwWOyo,2noRn2Aes5aoNVsU6iWThc&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authorization_access .bearer_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param market = &quot;ES&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">456</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">01:20:18.862 request:
+1 &gt; GET https://api.spotify.com/v1/albums?market=ES&amp;ids=382ObEPsp2rxGrnsizN5TX%2C1A2GTWGtFfWp7KSQTwWOyo%2C2noRn2Aes5aoNVsU6iWThc
+1 &gt; Authorization: Bearer BQBxzjlToHbI5SI6CqC0MAZg1GfNQlMk1uRGi8h5SbFhxFoXLkx70h46R-718nsBqC7xQ6VnESwRsrz2z_PLKjK2Govz5VgHGIl-0ISTMbKxlSqHxzv0
+1 &gt; Host: api.spotify.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.14)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+01:20:19.300 response time in milliseconds: 415
+1 &lt; 200
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; cache-control: public, max-age=7200
+1 &lt; x-robots-tag: noindex, nofollow
+1 &lt; access-control-allow-origin: *
+1 &lt; access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+1 &lt; access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-max-age: 604800
+1 &lt; strict-transport-security: max-age=31536000
+1 &lt; x-content-type-options: nosniff
+1 &lt; date: Sun, 09 Apr 2023 01:18:41 GMT
+1 &lt; server: envoy
+1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+1 &lt; Transfer-Encoding: chunked
+{
+  &quot;albums&quot; : [ {
+    &quot;album_group&quot; : &quot;album&quot;,
+    &quot;album_type&quot; : &quot;album&quot;,
+    &quot;artists&quot; : [ {
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+      &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+      &quot;name&quot; : &quot;Daft Punk&quot;,
+      &quot;type&quot; : &quot;artist&quot;,
+      &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+    } ],
+    &quot;copyrights&quot; : [ {
+      &quot;text&quot; : &quot;© 2011 Disney&quot;,
+      &quot;type&quot; : &quot;C&quot;
+    }, {
+      &quot;text&quot; : &quot;℗ 2011 Walt Disney Records&quot;,
+      &quot;type&quot; : &quot;P&quot;
+    } ],
+    &quot;external_ids&quot; : {
+      &quot;upc&quot; : &quot;00050087239633&quot;
+    },
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/album/382ObEPsp2rxGrnsizN5TX&quot;
+    },
+    &quot;genres&quot; : [ ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/albums/382ObEPsp2rxGrnsizN5TX&quot;,
+    &quot;id&quot; : &quot;382ObEPsp2rxGrnsizN5TX&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d0000b27326597c053b38c9cf93f8f3a9&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 300,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d00001e0226597c053b38c9cf93f8f3a9&quot;,
+      &quot;width&quot; : 300
+    }, {
+      &quot;height&quot; : 64,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d0000485126597c053b38c9cf93f8f3a9&quot;,
+      &quot;width&quot; : 64
+    } ],
+    &quot;is_playable&quot; : true,
+    &quot;label&quot; : &quot;Walt Disney Records&quot;,
+    &quot;name&quot; : &quot;TRON: Legacy Reconfigured&quot;,
+    &quot;popularity&quot; : 53,
+    &quot;release_date&quot; : &quot;2011-01-01&quot;,
+    &quot;release_date_precision&quot; : &quot;day&quot;,
+    &quot;total_tracks&quot; : 15,
+    &quot;tracks&quot; : {
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/albums/382ObEPsp2rxGrnsizN5TX/tracks?offset=0&amp;limit=50&amp;market=ES&quot;,
+      &quot;items&quot; : [ {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        }, {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/3a9qv6NLHnsVxJUtKOMHvD&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/3a9qv6NLHnsVxJUtKOMHvD&quot;,
+          &quot;id&quot; : &quot;3a9qv6NLHnsVxJUtKOMHvD&quot;,
+          &quot;name&quot; : &quot;The Glitch Mob&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:3a9qv6NLHnsVxJUtKOMHvD&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 262240,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/4lteJuSjb9Jt9W1W7PIU2U&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/4lteJuSjb9Jt9W1W7PIU2U&quot;,
+        &quot;id&quot; : &quot;4lteJuSjb9Jt9W1W7PIU2U&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;name&quot; : &quot;Derezzed - Remixed by The Glitch Mob&quot;,
+        &quot;preview_url&quot; : null,
+        &quot;track_number&quot; : 1,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:4lteJuSjb9Jt9W1W7PIU2U&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        }, {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4CecgT3PfTiMzdO3pFCDNP&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4CecgT3PfTiMzdO3pFCDNP&quot;,
+          &quot;id&quot; : &quot;4CecgT3PfTiMzdO3pFCDNP&quot;,
+          &quot;name&quot; : &quot;M83 VS Big Black Delta&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4CecgT3PfTiMzdO3pFCDNP&quot;
+        }, {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/63MQldklfxkjYDoUE4Tppz&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/63MQldklfxkjYDoUE4Tppz&quot;,
+          &quot;id&quot; : &quot;63MQldklfxkjYDoUE4Tppz&quot;,
+          &quot;name&quot; : &quot;M83&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:63MQldklfxkjYDoUE4Tppz&quot;
+        }, {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/2TXpVEw5FbzDh93tLoDm0i&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/2TXpVEw5FbzDh93tLoDm0i&quot;,
+          &quot;id&quot; : &quot;2TXpVEw5FbzDh93tLoDm0i&quot;,
+          &quot;name&quot; : &quot;Big Black Delta&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:2TXpVEw5FbzDh93tLoDm0i&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 234986,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/66uVqkmHAc0MBUzoPhIypN&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/66uVqkmHAc0MBUzoPhIypN&quot;,
+        &quot;id&quot; : &quot;66uVqkmHAc0MBUzoPhIypN&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;name&quot; : &quot;Fall - Remixed by M83 VS Big Black Delta&quot;,
+        &quot;preview_url&quot; : null,
+        &quot;track_number&quot; : 2,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:66uVqkmHAc0MBUzoPhIypN&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        }, {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/5eKLa1xyHLq8ERWmT1CRHj&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/5eKLa1xyHLq8ERWmT1CRHj&quot;,
+          &quot;id&quot; : &quot;5eKLa1xyHLq8ERWmT1CRHj&quot;,
+          &quot;name&quot; : &quot;The Crystal Method&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:5eKLa1xyHLq8ERWmT1CRHj&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 267786,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/4OEnpg5ubhg6OQ4M2ZjtsL&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/4OEnpg5ubhg6OQ4M2ZjtsL&quot;,
+        &quot;id&quot; : &quot;4OEnpg5ubhg6OQ4M2ZjtsL&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;name&quot; : &quot;The Grid - Remixed by The Crystal Method&quot;,
+        &quot;preview_url&quot; : null,
+        &quot;track_number&quot; : 3,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:4OEnpg5ubhg6OQ4M2ZjtsL&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        }, {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/3gqv1kgivAc92KnUm4elKv&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/3gqv1kgivAc92KnUm4elKv&quot;,
+          &quot;id&quot; : &quot;3gqv1kgivAc92KnUm4elKv&quot;,
+          &quot;name&quot; : &quot;Teddybears&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:3gqv1kgivAc92KnUm4elKv&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 334346,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/2EyK6JBWqftJlxAuqd0Dsq&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/2EyK6JBWqftJlxAuqd0Dsq&quot;,
+        &quot;id&quot; : &quot;2EyK6JBWqftJlxAuqd0Dsq&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;name&quot; : &quot;Adagio for TRON - Remixed by Teddybears&quot;,
+        &quot;preview_url&quot; : null,
+        &quot;track_number&quot; : 4,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:2EyK6JBWqftJlxAuqd0Dsq&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        }, {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/1mB4aweE1XGdjbFVFC8i5m&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/1mB4aweE1XGdjbFVFC8i5m&quot;,
+          &quot;id&quot; : &quot;1mB4aweE1XGdjbFVFC8i5m&quot;,
+          &quot;name&quot; : &quot;Ki:Theory&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:1mB4aweE1XGdjbFVFC8i5m&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 291506,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/1TT6gRprLQ5vSWgoWpyKfR&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/1TT6gRprLQ5vSWgoWpyKfR&quot;,
+        &quot;id&quot; : &quot;1TT6gRprLQ5vSWgoWpyKfR&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;name&quot; : &quot;The Son of Flynn - Remixed by Ki:Theory&quot;,
+        &quot;preview_url&quot; : null,
+        &quot;track_number&quot; : 5,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:1TT6gRprLQ5vSWgoWpyKfR&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        }, {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/5MO2kbaGGA2a8kL4c9qqHq&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/5MO2kbaGGA2a8kL4c9qqHq&quot;,
+          &quot;id&quot; : &quot;5MO2kbaGGA2a8kL4c9qqHq&quot;,
+          &quot;name&quot; : &quot;Paul Oakenfold&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:5MO2kbaGGA2a8kL4c9qqHq&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 275266,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/6hEvTmmvby9ZTkSdfmPW3m&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/6hEvTmmvby9ZTkSdfmPW3m&quot;,
+        &quot;id&quot; : &quot;6hEvTmmvby9ZTkSdfmPW3m&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;name&quot; : &quot;C.L.U. - Remixed by Paul Oakenfold&quot;,
+        &quot;preview_url&quot; : null,
+        &quot;track_number&quot; : 6,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:6hEvTmmvby9ZTkSdfmPW3m&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        }, {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/3OsRAKCvk37zwYcnzRf5XF&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/3OsRAKCvk37zwYcnzRf5XF&quot;,
+          &quot;id&quot; : &quot;3OsRAKCvk37zwYcnzRf5XF&quot;,
+          &quot;name&quot; : &quot;Moby&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:3OsRAKCvk37zwYcnzRf5XF&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 392293,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/03uOJUuuTgaFFI1Efal1no&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/03uOJUuuTgaFFI1Efal1no&quot;,
+        &quot;id&quot; : &quot;03uOJUuuTgaFFI1Efal1no&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;name&quot; : &quot;The Son of Flynn - Remixed by Moby&quot;,
+        &quot;preview_url&quot; : null,
+        &quot;track_number&quot; : 7,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:03uOJUuuTgaFFI1Efal1no&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        }, {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/62k5LKMhymqlDNo2DWOvvv&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/62k5LKMhymqlDNo2DWOvvv&quot;,
+          &quot;id&quot; : &quot;62k5LKMhymqlDNo2DWOvvv&quot;,
+          &quot;name&quot; : &quot;Boys Noize&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:62k5LKMhymqlDNo2DWOvvv&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 340186,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/3YYnfKM02WkygOwg6ozfrL&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/3YYnfKM02WkygOwg6ozfrL&quot;,
+        &quot;id&quot; : &quot;3YYnfKM02WkygOwg6ozfrL&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;name&quot; : &quot;End of Line - Remixed by Boys Noize&quot;,
+        &quot;preview_url&quot; : null,
+        &quot;track_number&quot; : 8,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:3YYnfKM02WkygOwg6ozfrL&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        }, {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/6TQj5BFPooTa08A7pk8AQ1&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/6TQj5BFPooTa08A7pk8AQ1&quot;,
+          &quot;id&quot; : &quot;6TQj5BFPooTa08A7pk8AQ1&quot;,
+          &quot;name&quot; : &quot;Kaskade&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:6TQj5BFPooTa08A7pk8AQ1&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 412440,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/2jFLd9OdNcLsblpv4fDTRn&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/2jFLd9OdNcLsblpv4fDTRn&quot;,
+        &quot;id&quot; : &quot;2jFLd9OdNcLsblpv4fDTRn&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;name&quot; : &quot;Rinzler - Remixed by Kaskade&quot;,
+        &quot;preview_url&quot; : null,
+        &quot;track_number&quot; : 9,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:2jFLd9OdNcLsblpv4fDTRn&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        }, {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/2wouN3QXejYa5tKetYdcVX&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/2wouN3QXejYa5tKetYdcVX&quot;,
+          &quot;id&quot; : &quot;2wouN3QXejYa5tKetYdcVX&quot;,
+          &quot;name&quot; : &quot;Com Truise&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:2wouN3QXejYa5tKetYdcVX&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 292093,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/3SL3UavpjRKNMM9UVlE9Bx&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/3SL3UavpjRKNMM9UVlE9Bx&quot;,
+        &quot;id&quot; : &quot;3SL3UavpjRKNMM9UVlE9Bx&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;name&quot; : &quot;Encom Part 2 - Remixed by Com Truise&quot;,
+        &quot;preview_url&quot; : null,
+        &quot;track_number&quot; : 10,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:3SL3UavpjRKNMM9UVlE9Bx&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        }, {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/3hXDMlrPegHRO0zUvBsRSI&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/3hXDMlrPegHRO0zUvBsRSI&quot;,
+          &quot;id&quot; : &quot;3hXDMlrPegHRO0zUvBsRSI&quot;,
+          &quot;name&quot; : &quot;Photek&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:3hXDMlrPegHRO0zUvBsRSI&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 318720,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/2UBYw2qf9PkvoKQ610ocft&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/2UBYw2qf9PkvoKQ610ocft&quot;,
+        &quot;id&quot; : &quot;2UBYw2qf9PkvoKQ610ocft&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;name&quot; : &quot;End of Line - Remixed by Photek&quot;,
+        &quot;preview_url&quot; : null,
+        &quot;track_number&quot; : 11,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:2UBYw2qf9PkvoKQ610ocft&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        }, {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/5F8v5xSIGtfukNxq0Jqgwh&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/5F8v5xSIGtfukNxq0Jqgwh&quot;,
+          &quot;id&quot; : &quot;5F8v5xSIGtfukNxq0Jqgwh&quot;,
+          &quot;name&quot; : &quot;The Japanese Popstars&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:5F8v5xSIGtfukNxq0Jqgwh&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 367720,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/7irNlzUSPNgCDtEyQuS3lm&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/7irNlzUSPNgCDtEyQuS3lm&quot;,
+        &quot;id&quot; : &quot;7irNlzUSPNgCDtEyQuS3lm&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;name&quot; : &quot;Arena - Remixed by The Japanese Popstars&quot;,
+        &quot;preview_url&quot; : null,
+        &quot;track_number&quot; : 12,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:7irNlzUSPNgCDtEyQuS3lm&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        }, {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/1vCWHaC5f2uS3yhpwWbIA6&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/1vCWHaC5f2uS3yhpwWbIA6&quot;,
+          &quot;id&quot; : &quot;1vCWHaC5f2uS3yhpwWbIA6&quot;,
+          &quot;name&quot; : &quot;Avicii&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:1vCWHaC5f2uS3yhpwWbIA6&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 303946,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/1rn6JIHBuBZiwvA57jeoOB&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/1rn6JIHBuBZiwvA57jeoOB&quot;,
+        &quot;id&quot; : &quot;1rn6JIHBuBZiwvA57jeoOB&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;name&quot; : &quot;Derezzed - Remixed by Avicii&quot;,
+        &quot;preview_url&quot; : null,
+        &quot;track_number&quot; : 13,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:1rn6JIHBuBZiwvA57jeoOB&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        }, {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4iVhFmG8YCCEHANGeUUS9q&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4iVhFmG8YCCEHANGeUUS9q&quot;,
+          &quot;id&quot; : &quot;4iVhFmG8YCCEHANGeUUS9q&quot;,
+          &quot;name&quot; : &quot;Pretty Lights&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4iVhFmG8YCCEHANGeUUS9q&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 272853,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/4OgB6TRmIGBRT4NoFxxIQd&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/4OgB6TRmIGBRT4NoFxxIQd&quot;,
+        &quot;id&quot; : &quot;4OgB6TRmIGBRT4NoFxxIQd&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;name&quot; : &quot;Solar Sailer - Remixed by Pretty Lights&quot;,
+        &quot;preview_url&quot; : null,
+        &quot;track_number&quot; : 14,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:4OgB6TRmIGBRT4NoFxxIQd&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        }, {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/3CfH3WZPzbk5mNDWXpGIy6&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/3CfH3WZPzbk5mNDWXpGIy6&quot;,
+          &quot;id&quot; : &quot;3CfH3WZPzbk5mNDWXpGIy6&quot;,
+          &quot;name&quot; : &quot;Sander Kleinenberg&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:3CfH3WZPzbk5mNDWXpGIy6&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 304466,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/1Nv1h7ANN9E4rAjLP4OfgA&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/1Nv1h7ANN9E4rAjLP4OfgA&quot;,
+        &quot;id&quot; : &quot;1Nv1h7ANN9E4rAjLP4OfgA&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;name&quot; : &quot;TRON Legacy (End Titles) - Remixed by Sander Kleinenberg&quot;,
+        &quot;preview_url&quot; : null,
+        &quot;track_number&quot; : 15,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:1Nv1h7ANN9E4rAjLP4OfgA&quot;
+      } ],
+      &quot;limit&quot; : 50,
+      &quot;next&quot; : null,
+      &quot;offset&quot; : 0,
+      &quot;previous&quot; : null,
+      &quot;total&quot; : 15
+    },
+    &quot;type&quot; : &quot;album&quot;,
+    &quot;uri&quot; : &quot;spotify:album:382ObEPsp2rxGrnsizN5TX&quot;
+  }, {
+    &quot;album_group&quot; : &quot;album&quot;,
+    &quot;album_type&quot; : &quot;album&quot;,
+    &quot;artists&quot; : [ {
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+      &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+      &quot;name&quot; : &quot;Daft Punk&quot;,
+      &quot;type&quot; : &quot;artist&quot;,
+      &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+    } ],
+    &quot;copyrights&quot; : [ {
+      &quot;text&quot; : &quot;Distributed exclusively by Warner Music France / ADA France, © 2005 Daft Life Ltd.&quot;,
+      &quot;type&quot; : &quot;C&quot;
+    }, {
+      &quot;text&quot; : &quot;Distributed exclusively by Warner Music France / ADA France, ℗ 2005 Daft Life Ltd.&quot;,
+      &quot;type&quot; : &quot;P&quot;
+    } ],
+    &quot;external_ids&quot; : {
+      &quot;upc&quot; : &quot;0724386091956&quot;
+    },
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/album/1A2GTWGtFfWp7KSQTwWOyo&quot;
+    },
+    &quot;genres&quot; : [ ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/albums/1A2GTWGtFfWp7KSQTwWOyo&quot;,
+    &quot;id&quot; : &quot;1A2GTWGtFfWp7KSQTwWOyo&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d0000b273d8601e15fa1b4351fe1fc6ae&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 300,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d00001e02d8601e15fa1b4351fe1fc6ae&quot;,
+      &quot;width&quot; : 300
+    }, {
+      &quot;height&quot; : 64,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d00004851d8601e15fa1b4351fe1fc6ae&quot;,
+      &quot;width&quot; : 64
+    } ],
+    &quot;is_playable&quot; : true,
+    &quot;label&quot; : &quot;Daft Life Ltd./ADA France&quot;,
+    &quot;name&quot; : &quot;Human After All&quot;,
+    &quot;popularity&quot; : 55,
+    &quot;release_date&quot; : &quot;2005-03-14&quot;,
+    &quot;release_date_precision&quot; : &quot;day&quot;,
+    &quot;total_tracks&quot; : 10,
+    &quot;tracks&quot; : {
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/albums/1A2GTWGtFfWp7KSQTwWOyo/tracks?offset=0&amp;limit=50&amp;market=ES&quot;,
+      &quot;items&quot; : [ {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 319879,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/3aCKAkMx3yfaj3AO5Gz47e&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/3aCKAkMx3yfaj3AO5Gz47e&quot;,
+        &quot;id&quot; : &quot;3aCKAkMx3yfaj3AO5Gz47e&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;linked_from&quot; : {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/track/3aByRUC2BVL6Fs1zI723sd&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/3aByRUC2BVL6Fs1zI723sd&quot;,
+          &quot;id&quot; : &quot;3aByRUC2BVL6Fs1zI723sd&quot;,
+          &quot;type&quot; : &quot;track&quot;,
+          &quot;uri&quot; : &quot;spotify:track:3aByRUC2BVL6Fs1zI723sd&quot;
+        },
+        &quot;name&quot; : &quot;Human After All&quot;,
+        &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/c4640d45ffd9f45875df3ddfc360f5d6cfc33430?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+        &quot;track_number&quot; : 1,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:3aCKAkMx3yfaj3AO5Gz47e&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 263240,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/0UZRFYMoz9xmeE2AQUhTDl&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/0UZRFYMoz9xmeE2AQUhTDl&quot;,
+        &quot;id&quot; : &quot;0UZRFYMoz9xmeE2AQUhTDl&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;linked_from&quot; : {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/track/2ABpuao3ZbTjP2cSiX9KZc&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/2ABpuao3ZbTjP2cSiX9KZc&quot;,
+          &quot;id&quot; : &quot;2ABpuao3ZbTjP2cSiX9KZc&quot;,
+          &quot;type&quot; : &quot;track&quot;,
+          &quot;uri&quot; : &quot;spotify:track:2ABpuao3ZbTjP2cSiX9KZc&quot;
+        },
+        &quot;name&quot; : &quot;The Prime Time of Your Life&quot;,
+        &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/c7cf4974addc9d3300034b7ead88eb24086ff538?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+        &quot;track_number&quot; : 2,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:0UZRFYMoz9xmeE2AQUhTDl&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 287720,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/7LL40F6YdZgeiQ6en1c7Lk&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/7LL40F6YdZgeiQ6en1c7Lk&quot;,
+        &quot;id&quot; : &quot;7LL40F6YdZgeiQ6en1c7Lk&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;linked_from&quot; : {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/track/4zu9wo2FXoBSsKjO6tRB3R&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/4zu9wo2FXoBSsKjO6tRB3R&quot;,
+          &quot;id&quot; : &quot;4zu9wo2FXoBSsKjO6tRB3R&quot;,
+          &quot;type&quot; : &quot;track&quot;,
+          &quot;uri&quot; : &quot;spotify:track:4zu9wo2FXoBSsKjO6tRB3R&quot;
+        },
+        &quot;name&quot; : &quot;Robot Rock&quot;,
+        &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/b2c4b594e86720ca71c59d6f2681a43c38b3fd06?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+        &quot;track_number&quot; : 3,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:7LL40F6YdZgeiQ6en1c7Lk&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 321186,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/60HSQkYSlJVtdRdHgzRsXz&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/60HSQkYSlJVtdRdHgzRsXz&quot;,
+        &quot;id&quot; : &quot;60HSQkYSlJVtdRdHgzRsXz&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;linked_from&quot; : {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/track/07KtTNn0wZndtN5NOYdBWR&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/07KtTNn0wZndtN5NOYdBWR&quot;,
+          &quot;id&quot; : &quot;07KtTNn0wZndtN5NOYdBWR&quot;,
+          &quot;type&quot; : &quot;track&quot;,
+          &quot;uri&quot; : &quot;spotify:track:07KtTNn0wZndtN5NOYdBWR&quot;
+        },
+        &quot;name&quot; : &quot;Steam Machine&quot;,
+        &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/c34498d7e21992f7da5aefb0c5d32776ccbcefea?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+        &quot;track_number&quot; : 4,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:60HSQkYSlJVtdRdHgzRsXz&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 289680,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/4ABWPP59ItFKykdaDF09K5&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/4ABWPP59ItFKykdaDF09K5&quot;,
+        &quot;id&quot; : &quot;4ABWPP59ItFKykdaDF09K5&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;linked_from&quot; : {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/track/1WnXCfO6oIxG0TbJj29MqR&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/1WnXCfO6oIxG0TbJj29MqR&quot;,
+          &quot;id&quot; : &quot;1WnXCfO6oIxG0TbJj29MqR&quot;,
+          &quot;type&quot; : &quot;track&quot;,
+          &quot;uri&quot; : &quot;spotify:track:1WnXCfO6oIxG0TbJj29MqR&quot;
+        },
+        &quot;name&quot; : &quot;Make Love&quot;,
+        &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/c23e57fe786c75e53f76f3e62855cbabe7879594?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+        &quot;track_number&quot; : 5,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:4ABWPP59ItFKykdaDF09K5&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 248400,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/73MAeHX5sqLYfuYclsrvHc&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/73MAeHX5sqLYfuYclsrvHc&quot;,
+        &quot;id&quot; : &quot;73MAeHX5sqLYfuYclsrvHc&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;linked_from&quot; : {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/track/61qwHnU8dyMqPemGzopDcp&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/61qwHnU8dyMqPemGzopDcp&quot;,
+          &quot;id&quot; : &quot;61qwHnU8dyMqPemGzopDcp&quot;,
+          &quot;type&quot; : &quot;track&quot;,
+          &quot;uri&quot; : &quot;spotify:track:61qwHnU8dyMqPemGzopDcp&quot;
+        },
+        &quot;name&quot; : &quot;The Brainwasher&quot;,
+        &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/a419922329501fa9ec75475d179d8886288bd9a2?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+        &quot;track_number&quot; : 6,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:73MAeHX5sqLYfuYclsrvHc&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 19200,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/3dWxT7lAv6lmXEW2AEZyPQ&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/3dWxT7lAv6lmXEW2AEZyPQ&quot;,
+        &quot;id&quot; : &quot;3dWxT7lAv6lmXEW2AEZyPQ&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;linked_from&quot; : {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/track/0cV1dl2k19YoGbxTKDb0rH&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/0cV1dl2k19YoGbxTKDb0rH&quot;,
+          &quot;id&quot; : &quot;0cV1dl2k19YoGbxTKDb0rH&quot;,
+          &quot;type&quot; : &quot;track&quot;,
+          &quot;uri&quot; : &quot;spotify:track:0cV1dl2k19YoGbxTKDb0rH&quot;
+        },
+        &quot;name&quot; : &quot;On / Off&quot;,
+        &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/0d0c02b96d20b5a297007d4afa156213a7bb546c?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+        &quot;track_number&quot; : 7,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:3dWxT7lAv6lmXEW2AEZyPQ&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 287840,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/37M8nuFfSrlKfTR0AAp7gK&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/37M8nuFfSrlKfTR0AAp7gK&quot;,
+        &quot;id&quot; : &quot;37M8nuFfSrlKfTR0AAp7gK&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;linked_from&quot; : {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/track/73mTIDCNKGfUF4MiFfR3b5&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/73mTIDCNKGfUF4MiFfR3b5&quot;,
+          &quot;id&quot; : &quot;73mTIDCNKGfUF4MiFfR3b5&quot;,
+          &quot;type&quot; : &quot;track&quot;,
+          &quot;uri&quot; : &quot;spotify:track:73mTIDCNKGfUF4MiFfR3b5&quot;
+        },
+        &quot;name&quot; : &quot;Television Rules the Nation&quot;,
+        &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/14656ff6f43fe87d31a293024f1bb25922e67596?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+        &quot;track_number&quot; : 8,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:37M8nuFfSrlKfTR0AAp7gK&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 284280,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/1iNeZGJsoC0D7ZyJTdIbDS&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/1iNeZGJsoC0D7ZyJTdIbDS&quot;,
+        &quot;id&quot; : &quot;1iNeZGJsoC0D7ZyJTdIbDS&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;linked_from&quot; : {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/track/0LSLM0zuWRkEYemF7JcfEE&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/0LSLM0zuWRkEYemF7JcfEE&quot;,
+          &quot;id&quot; : &quot;0LSLM0zuWRkEYemF7JcfEE&quot;,
+          &quot;type&quot; : &quot;track&quot;,
+          &quot;uri&quot; : &quot;spotify:track:0LSLM0zuWRkEYemF7JcfEE&quot;
+        },
+        &quot;name&quot; : &quot;Technologic&quot;,
+        &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/4e68f73933a203aec3e11fb5df3898d70f98d68a?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+        &quot;track_number&quot; : 9,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:1iNeZGJsoC0D7ZyJTdIbDS&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 417320,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/0Dezmoeb373GNcYBjLVAMH&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/0Dezmoeb373GNcYBjLVAMH&quot;,
+        &quot;id&quot; : &quot;0Dezmoeb373GNcYBjLVAMH&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;linked_from&quot; : {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/track/3PsJ6zisndTa3F9eOjBfCc&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/3PsJ6zisndTa3F9eOjBfCc&quot;,
+          &quot;id&quot; : &quot;3PsJ6zisndTa3F9eOjBfCc&quot;,
+          &quot;type&quot; : &quot;track&quot;,
+          &quot;uri&quot; : &quot;spotify:track:3PsJ6zisndTa3F9eOjBfCc&quot;
+        },
+        &quot;name&quot; : &quot;Emotion&quot;,
+        &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/ac672d14bde8e6d159a66d1ff2b7b05936b46dd4?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+        &quot;track_number&quot; : 10,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:0Dezmoeb373GNcYBjLVAMH&quot;
+      } ],
+      &quot;limit&quot; : 50,
+      &quot;next&quot; : null,
+      &quot;offset&quot; : 0,
+      &quot;previous&quot; : null,
+      &quot;total&quot; : 10
+    },
+    &quot;type&quot; : &quot;album&quot;,
+    &quot;uri&quot; : &quot;spotify:album:1A2GTWGtFfWp7KSQTwWOyo&quot;
+  }, {
+    &quot;album_group&quot; : &quot;album&quot;,
+    &quot;album_type&quot; : &quot;album&quot;,
+    &quot;artists&quot; : [ {
+      &quot;external_urls&quot; : {
+        &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+      },
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+      &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+      &quot;name&quot; : &quot;Daft Punk&quot;,
+      &quot;type&quot; : &quot;artist&quot;,
+      &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+    } ],
+    &quot;copyrights&quot; : [ {
+      &quot;text&quot; : &quot;Distributed exclusively by Warner Music France / ADA France, © 2001 Daft Life Ltd.&quot;,
+      &quot;type&quot; : &quot;C&quot;
+    }, {
+      &quot;text&quot; : &quot;Distributed exclusively by Warner Music France / ADA France, ℗ 2001 Daft Life Ltd.&quot;,
+      &quot;type&quot; : &quot;P&quot;
+    } ],
+    &quot;external_ids&quot; : {
+      &quot;upc&quot; : &quot;0724384960650&quot;
+    },
+    &quot;external_urls&quot; : {
+      &quot;spotify&quot; : &quot;https://open.spotify.com/album/2noRn2Aes5aoNVsU6iWThc&quot;
+    },
+    &quot;genres&quot; : [ ],
+    &quot;href&quot; : &quot;https://api.spotify.com/v1/albums/2noRn2Aes5aoNVsU6iWThc&quot;,
+    &quot;id&quot; : &quot;2noRn2Aes5aoNVsU6iWThc&quot;,
+    &quot;images&quot; : [ {
+      &quot;height&quot; : 640,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d0000b273b33d46dfa2635a47eebf63b2&quot;,
+      &quot;width&quot; : 640
+    }, {
+      &quot;height&quot; : 300,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d00001e02b33d46dfa2635a47eebf63b2&quot;,
+      &quot;width&quot; : 300
+    }, {
+      &quot;height&quot; : 64,
+      &quot;url&quot; : &quot;https://i.scdn.co/image/ab67616d00004851b33d46dfa2635a47eebf63b2&quot;,
+      &quot;width&quot; : 64
+    } ],
+    &quot;is_playable&quot; : true,
+    &quot;label&quot; : &quot;Daft Life Ltd./ADA France&quot;,
+    &quot;name&quot; : &quot;Discovery&quot;,
+    &quot;popularity&quot; : 78,
+    &quot;release_date&quot; : &quot;2001-03-12&quot;,
+    &quot;release_date_precision&quot; : &quot;day&quot;,
+    &quot;total_tracks&quot; : 14,
+    &quot;tracks&quot; : {
+      &quot;href&quot; : &quot;https://api.spotify.com/v1/albums/2noRn2Aes5aoNVsU6iWThc/tracks?offset=0&amp;limit=50&amp;market=ES&quot;,
+      &quot;items&quot; : [ {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 320357,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/0DiWol3AO6WpXZgp0goxAV&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/0DiWol3AO6WpXZgp0goxAV&quot;,
+        &quot;id&quot; : &quot;0DiWol3AO6WpXZgp0goxAV&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;name&quot; : &quot;One More Time&quot;,
+        &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/5e7d7e1faefc00e347d0a1c958d4b7f52baa3a44?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+        &quot;track_number&quot; : 1,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:0DiWol3AO6WpXZgp0goxAV&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 212546,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/3H3cOQ6LBLSvmcaV7QkZEu&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/3H3cOQ6LBLSvmcaV7QkZEu&quot;,
+        &quot;id&quot; : &quot;3H3cOQ6LBLSvmcaV7QkZEu&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;name&quot; : &quot;Aerodynamic&quot;,
+        &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/084468bc8b4d33ece2742182d92ef780a8188daa?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+        &quot;track_number&quot; : 2,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:3H3cOQ6LBLSvmcaV7QkZEu&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 301373,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/2VEZx7NWsZ1D0eJ4uv5Fym&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/2VEZx7NWsZ1D0eJ4uv5Fym&quot;,
+        &quot;id&quot; : &quot;2VEZx7NWsZ1D0eJ4uv5Fym&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;name&quot; : &quot;Digital Love&quot;,
+        &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/1975b7202f835305dc2e8b44995bea0e1dc9b557?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+        &quot;track_number&quot; : 3,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:2VEZx7NWsZ1D0eJ4uv5Fym&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 224693,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/5W3cjX2J3tjhG8zb6u0qHn&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/5W3cjX2J3tjhG8zb6u0qHn&quot;,
+        &quot;id&quot; : &quot;5W3cjX2J3tjhG8zb6u0qHn&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;name&quot; : &quot;Harder, Better, Faster, Stronger&quot;,
+        &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/18372aae97b8d78de63f3fa200cc36a6eef5e98e?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+        &quot;track_number&quot; : 4,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:5W3cjX2J3tjhG8zb6u0qHn&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 211640,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/6vuPZX9fWESg5js2JFTQRJ&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/6vuPZX9fWESg5js2JFTQRJ&quot;,
+        &quot;id&quot; : &quot;6vuPZX9fWESg5js2JFTQRJ&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;name&quot; : &quot;Crescendolls&quot;,
+        &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/9fa487146712b9c4f737dfcb7c9c0197c525c693?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+        &quot;track_number&quot; : 5,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:6vuPZX9fWESg5js2JFTQRJ&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 104466,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/63JXZZRbmzooashakb0zbu&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/63JXZZRbmzooashakb0zbu&quot;,
+        &quot;id&quot; : &quot;63JXZZRbmzooashakb0zbu&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;name&quot; : &quot;Nightvision&quot;,
+        &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/d07c36ccac66ab987d4e97772daec794d977ccb6?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+        &quot;track_number&quot; : 6,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:63JXZZRbmzooashakb0zbu&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 237800,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/186hvCTyrni4KT9nwIQ7zS&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/186hvCTyrni4KT9nwIQ7zS&quot;,
+        &quot;id&quot; : &quot;186hvCTyrni4KT9nwIQ7zS&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;name&quot; : &quot;Superheroes&quot;,
+        &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/8f384b1b7800a027a11fddcf51c33d03ca33992f?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+        &quot;track_number&quot; : 7,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:186hvCTyrni4KT9nwIQ7zS&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 201800,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/098ttCNmncrO4YvqWUNMvn&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/098ttCNmncrO4YvqWUNMvn&quot;,
+        &quot;id&quot; : &quot;098ttCNmncrO4YvqWUNMvn&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;name&quot; : &quot;High Life&quot;,
+        &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/3a80fbcdf70685141a7171f96c991e86ca32aae7?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+        &quot;track_number&quot; : 8,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:098ttCNmncrO4YvqWUNMvn&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 232666,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/1NeLwFETswx8Fzxl2AFl91&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/1NeLwFETswx8Fzxl2AFl91&quot;,
+        &quot;id&quot; : &quot;1NeLwFETswx8Fzxl2AFl91&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;name&quot; : &quot;Something About Us&quot;,
+        &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/ebdd8168dd86d03fce7d10837b00a50d33914ff0?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+        &quot;track_number&quot; : 9,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:1NeLwFETswx8Fzxl2AFl91&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 227866,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/7cMFjxhbXBpOlais7KMF3j&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/7cMFjxhbXBpOlais7KMF3j&quot;,
+        &quot;id&quot; : &quot;7cMFjxhbXBpOlais7KMF3j&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;name&quot; : &quot;Voyager&quot;,
+        &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/b85ab3e7d4485db692d1e054493c0a1aa2773665?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+        &quot;track_number&quot; : 10,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:7cMFjxhbXBpOlais7KMF3j&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 345186,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/2LD2gT7gwAurzdQDQtILds&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/2LD2gT7gwAurzdQDQtILds&quot;,
+        &quot;id&quot; : &quot;2LD2gT7gwAurzdQDQtILds&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;name&quot; : &quot;Veridis Quo&quot;,
+        &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/9ce7b8a64cb0f8a87e6822e78ae825ecd3a9ec71?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+        &quot;track_number&quot; : 11,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:2LD2gT7gwAurzdQDQtILds&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 206866,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/4npMbTuxrUA3Wd7edACZ2L&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/4npMbTuxrUA3Wd7edACZ2L&quot;,
+        &quot;id&quot; : &quot;4npMbTuxrUA3Wd7edACZ2L&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;name&quot; : &quot;Short Circuit&quot;,
+        &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/923a4bf949ee16336068929e2e3ad2a7c8d460cc?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+        &quot;track_number&quot; : 12,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:4npMbTuxrUA3Wd7edACZ2L&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 240173,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/7v9Q0dAb9t7h8gJOkcJHay&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/7v9Q0dAb9t7h8gJOkcJHay&quot;,
+        &quot;id&quot; : &quot;7v9Q0dAb9t7h8gJOkcJHay&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;name&quot; : &quot;Face to Face&quot;,
+        &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/1e1ac914d240a6b0c3e0b53febdbe3f1267f53af?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+        &quot;track_number&quot; : 13,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:7v9Q0dAb9t7h8gJOkcJHay&quot;
+      }, {
+        &quot;artists&quot; : [ {
+          &quot;external_urls&quot; : {
+            &quot;spotify&quot; : &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot; : &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot; : &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot; : &quot;Daft Punk&quot;,
+          &quot;type&quot; : &quot;artist&quot;,
+          &quot;uri&quot; : &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        } ],
+        &quot;disc_number&quot; : 1,
+        &quot;duration_ms&quot; : 600293,
+        &quot;explicit&quot; : false,
+        &quot;external_urls&quot; : {
+          &quot;spotify&quot; : &quot;https://open.spotify.com/track/3zMvotMEQK3xvH01vA9wAP&quot;
+        },
+        &quot;href&quot; : &quot;https://api.spotify.com/v1/tracks/3zMvotMEQK3xvH01vA9wAP&quot;,
+        &quot;id&quot; : &quot;3zMvotMEQK3xvH01vA9wAP&quot;,
+        &quot;is_local&quot; : false,
+        &quot;is_playable&quot; : true,
+        &quot;name&quot; : &quot;Too Long&quot;,
+        &quot;preview_url&quot; : &quot;https://p.scdn.co/mp3-preview/5563cb6542b0ad239a11d414061a780a22de9dff?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+        &quot;track_number&quot; : 14,
+        &quot;type&quot; : &quot;track&quot;,
+        &quot;uri&quot; : &quot;spotify:track:3zMvotMEQK3xvH01vA9wAP&quot;
+      } ],
+      &quot;limit&quot; : 50,
+      &quot;next&quot; : null,
+      &quot;offset&quot; : 0,
+      &quot;previous&quot; : null,
+      &quot;total&quot; : 14
+    },
+    &quot;type&quot; : &quot;album&quot;,
+    &quot;uri&quot; : &quot;spotify:album:2noRn2Aes5aoNVsU6iWThc&quot;
+  } ]
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">41</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">01:20:19.356 [print] {
+  &quot;albums&quot;: [
+    {
+      &quot;album_group&quot;: &quot;album&quot;,
+      &quot;album_type&quot;: &quot;album&quot;,
+      &quot;artists&quot;: [
+        {
+          &quot;external_urls&quot;: {
+            &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot;: &quot;Daft Punk&quot;,
+          &quot;type&quot;: &quot;artist&quot;,
+          &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        }
+      ],
+      &quot;copyrights&quot;: [
+        {
+          &quot;text&quot;: &quot;© 2011 Disney&quot;,
+          &quot;type&quot;: &quot;C&quot;
+        },
+        {
+          &quot;text&quot;: &quot;℗ 2011 Walt Disney Records&quot;,
+          &quot;type&quot;: &quot;P&quot;
+        }
+      ],
+      &quot;external_ids&quot;: {
+        &quot;upc&quot;: &quot;00050087239633&quot;
+      },
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/album/382ObEPsp2rxGrnsizN5TX&quot;
+      },
+      &quot;genres&quot;: [
+      ],
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/albums/382ObEPsp2rxGrnsizN5TX&quot;,
+      &quot;id&quot;: &quot;382ObEPsp2rxGrnsizN5TX&quot;,
+      &quot;images&quot;: [
+        {
+          &quot;height&quot;: 640,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d0000b27326597c053b38c9cf93f8f3a9&quot;,
+          &quot;width&quot;: 640
+        },
+        {
+          &quot;height&quot;: 300,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d00001e0226597c053b38c9cf93f8f3a9&quot;,
+          &quot;width&quot;: 300
+        },
+        {
+          &quot;height&quot;: 64,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d0000485126597c053b38c9cf93f8f3a9&quot;,
+          &quot;width&quot;: 64
+        }
+      ],
+      &quot;is_playable&quot;: true,
+      &quot;label&quot;: &quot;Walt Disney Records&quot;,
+      &quot;name&quot;: &quot;TRON: Legacy Reconfigured&quot;,
+      &quot;popularity&quot;: 53,
+      &quot;release_date&quot;: &quot;2011-01-01&quot;,
+      &quot;release_date_precision&quot;: &quot;day&quot;,
+      &quot;total_tracks&quot;: 15,
+      &quot;tracks&quot;: {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/albums/382ObEPsp2rxGrnsizN5TX/tracks?offset=0&amp;limit=50&amp;market=ES&quot;,
+        &quot;items&quot;: [
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              },
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/3a9qv6NLHnsVxJUtKOMHvD&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/3a9qv6NLHnsVxJUtKOMHvD&quot;,
+                &quot;id&quot;: &quot;3a9qv6NLHnsVxJUtKOMHvD&quot;,
+                &quot;name&quot;: &quot;The Glitch Mob&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:3a9qv6NLHnsVxJUtKOMHvD&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 262240,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/4lteJuSjb9Jt9W1W7PIU2U&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/4lteJuSjb9Jt9W1W7PIU2U&quot;,
+            &quot;id&quot;: &quot;4lteJuSjb9Jt9W1W7PIU2U&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;name&quot;: &quot;Derezzed - Remixed by The Glitch Mob&quot;,
+            &quot;preview_url&quot;: null,
+            &quot;track_number&quot;: 1,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:4lteJuSjb9Jt9W1W7PIU2U&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              },
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4CecgT3PfTiMzdO3pFCDNP&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4CecgT3PfTiMzdO3pFCDNP&quot;,
+                &quot;id&quot;: &quot;4CecgT3PfTiMzdO3pFCDNP&quot;,
+                &quot;name&quot;: &quot;M83 VS Big Black Delta&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4CecgT3PfTiMzdO3pFCDNP&quot;
+              },
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/63MQldklfxkjYDoUE4Tppz&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/63MQldklfxkjYDoUE4Tppz&quot;,
+                &quot;id&quot;: &quot;63MQldklfxkjYDoUE4Tppz&quot;,
+                &quot;name&quot;: &quot;M83&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:63MQldklfxkjYDoUE4Tppz&quot;
+              },
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/2TXpVEw5FbzDh93tLoDm0i&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/2TXpVEw5FbzDh93tLoDm0i&quot;,
+                &quot;id&quot;: &quot;2TXpVEw5FbzDh93tLoDm0i&quot;,
+                &quot;name&quot;: &quot;Big Black Delta&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:2TXpVEw5FbzDh93tLoDm0i&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 234986,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/66uVqkmHAc0MBUzoPhIypN&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/66uVqkmHAc0MBUzoPhIypN&quot;,
+            &quot;id&quot;: &quot;66uVqkmHAc0MBUzoPhIypN&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;name&quot;: &quot;Fall - Remixed by M83 VS Big Black Delta&quot;,
+            &quot;preview_url&quot;: null,
+            &quot;track_number&quot;: 2,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:66uVqkmHAc0MBUzoPhIypN&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              },
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/5eKLa1xyHLq8ERWmT1CRHj&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/5eKLa1xyHLq8ERWmT1CRHj&quot;,
+                &quot;id&quot;: &quot;5eKLa1xyHLq8ERWmT1CRHj&quot;,
+                &quot;name&quot;: &quot;The Crystal Method&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:5eKLa1xyHLq8ERWmT1CRHj&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 267786,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/4OEnpg5ubhg6OQ4M2ZjtsL&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/4OEnpg5ubhg6OQ4M2ZjtsL&quot;,
+            &quot;id&quot;: &quot;4OEnpg5ubhg6OQ4M2ZjtsL&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;name&quot;: &quot;The Grid - Remixed by The Crystal Method&quot;,
+            &quot;preview_url&quot;: null,
+            &quot;track_number&quot;: 3,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:4OEnpg5ubhg6OQ4M2ZjtsL&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              },
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/3gqv1kgivAc92KnUm4elKv&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/3gqv1kgivAc92KnUm4elKv&quot;,
+                &quot;id&quot;: &quot;3gqv1kgivAc92KnUm4elKv&quot;,
+                &quot;name&quot;: &quot;Teddybears&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:3gqv1kgivAc92KnUm4elKv&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 334346,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/2EyK6JBWqftJlxAuqd0Dsq&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/2EyK6JBWqftJlxAuqd0Dsq&quot;,
+            &quot;id&quot;: &quot;2EyK6JBWqftJlxAuqd0Dsq&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;name&quot;: &quot;Adagio for TRON - Remixed by Teddybears&quot;,
+            &quot;preview_url&quot;: null,
+            &quot;track_number&quot;: 4,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:2EyK6JBWqftJlxAuqd0Dsq&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              },
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/1mB4aweE1XGdjbFVFC8i5m&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/1mB4aweE1XGdjbFVFC8i5m&quot;,
+                &quot;id&quot;: &quot;1mB4aweE1XGdjbFVFC8i5m&quot;,
+                &quot;name&quot;: &quot;Ki:Theory&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:1mB4aweE1XGdjbFVFC8i5m&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 291506,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/1TT6gRprLQ5vSWgoWpyKfR&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/1TT6gRprLQ5vSWgoWpyKfR&quot;,
+            &quot;id&quot;: &quot;1TT6gRprLQ5vSWgoWpyKfR&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;name&quot;: &quot;The Son of Flynn - Remixed by Ki:Theory&quot;,
+            &quot;preview_url&quot;: null,
+            &quot;track_number&quot;: 5,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:1TT6gRprLQ5vSWgoWpyKfR&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              },
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/5MO2kbaGGA2a8kL4c9qqHq&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/5MO2kbaGGA2a8kL4c9qqHq&quot;,
+                &quot;id&quot;: &quot;5MO2kbaGGA2a8kL4c9qqHq&quot;,
+                &quot;name&quot;: &quot;Paul Oakenfold&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:5MO2kbaGGA2a8kL4c9qqHq&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 275266,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/6hEvTmmvby9ZTkSdfmPW3m&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/6hEvTmmvby9ZTkSdfmPW3m&quot;,
+            &quot;id&quot;: &quot;6hEvTmmvby9ZTkSdfmPW3m&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;name&quot;: &quot;C.L.U. - Remixed by Paul Oakenfold&quot;,
+            &quot;preview_url&quot;: null,
+            &quot;track_number&quot;: 6,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:6hEvTmmvby9ZTkSdfmPW3m&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              },
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/3OsRAKCvk37zwYcnzRf5XF&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/3OsRAKCvk37zwYcnzRf5XF&quot;,
+                &quot;id&quot;: &quot;3OsRAKCvk37zwYcnzRf5XF&quot;,
+                &quot;name&quot;: &quot;Moby&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:3OsRAKCvk37zwYcnzRf5XF&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 392293,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/03uOJUuuTgaFFI1Efal1no&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/03uOJUuuTgaFFI1Efal1no&quot;,
+            &quot;id&quot;: &quot;03uOJUuuTgaFFI1Efal1no&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;name&quot;: &quot;The Son of Flynn - Remixed by Moby&quot;,
+            &quot;preview_url&quot;: null,
+            &quot;track_number&quot;: 7,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:03uOJUuuTgaFFI1Efal1no&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              },
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/62k5LKMhymqlDNo2DWOvvv&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/62k5LKMhymqlDNo2DWOvvv&quot;,
+                &quot;id&quot;: &quot;62k5LKMhymqlDNo2DWOvvv&quot;,
+                &quot;name&quot;: &quot;Boys Noize&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:62k5LKMhymqlDNo2DWOvvv&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 340186,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/3YYnfKM02WkygOwg6ozfrL&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/3YYnfKM02WkygOwg6ozfrL&quot;,
+            &quot;id&quot;: &quot;3YYnfKM02WkygOwg6ozfrL&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;name&quot;: &quot;End of Line - Remixed by Boys Noize&quot;,
+            &quot;preview_url&quot;: null,
+            &quot;track_number&quot;: 8,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:3YYnfKM02WkygOwg6ozfrL&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              },
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/6TQj5BFPooTa08A7pk8AQ1&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/6TQj5BFPooTa08A7pk8AQ1&quot;,
+                &quot;id&quot;: &quot;6TQj5BFPooTa08A7pk8AQ1&quot;,
+                &quot;name&quot;: &quot;Kaskade&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:6TQj5BFPooTa08A7pk8AQ1&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 412440,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/2jFLd9OdNcLsblpv4fDTRn&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/2jFLd9OdNcLsblpv4fDTRn&quot;,
+            &quot;id&quot;: &quot;2jFLd9OdNcLsblpv4fDTRn&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;name&quot;: &quot;Rinzler - Remixed by Kaskade&quot;,
+            &quot;preview_url&quot;: null,
+            &quot;track_number&quot;: 9,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:2jFLd9OdNcLsblpv4fDTRn&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              },
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/2wouN3QXejYa5tKetYdcVX&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/2wouN3QXejYa5tKetYdcVX&quot;,
+                &quot;id&quot;: &quot;2wouN3QXejYa5tKetYdcVX&quot;,
+                &quot;name&quot;: &quot;Com Truise&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:2wouN3QXejYa5tKetYdcVX&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 292093,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/3SL3UavpjRKNMM9UVlE9Bx&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/3SL3UavpjRKNMM9UVlE9Bx&quot;,
+            &quot;id&quot;: &quot;3SL3UavpjRKNMM9UVlE9Bx&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;name&quot;: &quot;Encom Part 2 - Remixed by Com Truise&quot;,
+            &quot;preview_url&quot;: null,
+            &quot;track_number&quot;: 10,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:3SL3UavpjRKNMM9UVlE9Bx&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              },
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/3hXDMlrPegHRO0zUvBsRSI&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/3hXDMlrPegHRO0zUvBsRSI&quot;,
+                &quot;id&quot;: &quot;3hXDMlrPegHRO0zUvBsRSI&quot;,
+                &quot;name&quot;: &quot;Photek&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:3hXDMlrPegHRO0zUvBsRSI&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 318720,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/2UBYw2qf9PkvoKQ610ocft&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/2UBYw2qf9PkvoKQ610ocft&quot;,
+            &quot;id&quot;: &quot;2UBYw2qf9PkvoKQ610ocft&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;name&quot;: &quot;End of Line - Remixed by Photek&quot;,
+            &quot;preview_url&quot;: null,
+            &quot;track_number&quot;: 11,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:2UBYw2qf9PkvoKQ610ocft&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              },
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/5F8v5xSIGtfukNxq0Jqgwh&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/5F8v5xSIGtfukNxq0Jqgwh&quot;,
+                &quot;id&quot;: &quot;5F8v5xSIGtfukNxq0Jqgwh&quot;,
+                &quot;name&quot;: &quot;The Japanese Popstars&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:5F8v5xSIGtfukNxq0Jqgwh&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 367720,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/7irNlzUSPNgCDtEyQuS3lm&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/7irNlzUSPNgCDtEyQuS3lm&quot;,
+            &quot;id&quot;: &quot;7irNlzUSPNgCDtEyQuS3lm&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;name&quot;: &quot;Arena - Remixed by The Japanese Popstars&quot;,
+            &quot;preview_url&quot;: null,
+            &quot;track_number&quot;: 12,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:7irNlzUSPNgCDtEyQuS3lm&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              },
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/1vCWHaC5f2uS3yhpwWbIA6&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/1vCWHaC5f2uS3yhpwWbIA6&quot;,
+                &quot;id&quot;: &quot;1vCWHaC5f2uS3yhpwWbIA6&quot;,
+                &quot;name&quot;: &quot;Avicii&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:1vCWHaC5f2uS3yhpwWbIA6&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 303946,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/1rn6JIHBuBZiwvA57jeoOB&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/1rn6JIHBuBZiwvA57jeoOB&quot;,
+            &quot;id&quot;: &quot;1rn6JIHBuBZiwvA57jeoOB&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;name&quot;: &quot;Derezzed - Remixed by Avicii&quot;,
+            &quot;preview_url&quot;: null,
+            &quot;track_number&quot;: 13,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:1rn6JIHBuBZiwvA57jeoOB&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              },
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4iVhFmG8YCCEHANGeUUS9q&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4iVhFmG8YCCEHANGeUUS9q&quot;,
+                &quot;id&quot;: &quot;4iVhFmG8YCCEHANGeUUS9q&quot;,
+                &quot;name&quot;: &quot;Pretty Lights&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4iVhFmG8YCCEHANGeUUS9q&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 272853,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/4OgB6TRmIGBRT4NoFxxIQd&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/4OgB6TRmIGBRT4NoFxxIQd&quot;,
+            &quot;id&quot;: &quot;4OgB6TRmIGBRT4NoFxxIQd&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;name&quot;: &quot;Solar Sailer - Remixed by Pretty Lights&quot;,
+            &quot;preview_url&quot;: null,
+            &quot;track_number&quot;: 14,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:4OgB6TRmIGBRT4NoFxxIQd&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              },
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/3CfH3WZPzbk5mNDWXpGIy6&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/3CfH3WZPzbk5mNDWXpGIy6&quot;,
+                &quot;id&quot;: &quot;3CfH3WZPzbk5mNDWXpGIy6&quot;,
+                &quot;name&quot;: &quot;Sander Kleinenberg&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:3CfH3WZPzbk5mNDWXpGIy6&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 304466,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/1Nv1h7ANN9E4rAjLP4OfgA&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/1Nv1h7ANN9E4rAjLP4OfgA&quot;,
+            &quot;id&quot;: &quot;1Nv1h7ANN9E4rAjLP4OfgA&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;name&quot;: &quot;TRON Legacy (End Titles) - Remixed by Sander Kleinenberg&quot;,
+            &quot;preview_url&quot;: null,
+            &quot;track_number&quot;: 15,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:1Nv1h7ANN9E4rAjLP4OfgA&quot;
+          }
+        ],
+        &quot;limit&quot;: 50,
+        &quot;next&quot;: null,
+        &quot;offset&quot;: 0,
+        &quot;previous&quot;: null,
+        &quot;total&quot;: 15
+      },
+      &quot;type&quot;: &quot;album&quot;,
+      &quot;uri&quot;: &quot;spotify:album:382ObEPsp2rxGrnsizN5TX&quot;
+    },
+    {
+      &quot;album_group&quot;: &quot;album&quot;,
+      &quot;album_type&quot;: &quot;album&quot;,
+      &quot;artists&quot;: [
+        {
+          &quot;external_urls&quot;: {
+            &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot;: &quot;Daft Punk&quot;,
+          &quot;type&quot;: &quot;artist&quot;,
+          &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        }
+      ],
+      &quot;copyrights&quot;: [
+        {
+          &quot;text&quot;: &quot;Distributed exclusively by Warner Music France / ADA France, © 2005 Daft Life Ltd.&quot;,
+          &quot;type&quot;: &quot;C&quot;
+        },
+        {
+          &quot;text&quot;: &quot;Distributed exclusively by Warner Music France / ADA France, ℗ 2005 Daft Life Ltd.&quot;,
+          &quot;type&quot;: &quot;P&quot;
+        }
+      ],
+      &quot;external_ids&quot;: {
+        &quot;upc&quot;: &quot;0724386091956&quot;
+      },
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/album/1A2GTWGtFfWp7KSQTwWOyo&quot;
+      },
+      &quot;genres&quot;: [
+      ],
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/albums/1A2GTWGtFfWp7KSQTwWOyo&quot;,
+      &quot;id&quot;: &quot;1A2GTWGtFfWp7KSQTwWOyo&quot;,
+      &quot;images&quot;: [
+        {
+          &quot;height&quot;: 640,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d0000b273d8601e15fa1b4351fe1fc6ae&quot;,
+          &quot;width&quot;: 640
+        },
+        {
+          &quot;height&quot;: 300,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d00001e02d8601e15fa1b4351fe1fc6ae&quot;,
+          &quot;width&quot;: 300
+        },
+        {
+          &quot;height&quot;: 64,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d00004851d8601e15fa1b4351fe1fc6ae&quot;,
+          &quot;width&quot;: 64
+        }
+      ],
+      &quot;is_playable&quot;: true,
+      &quot;label&quot;: &quot;Daft Life Ltd./ADA France&quot;,
+      &quot;name&quot;: &quot;Human After All&quot;,
+      &quot;popularity&quot;: 55,
+      &quot;release_date&quot;: &quot;2005-03-14&quot;,
+      &quot;release_date_precision&quot;: &quot;day&quot;,
+      &quot;total_tracks&quot;: 10,
+      &quot;tracks&quot;: {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/albums/1A2GTWGtFfWp7KSQTwWOyo/tracks?offset=0&amp;limit=50&amp;market=ES&quot;,
+        &quot;items&quot;: [
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 319879,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/3aCKAkMx3yfaj3AO5Gz47e&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/3aCKAkMx3yfaj3AO5Gz47e&quot;,
+            &quot;id&quot;: &quot;3aCKAkMx3yfaj3AO5Gz47e&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;linked_from&quot;: {
+              &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/track/3aByRUC2BVL6Fs1zI723sd&quot;
+              },
+              &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/3aByRUC2BVL6Fs1zI723sd&quot;,
+              &quot;id&quot;: &quot;3aByRUC2BVL6Fs1zI723sd&quot;,
+              &quot;type&quot;: &quot;track&quot;,
+              &quot;uri&quot;: &quot;spotify:track:3aByRUC2BVL6Fs1zI723sd&quot;
+            },
+            &quot;name&quot;: &quot;Human After All&quot;,
+            &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/c4640d45ffd9f45875df3ddfc360f5d6cfc33430?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+            &quot;track_number&quot;: 1,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:3aCKAkMx3yfaj3AO5Gz47e&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 263240,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/0UZRFYMoz9xmeE2AQUhTDl&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/0UZRFYMoz9xmeE2AQUhTDl&quot;,
+            &quot;id&quot;: &quot;0UZRFYMoz9xmeE2AQUhTDl&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;linked_from&quot;: {
+              &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/track/2ABpuao3ZbTjP2cSiX9KZc&quot;
+              },
+              &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/2ABpuao3ZbTjP2cSiX9KZc&quot;,
+              &quot;id&quot;: &quot;2ABpuao3ZbTjP2cSiX9KZc&quot;,
+              &quot;type&quot;: &quot;track&quot;,
+              &quot;uri&quot;: &quot;spotify:track:2ABpuao3ZbTjP2cSiX9KZc&quot;
+            },
+            &quot;name&quot;: &quot;The Prime Time of Your Life&quot;,
+            &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/c7cf4974addc9d3300034b7ead88eb24086ff538?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+            &quot;track_number&quot;: 2,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:0UZRFYMoz9xmeE2AQUhTDl&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 287720,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/7LL40F6YdZgeiQ6en1c7Lk&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/7LL40F6YdZgeiQ6en1c7Lk&quot;,
+            &quot;id&quot;: &quot;7LL40F6YdZgeiQ6en1c7Lk&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;linked_from&quot;: {
+              &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/track/4zu9wo2FXoBSsKjO6tRB3R&quot;
+              },
+              &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/4zu9wo2FXoBSsKjO6tRB3R&quot;,
+              &quot;id&quot;: &quot;4zu9wo2FXoBSsKjO6tRB3R&quot;,
+              &quot;type&quot;: &quot;track&quot;,
+              &quot;uri&quot;: &quot;spotify:track:4zu9wo2FXoBSsKjO6tRB3R&quot;
+            },
+            &quot;name&quot;: &quot;Robot Rock&quot;,
+            &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/b2c4b594e86720ca71c59d6f2681a43c38b3fd06?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+            &quot;track_number&quot;: 3,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:7LL40F6YdZgeiQ6en1c7Lk&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 321186,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/60HSQkYSlJVtdRdHgzRsXz&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/60HSQkYSlJVtdRdHgzRsXz&quot;,
+            &quot;id&quot;: &quot;60HSQkYSlJVtdRdHgzRsXz&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;linked_from&quot;: {
+              &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/track/07KtTNn0wZndtN5NOYdBWR&quot;
+              },
+              &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/07KtTNn0wZndtN5NOYdBWR&quot;,
+              &quot;id&quot;: &quot;07KtTNn0wZndtN5NOYdBWR&quot;,
+              &quot;type&quot;: &quot;track&quot;,
+              &quot;uri&quot;: &quot;spotify:track:07KtTNn0wZndtN5NOYdBWR&quot;
+            },
+            &quot;name&quot;: &quot;Steam Machine&quot;,
+            &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/c34498d7e21992f7da5aefb0c5d32776ccbcefea?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+            &quot;track_number&quot;: 4,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:60HSQkYSlJVtdRdHgzRsXz&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 289680,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/4ABWPP59ItFKykdaDF09K5&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/4ABWPP59ItFKykdaDF09K5&quot;,
+            &quot;id&quot;: &quot;4ABWPP59ItFKykdaDF09K5&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;linked_from&quot;: {
+              &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/track/1WnXCfO6oIxG0TbJj29MqR&quot;
+              },
+              &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/1WnXCfO6oIxG0TbJj29MqR&quot;,
+              &quot;id&quot;: &quot;1WnXCfO6oIxG0TbJj29MqR&quot;,
+              &quot;type&quot;: &quot;track&quot;,
+              &quot;uri&quot;: &quot;spotify:track:1WnXCfO6oIxG0TbJj29MqR&quot;
+            },
+            &quot;name&quot;: &quot;Make Love&quot;,
+            &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/c23e57fe786c75e53f76f3e62855cbabe7879594?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+            &quot;track_number&quot;: 5,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:4ABWPP59ItFKykdaDF09K5&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 248400,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/73MAeHX5sqLYfuYclsrvHc&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/73MAeHX5sqLYfuYclsrvHc&quot;,
+            &quot;id&quot;: &quot;73MAeHX5sqLYfuYclsrvHc&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;linked_from&quot;: {
+              &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/track/61qwHnU8dyMqPemGzopDcp&quot;
+              },
+              &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/61qwHnU8dyMqPemGzopDcp&quot;,
+              &quot;id&quot;: &quot;61qwHnU8dyMqPemGzopDcp&quot;,
+              &quot;type&quot;: &quot;track&quot;,
+              &quot;uri&quot;: &quot;spotify:track:61qwHnU8dyMqPemGzopDcp&quot;
+            },
+            &quot;name&quot;: &quot;The Brainwasher&quot;,
+            &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/a419922329501fa9ec75475d179d8886288bd9a2?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+            &quot;track_number&quot;: 6,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:73MAeHX5sqLYfuYclsrvHc&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 19200,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/3dWxT7lAv6lmXEW2AEZyPQ&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/3dWxT7lAv6lmXEW2AEZyPQ&quot;,
+            &quot;id&quot;: &quot;3dWxT7lAv6lmXEW2AEZyPQ&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;linked_from&quot;: {
+              &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/track/0cV1dl2k19YoGbxTKDb0rH&quot;
+              },
+              &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/0cV1dl2k19YoGbxTKDb0rH&quot;,
+              &quot;id&quot;: &quot;0cV1dl2k19YoGbxTKDb0rH&quot;,
+              &quot;type&quot;: &quot;track&quot;,
+              &quot;uri&quot;: &quot;spotify:track:0cV1dl2k19YoGbxTKDb0rH&quot;
+            },
+            &quot;name&quot;: &quot;On / Off&quot;,
+            &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/0d0c02b96d20b5a297007d4afa156213a7bb546c?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+            &quot;track_number&quot;: 7,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:3dWxT7lAv6lmXEW2AEZyPQ&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 287840,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/37M8nuFfSrlKfTR0AAp7gK&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/37M8nuFfSrlKfTR0AAp7gK&quot;,
+            &quot;id&quot;: &quot;37M8nuFfSrlKfTR0AAp7gK&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;linked_from&quot;: {
+              &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/track/73mTIDCNKGfUF4MiFfR3b5&quot;
+              },
+              &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/73mTIDCNKGfUF4MiFfR3b5&quot;,
+              &quot;id&quot;: &quot;73mTIDCNKGfUF4MiFfR3b5&quot;,
+              &quot;type&quot;: &quot;track&quot;,
+              &quot;uri&quot;: &quot;spotify:track:73mTIDCNKGfUF4MiFfR3b5&quot;
+            },
+            &quot;name&quot;: &quot;Television Rules the Nation&quot;,
+            &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/14656ff6f43fe87d31a293024f1bb25922e67596?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+            &quot;track_number&quot;: 8,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:37M8nuFfSrlKfTR0AAp7gK&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 284280,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/1iNeZGJsoC0D7ZyJTdIbDS&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/1iNeZGJsoC0D7ZyJTdIbDS&quot;,
+            &quot;id&quot;: &quot;1iNeZGJsoC0D7ZyJTdIbDS&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;linked_from&quot;: {
+              &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/track/0LSLM0zuWRkEYemF7JcfEE&quot;
+              },
+              &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/0LSLM0zuWRkEYemF7JcfEE&quot;,
+              &quot;id&quot;: &quot;0LSLM0zuWRkEYemF7JcfEE&quot;,
+              &quot;type&quot;: &quot;track&quot;,
+              &quot;uri&quot;: &quot;spotify:track:0LSLM0zuWRkEYemF7JcfEE&quot;
+            },
+            &quot;name&quot;: &quot;Technologic&quot;,
+            &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/4e68f73933a203aec3e11fb5df3898d70f98d68a?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+            &quot;track_number&quot;: 9,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:1iNeZGJsoC0D7ZyJTdIbDS&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 417320,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/0Dezmoeb373GNcYBjLVAMH&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/0Dezmoeb373GNcYBjLVAMH&quot;,
+            &quot;id&quot;: &quot;0Dezmoeb373GNcYBjLVAMH&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;linked_from&quot;: {
+              &quot;external_urls&quot;: {
+                &quot;spotify&quot;: &quot;https://open.spotify.com/track/3PsJ6zisndTa3F9eOjBfCc&quot;
+              },
+              &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/3PsJ6zisndTa3F9eOjBfCc&quot;,
+              &quot;id&quot;: &quot;3PsJ6zisndTa3F9eOjBfCc&quot;,
+              &quot;type&quot;: &quot;track&quot;,
+              &quot;uri&quot;: &quot;spotify:track:3PsJ6zisndTa3F9eOjBfCc&quot;
+            },
+            &quot;name&quot;: &quot;Emotion&quot;,
+            &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/ac672d14bde8e6d159a66d1ff2b7b05936b46dd4?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+            &quot;track_number&quot;: 10,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:0Dezmoeb373GNcYBjLVAMH&quot;
+          }
+        ],
+        &quot;limit&quot;: 50,
+        &quot;next&quot;: null,
+        &quot;offset&quot;: 0,
+        &quot;previous&quot;: null,
+        &quot;total&quot;: 10
+      },
+      &quot;type&quot;: &quot;album&quot;,
+      &quot;uri&quot;: &quot;spotify:album:1A2GTWGtFfWp7KSQTwWOyo&quot;
+    },
+    {
+      &quot;album_group&quot;: &quot;album&quot;,
+      &quot;album_type&quot;: &quot;album&quot;,
+      &quot;artists&quot;: [
+        {
+          &quot;external_urls&quot;: {
+            &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+          },
+          &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+          &quot;name&quot;: &quot;Daft Punk&quot;,
+          &quot;type&quot;: &quot;artist&quot;,
+          &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+        }
+      ],
+      &quot;copyrights&quot;: [
+        {
+          &quot;text&quot;: &quot;Distributed exclusively by Warner Music France / ADA France, © 2001 Daft Life Ltd.&quot;,
+          &quot;type&quot;: &quot;C&quot;
+        },
+        {
+          &quot;text&quot;: &quot;Distributed exclusively by Warner Music France / ADA France, ℗ 2001 Daft Life Ltd.&quot;,
+          &quot;type&quot;: &quot;P&quot;
+        }
+      ],
+      &quot;external_ids&quot;: {
+        &quot;upc&quot;: &quot;0724384960650&quot;
+      },
+      &quot;external_urls&quot;: {
+        &quot;spotify&quot;: &quot;https://open.spotify.com/album/2noRn2Aes5aoNVsU6iWThc&quot;
+      },
+      &quot;genres&quot;: [
+      ],
+      &quot;href&quot;: &quot;https://api.spotify.com/v1/albums/2noRn2Aes5aoNVsU6iWThc&quot;,
+      &quot;id&quot;: &quot;2noRn2Aes5aoNVsU6iWThc&quot;,
+      &quot;images&quot;: [
+        {
+          &quot;height&quot;: 640,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d0000b273b33d46dfa2635a47eebf63b2&quot;,
+          &quot;width&quot;: 640
+        },
+        {
+          &quot;height&quot;: 300,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d00001e02b33d46dfa2635a47eebf63b2&quot;,
+          &quot;width&quot;: 300
+        },
+        {
+          &quot;height&quot;: 64,
+          &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d00004851b33d46dfa2635a47eebf63b2&quot;,
+          &quot;width&quot;: 64
+        }
+      ],
+      &quot;is_playable&quot;: true,
+      &quot;label&quot;: &quot;Daft Life Ltd./ADA France&quot;,
+      &quot;name&quot;: &quot;Discovery&quot;,
+      &quot;popularity&quot;: 78,
+      &quot;release_date&quot;: &quot;2001-03-12&quot;,
+      &quot;release_date_precision&quot;: &quot;day&quot;,
+      &quot;total_tracks&quot;: 14,
+      &quot;tracks&quot;: {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/albums/2noRn2Aes5aoNVsU6iWThc/tracks?offset=0&amp;limit=50&amp;market=ES&quot;,
+        &quot;items&quot;: [
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 320357,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/0DiWol3AO6WpXZgp0goxAV&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/0DiWol3AO6WpXZgp0goxAV&quot;,
+            &quot;id&quot;: &quot;0DiWol3AO6WpXZgp0goxAV&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;name&quot;: &quot;One More Time&quot;,
+            &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/5e7d7e1faefc00e347d0a1c958d4b7f52baa3a44?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+            &quot;track_number&quot;: 1,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:0DiWol3AO6WpXZgp0goxAV&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 212546,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/3H3cOQ6LBLSvmcaV7QkZEu&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/3H3cOQ6LBLSvmcaV7QkZEu&quot;,
+            &quot;id&quot;: &quot;3H3cOQ6LBLSvmcaV7QkZEu&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;name&quot;: &quot;Aerodynamic&quot;,
+            &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/084468bc8b4d33ece2742182d92ef780a8188daa?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+            &quot;track_number&quot;: 2,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:3H3cOQ6LBLSvmcaV7QkZEu&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 301373,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/2VEZx7NWsZ1D0eJ4uv5Fym&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/2VEZx7NWsZ1D0eJ4uv5Fym&quot;,
+            &quot;id&quot;: &quot;2VEZx7NWsZ1D0eJ4uv5Fym&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;name&quot;: &quot;Digital Love&quot;,
+            &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/1975b7202f835305dc2e8b44995bea0e1dc9b557?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+            &quot;track_number&quot;: 3,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:2VEZx7NWsZ1D0eJ4uv5Fym&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 224693,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/5W3cjX2J3tjhG8zb6u0qHn&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/5W3cjX2J3tjhG8zb6u0qHn&quot;,
+            &quot;id&quot;: &quot;5W3cjX2J3tjhG8zb6u0qHn&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;name&quot;: &quot;Harder, Better, Faster, Stronger&quot;,
+            &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/18372aae97b8d78de63f3fa200cc36a6eef5e98e?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+            &quot;track_number&quot;: 4,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:5W3cjX2J3tjhG8zb6u0qHn&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 211640,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/6vuPZX9fWESg5js2JFTQRJ&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/6vuPZX9fWESg5js2JFTQRJ&quot;,
+            &quot;id&quot;: &quot;6vuPZX9fWESg5js2JFTQRJ&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;name&quot;: &quot;Crescendolls&quot;,
+            &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/9fa487146712b9c4f737dfcb7c9c0197c525c693?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+            &quot;track_number&quot;: 5,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:6vuPZX9fWESg5js2JFTQRJ&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 104466,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/63JXZZRbmzooashakb0zbu&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/63JXZZRbmzooashakb0zbu&quot;,
+            &quot;id&quot;: &quot;63JXZZRbmzooashakb0zbu&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;name&quot;: &quot;Nightvision&quot;,
+            &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/d07c36ccac66ab987d4e97772daec794d977ccb6?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+            &quot;track_number&quot;: 6,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:63JXZZRbmzooashakb0zbu&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 237800,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/186hvCTyrni4KT9nwIQ7zS&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/186hvCTyrni4KT9nwIQ7zS&quot;,
+            &quot;id&quot;: &quot;186hvCTyrni4KT9nwIQ7zS&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;name&quot;: &quot;Superheroes&quot;,
+            &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/8f384b1b7800a027a11fddcf51c33d03ca33992f?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+            &quot;track_number&quot;: 7,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:186hvCTyrni4KT9nwIQ7zS&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 201800,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/098ttCNmncrO4YvqWUNMvn&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/098ttCNmncrO4YvqWUNMvn&quot;,
+            &quot;id&quot;: &quot;098ttCNmncrO4YvqWUNMvn&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;name&quot;: &quot;High Life&quot;,
+            &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/3a80fbcdf70685141a7171f96c991e86ca32aae7?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+            &quot;track_number&quot;: 8,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:098ttCNmncrO4YvqWUNMvn&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 232666,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/1NeLwFETswx8Fzxl2AFl91&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/1NeLwFETswx8Fzxl2AFl91&quot;,
+            &quot;id&quot;: &quot;1NeLwFETswx8Fzxl2AFl91&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;name&quot;: &quot;Something About Us&quot;,
+            &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/ebdd8168dd86d03fce7d10837b00a50d33914ff0?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+            &quot;track_number&quot;: 9,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:1NeLwFETswx8Fzxl2AFl91&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 227866,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/7cMFjxhbXBpOlais7KMF3j&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/7cMFjxhbXBpOlais7KMF3j&quot;,
+            &quot;id&quot;: &quot;7cMFjxhbXBpOlais7KMF3j&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;name&quot;: &quot;Voyager&quot;,
+            &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/b85ab3e7d4485db692d1e054493c0a1aa2773665?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+            &quot;track_number&quot;: 10,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:7cMFjxhbXBpOlais7KMF3j&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 345186,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/2LD2gT7gwAurzdQDQtILds&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/2LD2gT7gwAurzdQDQtILds&quot;,
+            &quot;id&quot;: &quot;2LD2gT7gwAurzdQDQtILds&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;name&quot;: &quot;Veridis Quo&quot;,
+            &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/9ce7b8a64cb0f8a87e6822e78ae825ecd3a9ec71?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+            &quot;track_number&quot;: 11,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:2LD2gT7gwAurzdQDQtILds&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 206866,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/4npMbTuxrUA3Wd7edACZ2L&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/4npMbTuxrUA3Wd7edACZ2L&quot;,
+            &quot;id&quot;: &quot;4npMbTuxrUA3Wd7edACZ2L&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;name&quot;: &quot;Short Circuit&quot;,
+            &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/923a4bf949ee16336068929e2e3ad2a7c8d460cc?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+            &quot;track_number&quot;: 12,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:4npMbTuxrUA3Wd7edACZ2L&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 240173,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/7v9Q0dAb9t7h8gJOkcJHay&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/7v9Q0dAb9t7h8gJOkcJHay&quot;,
+            &quot;id&quot;: &quot;7v9Q0dAb9t7h8gJOkcJHay&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;name&quot;: &quot;Face to Face&quot;,
+            &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/1e1ac914d240a6b0c3e0b53febdbe3f1267f53af?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+            &quot;track_number&quot;: 13,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:7v9Q0dAb9t7h8gJOkcJHay&quot;
+          },
+          {
+            &quot;artists&quot;: [
+              {
+                &quot;external_urls&quot;: {
+                  &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi&quot;
+                },
+                &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;id&quot;: &quot;4tZwfgrHOc3mvqYlEYSvVi&quot;,
+                &quot;name&quot;: &quot;Daft Punk&quot;,
+                &quot;type&quot;: &quot;artist&quot;,
+                &quot;uri&quot;: &quot;spotify:artist:4tZwfgrHOc3mvqYlEYSvVi&quot;
+              }
+            ],
+            &quot;disc_number&quot;: 1,
+            &quot;duration_ms&quot;: 600293,
+            &quot;explicit&quot;: false,
+            &quot;external_urls&quot;: {
+              &quot;spotify&quot;: &quot;https://open.spotify.com/track/3zMvotMEQK3xvH01vA9wAP&quot;
+            },
+            &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/3zMvotMEQK3xvH01vA9wAP&quot;,
+            &quot;id&quot;: &quot;3zMvotMEQK3xvH01vA9wAP&quot;,
+            &quot;is_local&quot;: false,
+            &quot;is_playable&quot;: true,
+            &quot;name&quot;: &quot;Too Long&quot;,
+            &quot;preview_url&quot;: &quot;https://p.scdn.co/mp3-preview/5563cb6542b0ad239a11d414061a780a22de9dff?cid=34757a9fd9234369b098ddede5b0402c&quot;,
+            &quot;track_number&quot;: 14,
+            &quot;type&quot;: &quot;track&quot;,
+            &quot;uri&quot;: &quot;spotify:track:3zMvotMEQK3xvH01vA9wAP&quot;
+          }
+        ],
+        &quot;limit&quot;: 50,
+        &quot;next&quot;: null,
+        &quot;offset&quot;: 0,
+        &quot;previous&quot;: null,
+        &quot;total&quot;: 14
+      },
+      &quot;type&quot;: &quot;album&quot;,
+      &quot;uri&quot;: &quot;spotify:album:2noRn2Aes5aoNVsU6iWThc&quot;
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:16]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:16]</span>
+                <span class="scenario-name">verify if the API returns an error if i send an invalid values</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>746</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:16]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def authorization_access = call read(&#39;classpath:Authorization/BearerToken.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">385</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">Authorization.BearerToken</div>
+      </div>
+      <div class="time-cell passed">367</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://accounts.spotify.com/api/token&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def Base64 = Java.type(&#39;Utils.Base64Encode&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def auth_string = client_authorization</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def encoded_string = Base64.encode(auth_string)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &quot;Basic &quot; + encoded_string</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>form field grant_type = &quot;client_credentials&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">361</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.11">01:20:19.394 request:
+1 &gt; POST https://accounts.spotify.com/api/token
+1 &gt; Authorization: Basic MzQ3NTdhOWZkOTIzNDM2OWIwOThkZGVkZTViMDQwMmM6YWViZDMyMDkyOTVlNGQxNThiN2I2M2M1ODljNGU5Mjc=
+1 &gt; Content-Type: application/x-www-form-urlencoded
+1 &gt; Content-Length: 29
+1 &gt; Host: accounts.spotify.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.14)
+1 &gt; Accept-Encoding: gzip,deflate
+grant_type=client_credentials
+
+01:20:19.750 response time in milliseconds: 353
+1 &lt; 200
+1 &lt; date: Sun, 09 Apr 2023 01:18:41 GMT
+1 &lt; content-type: application/json
+1 &lt; set-cookie: __Host-device_id=AQBZEnRlEiH5a3rFmzfjglCclXrY2HjboCOk_0Lo04BaSOnKJDZmdpmIX-n4ETpaxZU2juyCqlda_wMp9X5vYhjtALlnhv8UOik;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly;SameSite=Lax
+1 &lt; set-cookie: sp_tr=false;Version=1;Domain=accounts.spotify.com;Path=/;Secure;SameSite=Lax
+1 &lt; sp-trace-id: 6b16f94d358a2064
+1 &lt; x-envoy-upstream-service-time: 11
+1 &lt; server: envoy
+1 &lt; strict-transport-security: max-age=31536000
+1 &lt; x-content-type-options: nosniff
+1 &lt; vary: Accept-Encoding
+1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Set-Cookie: __Host-device_id=AQBZEnRlEiH5a3rFmzfjglCclXrY2HjboCOk_0Lo04BaSOnKJDZmdpmIX-n4ETpaxZU2juyCqlda_wMp9X5vYhjtALlnhv8UOik;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly;SameSite=Lax
+1 &lt; Set-Cookie: sp_tr=false;Version=1;Domain=accounts.spotify.com;Path=/;Secure;SameSite=Lax
+{&quot;access_token&quot;:&quot;BQBbyZETJXugJByyzXp1ekUBkE0dZlIDuCqWUCdVaBzDyY10BbfLlXHRCgDvbmWX4UQIY0ajJGD2LXu4KNaVHnNiy2BV4W7u1XhvqGfJvzehFo6KtrTi&quot;,&quot;token_type&quot;:&quot;Bearer&quot;,&quot;expires_in&quot;:3600}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def bearer_token = response.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://api.spotify.com/v1/albums/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authorization_access .bearer_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;AA,7746,HASNAA&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">19</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param market = &quot;ES&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">338</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.21">01:20:19.782 request:
+1 &gt; GET https://api.spotify.com/v1/albums/AA,7746,HASNAA?market=ES
+1 &gt; Authorization: Bearer BQBbyZETJXugJByyzXp1ekUBkE0dZlIDuCqWUCdVaBzDyY10BbfLlXHRCgDvbmWX4UQIY0ajJGD2LXu4KNaVHnNiy2BV4W7u1XhvqGfJvzehFo6KtrTi
+1 &gt; Host: api.spotify.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.14)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+01:20:20.115 response time in milliseconds: 330
+1 &lt; 400
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; cache-control: private, max-age=0
+1 &lt; x-robots-tag: noindex, nofollow
+1 &lt; access-control-allow-origin: *
+1 &lt; access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+1 &lt; access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-max-age: 604800
+1 &lt; strict-transport-security: max-age=31536000
+1 &lt; x-content-type-options: nosniff
+1 &lt; date: Sun, 09 Apr 2023 01:18:42 GMT
+1 &lt; server: envoy
+1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+1 &lt; Transfer-Encoding: chunked
+{
+  &quot;error&quot; : {
+    &quot;status&quot; : 400,
+    &quot;message&quot; : &quot;invalid id&quot;
+  }
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
